@@ -2,6 +2,6 @@
 
 /*.md /posts/:splat 302
 
-/文章/ /posts/文章/ 302
+/文章/ /posts/文章/ 200
 
 
