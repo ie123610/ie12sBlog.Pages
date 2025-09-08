@@ -1,4 +1,4 @@
-baseURL = 'http://example.com/'
+baseURL = 'https://ie12sblog-pages.pages.dev/'
 languageCode = 'zh'
 defaultContentLanguage= 'zh'
 theme = 'terminal'
