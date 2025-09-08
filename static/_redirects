@@ -2,4 +2,5 @@
 
 /*.md /posts/:splat 302
 
+/文章/:folder2/*.md /posts/文章/:folder2/:splat
 
