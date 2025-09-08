@@ -1,1 +1,2 @@
-/posts/文章/图片/* /图片/* 302
+/posts/文章/图片/:folder/:img /图片/:folder/:img 302
+
