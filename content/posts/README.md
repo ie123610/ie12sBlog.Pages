@@ -1,7 +1,7 @@
 +++
 date = '2025-02-01'
 draft = false
-title = '索引'
+title = '关于'
 weight = 1
 
 +++

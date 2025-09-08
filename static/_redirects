@@ -1,2 +1,5 @@
 /posts/文章/图片/:folder/:img /图片/:folder/:img 302
 
+/*.md /posts/:splat 302
+
+
