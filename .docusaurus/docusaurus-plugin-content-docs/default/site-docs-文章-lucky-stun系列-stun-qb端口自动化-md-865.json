@@ -1,0 +1,23 @@
+{
+  "id": "文章/lucky-STUN系列/stun-qb端口自动化",
+  "title": "「LUCKY STUN穿透」使用webhook自动修改 qbittorrent 的监听端口",
+  "description": "在 lucky stun 穿透获得的外部端口发生变化后除了要修改路由设备上的映射规则",
+  "source": "@site/docs/文章/lucky-STUN系列/stun-qb端口自动化.md",
+  "sourceDirName": "文章/lucky-STUN系列",
+  "slug": "/文章/lucky-STUN系列/stun-qb端口自动化",
+  "permalink": "/文章/lucky-STUN系列/stun-qb端口自动化",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「LUCKY STUN穿透」在Docker中使用MiniUPnP为BT客户端自动添加内外端口不同的映射规则",
+    "permalink": "/文章/lucky-STUN系列/stun-docker-upnp"
+  },
+  "next": {
+    "title": "stun-tr修改端口",
+    "permalink": "/文章/lucky-STUN系列/stun-tr修改端口"
+  }
+}

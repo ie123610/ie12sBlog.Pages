@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC播放器路径设置",
+  "title": "比特彗星常见问题-设置视频预览播放器",
+  "description": "问： 如何设置比特彗星的预览播放器？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC播放器路径设置.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC播放器路径设置",
+  "permalink": "/文章/比特彗星-常见问题/BC播放器路径设置",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-截图和评论显示问题",
+    "permalink": "/文章/比特彗星-常见问题/BC截图和评论"
+  },
+  "next": {
+    "title": "比特彗星常见问题-断网问题",
+    "permalink": "/文章/比特彗星-常见问题/BC断网问题"
+  }
+}

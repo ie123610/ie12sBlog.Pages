@@ -1,0 +1,21 @@
+{
+  "id": "README",
+  "title": "ie12'sBlog",
+  "description": "ie12的实验性博客",
+  "source": "@site/docs/README.md",
+  "sourceDirName": ".",
+  "slug": "/",
+  "permalink": "/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "slug": "/"
+  },
+  "sidebar": "mySidebar",
+  "next": {
+    "title": "索引",
+    "permalink": "/索引"
+  }
+}

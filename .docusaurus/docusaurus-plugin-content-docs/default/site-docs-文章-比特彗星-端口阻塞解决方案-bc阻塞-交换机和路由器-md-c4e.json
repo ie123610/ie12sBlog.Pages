@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器",
+  "title": "1.4 路由器 交换机 和 光猫 的作用",
+  "description": "问： 路由器、交换机、光猫是做什么用的？",
+  "source": "@site/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器.md",
+  "sourceDirName": "文章/比特彗星-端口阻塞解决方案",
+  "slug": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器",
+  "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "1.2 什么是 NAT",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_nat"
+  },
+  "next": {
+    "title": "2.2 可用的解决方法 （光猫部分）",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫"
+  }
+}

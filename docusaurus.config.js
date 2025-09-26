@@ -47,15 +47,17 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
+          routeBasePath: '/',
+          sidebarPath: './sidebars.js'
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+            //'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
         },
+        blog: false,
       }),
     ],
   ],
@@ -69,62 +71,52 @@ const config = {
         title: 'ie12sBlog',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.jpg',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '文章',
-          },
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://github.com/ie123610/ie12sBlog.Pages/',
+            label: 'GitHub后端',
             position: 'right',
           },
         ],
       },
+      docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '其他发布站点',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/',
+                label: 'B站专栏',
+                href: 'https://space.bilibili.com/390936347/article',
+              },
+              {
+                label: '彗星论坛',
+                href: 'https://www.cometbbs.com/t/%E6%AF%94%E7%89%B9%E5%BD%97%E6%98%9F-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E6%94%B6%E9%9B%86%E4%B8%8E%E8%A7%A3%E5%86%B3/86304',
+              },
+              {
+                label: '博客园',
+                href: 'https://www.cnblogs.com/ie123610/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: '更多',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: '比特彗星资源导航',
+                href: 'https://bc.36102025.xyz/',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `本博客中所有的文章若无特殊说明则均使用 CC BY-SA 4.0 共享协议`,
       },
       prism: {
         theme: prismThemes.github,

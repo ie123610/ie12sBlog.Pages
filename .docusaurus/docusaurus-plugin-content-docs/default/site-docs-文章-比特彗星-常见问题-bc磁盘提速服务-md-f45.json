@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC磁盘提速服务",
+  "title": "比特彗星常见问题-磁盘提速服务问题",
+  "description": "问： 磁盘提速服务出现 未安装\\拒绝访问\\其他错误 该怎么办？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC磁盘提速服务.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC磁盘提速服务",
+  "permalink": "/文章/比特彗星-常见问题/BC磁盘提速服务",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-磁力链接长度问题",
+    "permalink": "/文章/比特彗星-常见问题/BC磁力链接长度问题"
+  },
+  "next": {
+    "title": "比特彗星常见问题-种子市场使用教程",
+    "permalink": "/文章/比特彗星-常见问题/BC种子市场"
+  }
+}

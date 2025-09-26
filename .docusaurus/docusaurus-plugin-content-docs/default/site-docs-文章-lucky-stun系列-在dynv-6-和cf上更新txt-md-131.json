@@ -1,0 +1,23 @@
+{
+  "id": "文章/lucky-STUN系列/在dynv6和CF上更新TXT",
+  "title": "「前置」在Dynv6和Cloudflare上更新TXT记录",
+  "description": "关于本教程",
+  "source": "@site/docs/文章/lucky-STUN系列/在dynv6和CF上更新TXT.md",
+  "sourceDirName": "文章/lucky-STUN系列",
+  "slug": "/文章/lucky-STUN系列/在dynv6和CF上更新TXT",
+  "permalink": "/文章/lucky-STUN系列/在dynv6和CF上更新TXT",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "使用SVCB/HTTPS记录隐藏和固定Web服务端口",
+    "permalink": "/文章/lucky-STUN系列/svcb记录隐藏端口"
+  },
+  "next": {
+    "title": "有关比特彗星若干历史遗留问题的整理",
+    "permalink": "/文章/实验记录系列/BC历史遗留问题"
+  }
+}

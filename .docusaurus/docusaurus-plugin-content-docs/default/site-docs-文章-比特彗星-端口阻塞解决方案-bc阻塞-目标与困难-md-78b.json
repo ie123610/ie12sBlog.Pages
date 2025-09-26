@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_目标与困难",
+  "title": "2.1 目标与困难",
+  "description": "通过前面的基础知识讲解 我们对网络传输的过程和P2P模式有了一定的",
+  "source": "@site/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_目标与困难.md",
+  "sourceDirName": "文章/比特彗星-端口阻塞解决方案",
+  "slug": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目标与困难",
+  "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目标与困难",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "BC阻塞_目录",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目录"
+  },
+  "next": {
+    "title": "1.6 端口转发 DMZ 以及 UPnP 的作用和原理",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_端口转发DMZ和UPnP"
+  }
+}

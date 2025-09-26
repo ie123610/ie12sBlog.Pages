@@ -1,0 +1,23 @@
+{
+  "id": "文章/lucky-STUN系列/cf-srv设置",
+  "title": "「补充篇」在Cloudflare上设置并更新SRV记录",
+  "description": "关于本教程",
+  "source": "@site/docs/文章/lucky-STUN系列/cf-srv设置.md",
+  "sourceDirName": "文章/lucky-STUN系列",
+  "slug": "/文章/lucky-STUN系列/cf-srv设置",
+  "permalink": "/文章/lucky-STUN系列/cf-srv设置",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「权宜之计」使用Windows防火墙拦截浏览器IPv6请求迫使其使用IPv4",
+    "permalink": "/文章/IPv6过渡方案/win防火墙拦截IPv6"
+  },
+  "next": {
+    "title": "Lucky v2.15 版本后的DDNS配置方法",
+    "permalink": "/文章/lucky-STUN系列/lucky-ddns-2.15"
+  }
+}

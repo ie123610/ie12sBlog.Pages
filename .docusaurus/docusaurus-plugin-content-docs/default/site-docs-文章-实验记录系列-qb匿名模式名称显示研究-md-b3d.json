@@ -1,0 +1,23 @@
+{
+  "id": "文章/实验记录系列/qb匿名模式名称显示研究",
+  "title": "关于 qbittorrent 在匿名模式下能否以被比特彗星正确识别问题的研究",
+  "description": "原帖地址",
+  "source": "@site/docs/文章/实验记录系列/qb匿名模式名称显示研究.md",
+  "sourceDirName": "文章/实验记录系列",
+  "slug": "/文章/实验记录系列/qb匿名模式名称显示研究",
+  "permalink": "/文章/实验记录系列/qb匿名模式名称显示研究",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "eMule设置IP绑定",
+    "permalink": "/文章/实验记录系列/emule的ip绑定"
+  },
+  "next": {
+    "title": "Windows无法启用休眠问题",
+    "permalink": "/文章/实验记录系列/win休眠问题"
+  }
+}

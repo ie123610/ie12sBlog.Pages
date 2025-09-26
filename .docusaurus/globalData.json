@@ -1,0 +1,388 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/",
+          "mainDocId": "README",
+          "docs": [
+            {
+              "id": "索引",
+              "path": "/索引",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/堡垒防火墙反吸血",
+              "path": "/文章/比特彗星-常见问题/堡垒防火墙反吸血",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/补档-像素帝的bc教程",
+              "path": "/文章/比特彗星-常见问题/补档-像素帝的bc教程",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC播放器路径设置",
+              "path": "/文章/比特彗星-常见问题/BC播放器路径设置",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC磁力链接格式问题",
+              "path": "/文章/比特彗星-常见问题/BC磁力链接格式问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC磁力链接长度问题",
+              "path": "/文章/比特彗星-常见问题/BC磁力链接长度问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC磁盘提速服务",
+              "path": "/文章/比特彗星-常见问题/BC磁盘提速服务",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC断网问题",
+              "path": "/文章/比特彗星-常见问题/BC断网问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC反吸血",
+              "path": "/文章/比特彗星-常见问题/BC反吸血",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC分块校验失败问题",
+              "path": "/文章/比特彗星-常见问题/BC分块校验失败问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC截图和评论",
+              "path": "/文章/比特彗星-常见问题/BC截图和评论",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC绿灯常见问题",
+              "path": "/文章/比特彗星-常见问题/BC绿灯常见问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC内存占用过高",
+              "path": "/文章/比特彗星-常见问题/BC内存占用过高",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC配置恢复",
+              "path": "/文章/比特彗星-常见问题/BC配置恢复",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC下载测速",
+              "path": "/文章/比特彗星-常见问题/BC下载测速",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC下载缓慢问题-重置",
+              "path": "/文章/比特彗星-常见问题/BC下载缓慢问题-重置",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC下载卡99问题",
+              "path": "/文章/比特彗星-常见问题/BC下载卡99问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC用户列表显示问题",
+              "path": "/文章/比特彗星-常见问题/BC用户列表显示问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC元数据获取问题",
+              "path": "/文章/比特彗星-常见问题/BC元数据获取问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC种子补档99问题",
+              "path": "/文章/比特彗星-常见问题/BC种子补档99问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC种子市场",
+              "path": "/文章/比特彗星-常见问题/BC种子市场",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/BC专家模式及其作用",
+              "path": "/文章/比特彗星-常见问题/BC专家模式及其作用",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-常见问题/win防火墙反吸血",
+              "path": "/文章/比特彗星-常见问题/win防火墙反吸血",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_端口转发DMZ和UPnP",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_端口转发DMZ和UPnP",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_防火墙和nat",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_防火墙和nat",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_目标与困难",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目标与困难",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_目录",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目录",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_前言",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_前言",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_ip和端口",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_ip和端口",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_ipv6",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_ipv6",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_nat",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_nat",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞-win",
+              "path": "/文章/比特彗星-端口阻塞解决方案/BC阻塞-win",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/废弃方案-使用lucky端口转发固定STUN穿透端口",
+              "path": "/文章/实验记录系列/废弃方案-使用lucky端口转发固定STUN穿透端口",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/实验记录索引",
+              "path": "/文章/实验记录系列/实验记录索引",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/小米路由更多IPv6获取方式",
+              "path": "/文章/实验记录系列/小米路由更多IPv6获取方式",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/已知bittorrent客户端生存调查/已知客户端调查-说明",
+              "path": "/文章/实验记录系列/已知bittorrent客户端生存调查/已知客户端调查-说明",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/有关BC的奇谈怪论",
+              "path": "/文章/实验记录系列/有关BC的奇谈怪论",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/B站专栏文本复制问题",
+              "path": "/文章/实验记录系列/B站专栏文本复制问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/BC改进建议",
+              "path": "/文章/实验记录系列/BC改进建议",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/BC历史遗留问题",
+              "path": "/文章/实验记录系列/BC历史遗留问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/emule的ip绑定",
+              "path": "/文章/实验记录系列/emule的ip绑定",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/L2TP特性研究",
+              "path": "/文章/实验记录系列/L2TP特性研究",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/qb匿名模式名称显示研究",
+              "path": "/文章/实验记录系列/qb匿名模式名称显示研究",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/实验记录系列/win休眠问题",
+              "path": "/文章/实验记录系列/win休眠问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/虚拟专用网络系列/et从记录获取端口",
+              "path": "/文章/虚拟专用网络系列/et从记录获取端口",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/虚拟专用网络系列/gost-bt-穿透",
+              "path": "/文章/虚拟专用网络系列/gost-bt-穿透",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/虚拟专用网络系列/SE解决不支持此功能问题",
+              "path": "/文章/虚拟专用网络系列/SE解决不支持此功能问题",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/虚拟专用网络系列/win搭建easytier公共服务器",
+              "path": "/文章/虚拟专用网络系列/win搭建easytier公共服务器",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/IPv6过渡方案/CF双栈代理",
+              "path": "/文章/IPv6过渡方案/CF双栈代理",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/IPv6过渡方案/Win端口转发",
+              "path": "/文章/IPv6过渡方案/Win端口转发",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/IPv6过渡方案/win防火墙拦截IPv6",
+              "path": "/文章/IPv6过渡方案/win防火墙拦截IPv6",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/在dynv6和CF上更新TXT",
+              "path": "/文章/lucky-STUN系列/在dynv6和CF上更新TXT",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/cf-srv设置",
+              "path": "/文章/lucky-STUN系列/cf-srv设置",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/lucky-ddns-2.15",
+              "path": "/文章/lucky-STUN系列/lucky-ddns-2.15",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/lucky-vxkex兼容",
+              "path": "/文章/lucky-STUN系列/lucky-vxkex兼容",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-bc端口自动化",
+              "path": "/文章/lucky-STUN系列/stun-bc端口自动化",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-cf重定向",
+              "path": "/文章/lucky-STUN系列/stun-cf重定向",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-docker-upnp",
+              "path": "/文章/lucky-STUN系列/stun-docker-upnp",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-qb端口自动化",
+              "path": "/文章/lucky-STUN系列/stun-qb端口自动化",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-tr修改端口",
+              "path": "/文章/lucky-STUN系列/stun-tr修改端口",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-v4-v6分离",
+              "path": "/文章/lucky-STUN系列/stun-v4-v6分离",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-VNT组网",
+              "path": "/文章/lucky-STUN系列/stun-VNT组网",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun-web服务-CF",
+              "path": "/文章/lucky-STUN系列/stun-web服务-CF",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/stun穿透-bt",
+              "path": "/文章/lucky-STUN系列/stun穿透-bt",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/svcb记录隐藏端口",
+              "path": "/文章/lucky-STUN系列/svcb记录隐藏端口",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "README",
+              "path": "/",
+              "sidebar": "mySidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "mySidebar": {
+              "link": {
+                "path": "/",
+                "label": "关于"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

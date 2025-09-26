@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC下载缓慢问题-重置",
+  "title": "比特彗星常见问题-下载缓慢和无法下载问题[重置]",
+  "description": "问： 使用彗星下载资源缓慢/没有下载速度/无法下载怎么办？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC下载缓慢问题-重置.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC下载缓慢问题-重置",
+  "permalink": "/文章/比特彗星-常见问题/BC下载缓慢问题-重置",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "测试BT下载速度的方法和测速种子的选择",
+    "permalink": "/文章/比特彗星-常见问题/BC下载测速"
+  },
+  "next": {
+    "title": "比特彗星常见问题-专家模式及其作用",
+    "permalink": "/文章/比特彗星-常见问题/BC专家模式及其作用"
+  }
+}

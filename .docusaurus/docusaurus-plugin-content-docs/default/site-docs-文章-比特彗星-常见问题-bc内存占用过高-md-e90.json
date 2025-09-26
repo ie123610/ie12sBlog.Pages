@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC内存占用过高",
+  "title": "比特彗星常见问题-内存占用过高问题",
+  "description": "问： 比特彗星内存占用过高怎么办？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC内存占用过高.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC内存占用过高",
+  "permalink": "/文章/比特彗星-常见问题/BC内存占用过高",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-元数据获取问题",
+    "permalink": "/文章/比特彗星-常见问题/BC元数据获取问题"
+  },
+  "next": {
+    "title": "比特彗星常见问题-分块校验失败问题",
+    "permalink": "/文章/比特彗星-常见问题/BC分块校验失败问题"
+  }
+}

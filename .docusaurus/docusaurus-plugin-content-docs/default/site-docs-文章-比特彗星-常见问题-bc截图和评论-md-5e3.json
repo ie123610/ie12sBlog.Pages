@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC截图和评论",
+  "title": "比特彗星常见问题-截图和评论显示问题",
+  "description": "问： 评论和截图无法显示该怎么办？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC截图和评论.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC截图和评论",
+  "permalink": "/文章/比特彗星-常见问题/BC截图和评论",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-屏蔽吸血客户端和设置自动反吸血",
+    "permalink": "/文章/比特彗星-常见问题/BC反吸血"
+  },
+  "next": {
+    "title": "比特彗星常见问题-设置视频预览播放器",
+    "permalink": "/文章/比特彗星-常见问题/BC播放器路径设置"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "文章/实验记录系列/L2TP特性研究",
+  "title": "L2TP 特性研究",
+  "description": "其实这些内容发现的比较早 但直到现在才想到将其记录下来",
+  "source": "@site/docs/文章/实验记录系列/L2TP特性研究.md",
+  "sourceDirName": "文章/实验记录系列",
+  "slug": "/文章/实验记录系列/L2TP特性研究",
+  "permalink": "/文章/实验记录系列/L2TP特性研究",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "B站专栏文本复制问题",
+    "permalink": "/文章/实验记录系列/B站专栏文本复制问题"
+  },
+  "next": {
+    "title": "eMule设置IP绑定",
+    "permalink": "/文章/实验记录系列/emule的ip绑定"
+  }
+}

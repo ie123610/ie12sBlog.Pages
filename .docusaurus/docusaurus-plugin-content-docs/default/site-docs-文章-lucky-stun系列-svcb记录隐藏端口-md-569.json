@@ -1,0 +1,23 @@
+{
+  "id": "文章/lucky-STUN系列/svcb记录隐藏端口",
+  "title": "使用SVCB/HTTPS记录隐藏和固定Web服务端口",
+  "description": "背景",
+  "source": "@site/docs/文章/lucky-STUN系列/svcb记录隐藏端口.md",
+  "sourceDirName": "文章/lucky-STUN系列",
+  "slug": "/文章/lucky-STUN系列/svcb记录隐藏端口",
+  "permalink": "/文章/lucky-STUN系列/svcb记录隐藏端口",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "LUCKY STUN穿透在Windows上使用UPnP工具为BT客户端自动添加内外端口号不同的映射规则",
+    "permalink": "/文章/lucky-STUN系列/stun穿透-bt"
+  },
+  "next": {
+    "title": "「前置」在Dynv6和Cloudflare上更新TXT记录",
+    "permalink": "/文章/lucky-STUN系列/在dynv6和CF上更新TXT"
+  }
+}

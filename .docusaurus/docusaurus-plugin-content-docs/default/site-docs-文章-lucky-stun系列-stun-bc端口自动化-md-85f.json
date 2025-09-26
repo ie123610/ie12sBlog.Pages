@@ -1,0 +1,23 @@
+{
+  "id": "文章/lucky-STUN系列/stun-bc端口自动化",
+  "title": "「LUCKY STUN穿透」使用脚本自动修改比特彗星的监听端口",
+  "description": "在之前的教程中我们已经实现了 为qbittorrent 和 Transmission 自动更换监听端口",
+  "source": "@site/docs/文章/lucky-STUN系列/stun-bc端口自动化.md",
+  "sourceDirName": "文章/lucky-STUN系列",
+  "slug": "/文章/lucky-STUN系列/stun-bc端口自动化",
+  "permalink": "/文章/lucky-STUN系列/stun-bc端口自动化",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「LUCKY STUN穿透」在Windows下使用VNT组网为非HTTP服务固定STUN穿透端口",
+    "permalink": "/文章/lucky-STUN系列/stun-VNT组网"
+  },
+  "next": {
+    "title": "「扩展篇」使用Cloudflare的重定向规则传递资源路径和查询字符串",
+    "permalink": "/文章/lucky-STUN系列/stun-cf重定向"
+  }
+}

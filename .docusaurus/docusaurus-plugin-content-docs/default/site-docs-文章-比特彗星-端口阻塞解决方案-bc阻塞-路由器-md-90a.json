@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器",
+  "title": "2.2 可用的解决方法（路由器部分）",
+  "description": "2.2.3.1 宽带拨号（PPPoE）设置",
+  "source": "@site/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器.md",
+  "sourceDirName": "文章/比特彗星-端口阻塞解决方案",
+  "slug": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器",
+  "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "2.3 网络环境检测和优化",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构"
+  },
+  "next": {
+    "title": "1.5 防火墙和NAT的异同",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_防火墙和nat"
+  }
+}

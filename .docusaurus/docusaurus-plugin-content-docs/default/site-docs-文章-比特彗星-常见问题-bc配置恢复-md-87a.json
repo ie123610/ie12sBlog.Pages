@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC配置恢复",
+  "title": "比特彗星常见问题-意外退出程序后下载列表清空的解决方法",
+  "description": "问： 程序意外退出后（如停电） 下载列表清空了该怎么办？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC配置恢复.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC配置恢复",
+  "permalink": "/文章/比特彗星-常见问题/BC配置恢复",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-有关绿灯的常见误区",
+    "permalink": "/文章/比特彗星-常见问题/BC绿灯常见问题"
+  },
+  "next": {
+    "title": "「反吸血」使用命令操作Windows防火墙以实现全自动/半自动的批量IP屏蔽",
+    "permalink": "/文章/比特彗星-常见问题/win防火墙反吸血"
+  }
+}

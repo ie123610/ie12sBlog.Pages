@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC专家模式及其作用",
+  "title": "比特彗星常见问题-专家模式及其作用",
+  "description": "问： 如何开启专家模式？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC专家模式及其作用.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC专家模式及其作用",
+  "permalink": "/文章/比特彗星-常见问题/BC专家模式及其作用",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-下载缓慢和无法下载问题[重置]",
+    "permalink": "/文章/比特彗星-常见问题/BC下载缓慢问题-重置"
+  },
+  "next": {
+    "title": "比特彗星常见问题-元数据获取问题",
+    "permalink": "/文章/比特彗星-常见问题/BC元数据获取问题"
+  }
+}

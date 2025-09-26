@@ -1,0 +1,23 @@
+{
+  "id": "文章/比特彗星-常见问题/BC种子补档99问题",
+  "title": "比特彗星常见问题-资源补档卡进度99%问题",
+  "description": "关于资源补档",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC种子补档99问题.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC种子补档99问题",
+  "permalink": "/文章/比特彗星-常见问题/BC种子补档99问题",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-种子市场使用教程",
+    "permalink": "/文章/比特彗星-常见问题/BC种子市场"
+  },
+  "next": {
+    "title": "比特彗星常见问题-有关绿灯的常见误区",
+    "permalink": "/文章/比特彗星-常见问题/BC绿灯常见问题"
+  }
+}
