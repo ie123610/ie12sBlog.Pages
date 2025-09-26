@@ -1,2 +1,1 @@
-/docs/文章/图片/:img_path /图片/:img_path 302
-/1 / 302
+/docs/文章/图片/* /图片/:splat 200
