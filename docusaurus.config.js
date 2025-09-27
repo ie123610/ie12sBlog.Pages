@@ -71,7 +71,7 @@ const config = {
         title: 'ie12sBlog',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.jpg',
+          src: 'img/logo.png',
         },
         items: [
           {
