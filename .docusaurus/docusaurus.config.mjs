@@ -63,6 +63,7 @@ export default {
         "docs": {
           "routeBasePath": "/",
           "sidebarPath": "./sidebars.js",
+          "showLastUpdateTime": true,
           "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main"
         },
         "theme": {
