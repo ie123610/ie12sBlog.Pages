@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'ie12sBlog',
   tagline: 'ie12的博客',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/Internet_Explorer_10.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -41,6 +41,25 @@ const config = {
     locales: ['zh-Hans'],
   },
 
+  themes: [
+    // ... Your other themes.
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      {
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        language: ["en", "zh"],
+        // ```
+        docsRouteBasePath: "/",
+        indexBlog: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -49,7 +68,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          showLastUpdateTime: true,
+          //showLastUpdateTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -79,6 +98,10 @@ const config = {
             href: 'https://github.com/ie123610/ie12sBlog.Pages/',
             label: 'GitHub后端',
             position: 'right',
+          },
+          {
+            href: 'https://github.com/ie123610/ie12sBlog',
+            label: 'GitHub版博客',
           },
         ],
       },
@@ -117,7 +140,9 @@ const config = {
             ],
           },
         ],
-        copyright: `本博客中所有的文章若无特殊说明则均使用 CC BY-SA 4.0 共享协议`,
+        copyright: `<p>文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>
+Powered by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a> &amp; <a href="https://docusaurus.io/" target="_blank">Docusaurus</a></p>
+`,
       },
       prism: {
         theme: prismThemes.github,

@@ -6,7 +6,7 @@
 export default {
   "title": "ie12sBlog",
   "tagline": "ie12的博客",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/Internet_Explorer_10.svg",
   "future": {
     "v4": {
       "removeLegacyPostBuildHeadAttribute": true,
@@ -42,6 +42,20 @@ export default {
     "path": "i18n",
     "localeConfigs": {}
   },
+  "themes": [
+    [
+      "/home/ie12/文档/GitHub/ie12sBlog.Pages/node_modules/@easyops-cn/docusaurus-search-local/dist/server/server/index.js",
+      {
+        "hashed": true,
+        "language": [
+          "en",
+          "zh"
+        ],
+        "docsRouteBasePath": "/",
+        "indexBlog": false
+      }
+    ]
+  ],
   "presets": [
     [
       "classic",
@@ -49,7 +63,6 @@ export default {
         "docs": {
           "routeBasePath": "/",
           "sidebarPath": "./sidebars.js",
-          "showLastUpdateTime": true,
           "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main"
         },
         "theme": {
@@ -72,6 +85,11 @@ export default {
           "href": "https://github.com/ie123610/ie12sBlog.Pages/",
           "label": "GitHub后端",
           "position": "right"
+        },
+        {
+          "href": "https://github.com/ie123610/ie12sBlog",
+          "label": "GitHub版博客",
+          "position": "left"
         }
       ],
       "hideOnScroll": false
@@ -113,7 +131,7 @@ export default {
           ]
         }
       ],
-      "copyright": "本博客中所有的文章若无特殊说明则均使用 CC BY-SA 4.0 共享协议"
+      "copyright": "<p>文章若无特殊说明则均使用 <a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans\" target=\"_blank\">CC BY-SA 4.0</a> 共享协议<br>\nPowered by <a href=\"https://pages.cloudflare.com/\" target=\"_blank\">Cloudflare Pages</a> &amp; <a href=\"https://docusaurus.io/\" target=\"_blank\">Docusaurus</a></p>\n"
     },
     "prism": {
       "theme": {
@@ -343,7 +361,6 @@ export default {
   ],
   "customFields": {},
   "plugins": [],
-  "themes": [],
   "scripts": [],
   "headTags": [],
   "stylesheets": [],
