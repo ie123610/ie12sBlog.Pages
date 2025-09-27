@@ -8,8 +8,10 @@
   "permalink": "/",
   "draft": false,
   "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/README.md",
   "tags": [],
   "version": "current",
+  "lastUpdatedAt": 1539502055000,
   "frontMatter": {
     "slug": "/"
   },
