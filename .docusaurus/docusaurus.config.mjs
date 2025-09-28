@@ -91,6 +91,21 @@ export default {
           "href": "https://github.com/ie123610/ie12sBlog",
           "label": "GitHub版博客",
           "position": "left"
+        },
+        {
+          "href": "https://space.bilibili.com/390936347/article",
+          "label": "B站专栏",
+          "position": "left"
+        },
+        {
+          "label": "博客园",
+          "href": "https://www.cnblogs.com/ie123610/",
+          "position": "left"
+        },
+        {
+          "label": "彗星论坛",
+          "href": "https://www.cometbbs.com/t/%E6%AF%94%E7%89%B9%E5%BD%97%E6%98%9F-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E6%94%B6%E9%9B%86%E4%B8%8E%E8%A7%A3%E5%86%B3/86304",
+          "position": "left"
         }
       ],
       "hideOnScroll": false
@@ -104,34 +119,7 @@ export default {
     },
     "footer": {
       "style": "dark",
-      "links": [
-        {
-          "title": "其他发布站点",
-          "items": [
-            {
-              "label": "B站专栏",
-              "href": "https://space.bilibili.com/390936347/article"
-            },
-            {
-              "label": "彗星论坛",
-              "href": "https://www.cometbbs.com/t/%E6%AF%94%E7%89%B9%E5%BD%97%E6%98%9F-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E6%94%B6%E9%9B%86%E4%B8%8E%E8%A7%A3%E5%86%B3/86304"
-            },
-            {
-              "label": "博客园",
-              "href": "https://www.cnblogs.com/ie123610/"
-            }
-          ]
-        },
-        {
-          "title": "更多",
-          "items": [
-            {
-              "label": "比特彗星资源导航",
-              "href": "https://bc.36102025.xyz/"
-            }
-          ]
-        }
-      ],
+      "links": [],
       "copyright": "<p>文章若无特殊说明则均使用 <a href=\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans\" target=\"_blank\">CC BY-SA 4.0</a> 共享协议<br>\nPowered by <a href=\"https://pages.cloudflare.com/\" target=\"_blank\">Cloudflare Pages</a> &amp; <a href=\"https://docusaurus.io/\" target=\"_blank\">Docusaurus</a></p>\n"
     },
     "prism": {
