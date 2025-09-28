@@ -49,15 +49,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '86b'),
+    component: ComponentCreator('/', '8f9'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '973'),
+        component: ComponentCreator('/', 'ffb'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'f0c'),
+            component: ComponentCreator('/', 'b46'),
             routes: [
               {
                 path: '/索引',
@@ -284,6 +284,12 @@ export default [
               {
                 path: '/文章/比特彗星-端口阻塞解决方案/BC阻塞-win',
                 component: ComponentCreator('/文章/比特彗星-端口阻塞解决方案/BC阻塞-win', '12c'),
+                exact: true,
+                sidebar: "mySidebar"
+              },
+              {
+                path: '/文章/实验记录系列/爱奇艺HCDN',
+                component: ComponentCreator('/文章/实验记录系列/爱奇艺HCDN', '1e4'),
                 exact: true,
                 sidebar: "mySidebar"
               },

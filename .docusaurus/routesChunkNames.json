@@ -55,17 +55,17 @@
       "plugin": "plugin---search-138-688"
     }
   },
-  "/-86b": {
+  "/-8f9": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---aba-d70"
     }
   },
-  "/-973": {
+  "/-ffb": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---22-d-307"
   },
-  "/-f0c": {
+  "/-b46": {
     "__comp": "__comp---theme-doc-roota-94-67a"
   },
   "/索引-d91": {
@@ -219,6 +219,10 @@
   "/文章/比特彗星-端口阻塞解决方案/BC阻塞-win-12c": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-win-82-f-f73"
+  },
+  "/文章/实验记录系列/爱奇艺HCDN-1e4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-爱奇艺hcd-nadb-c4e"
   },
   "/文章/实验记录系列/废弃方案-使用lucky端口转发固定STUN穿透端口-89f": {
     "__comp": "__comp---theme-doc-item-178-a40",
