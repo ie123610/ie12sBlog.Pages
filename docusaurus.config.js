@@ -127,8 +127,7 @@ const config = {
         links: [
         ],
         copyright: `<p>文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>
-Powered by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a> &amp; <a href="https://docusaurus.io/" target="_blank">Docusaurus</a></p>
-`,
+Powered by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a> &amp; <a href="https://docusaurus.io/" target="_blank">Docusaurus</a><br><a href="https://icp.gov.moe/?keyword=20253610" target="_blank">萌ICP备20253610号</a`,
       },
       prism: {
         theme: prismThemes.github,
