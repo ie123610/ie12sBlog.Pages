@@ -28,7 +28,7 @@ export default {
     },
     "experimental_router": "browser"
   },
-  "url": "https://your-docusaurus-site.example.com",
+  "url": "https://ie12blog.36102025.xyz",
   "baseUrl": "/",
   "organizationName": "facebook",
   "projectName": "docusaurus",

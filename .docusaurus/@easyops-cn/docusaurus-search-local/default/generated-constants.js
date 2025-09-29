@@ -4,6 +4,6 @@ require("/home/ie12/文档/GitHub/ie12sBlog.Pages/node_modules/@easyops-cn/docus
 require("/home/ie12/文档/GitHub/ie12sBlog.Pages/node_modules/lunr-languages/lunr.multi.js")(lunr);
 export const removeDefaultStopWordFilter = [];
 export const language = ["en","zh"];
-export const searchIndexUrl = "search-index{dir}.json?_=ecb8699a";
+export const searchIndexUrl = "search-index{dir}.json?_=2712d3b7";
 export const searchResultLimits = 8;
 export const fuzzyMatchingDistance = 1;
