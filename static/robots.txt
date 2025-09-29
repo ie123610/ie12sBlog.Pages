@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://ie12blog.36102025.xyz/sitemap.xml
