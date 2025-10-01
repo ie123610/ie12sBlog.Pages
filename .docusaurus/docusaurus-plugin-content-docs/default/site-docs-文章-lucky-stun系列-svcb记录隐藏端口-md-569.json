@@ -19,7 +19,7 @@
     "permalink": "/文章/lucky-STUN系列/stun穿透-bt"
   },
   "next": {
-    "title": "「前置」在Dynv6和Cloudflare上更新TXT记录",
-    "permalink": "/文章/lucky-STUN系列/在dynv6和CF上更新TXT"
+    "title": "「LUCKY STUN穿透」使用UptimeRobot使UPnP映射的TCP规则保持活跃",
+    "permalink": "/文章/lucky-STUN系列/uptime-upnp保活"
   }
 }

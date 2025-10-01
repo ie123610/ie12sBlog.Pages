@@ -1,0 +1,25 @@
+{
+  "id": "文章/lucky-STUN系列/邮件通知端口",
+  "title": "「LUCKY STUN穿透」使用邮件通知端口变化情况 WIP",
+  "description": "",
+  "source": "@site/docs/文章/lucky-STUN系列/邮件通知端口.md",
+  "sourceDirName": "文章/lucky-STUN系列",
+  "slug": "/文章/lucky-STUN系列/邮件通知端口",
+  "permalink": "/文章/lucky-STUN系列/邮件通知端口",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/lucky-STUN系列/邮件通知端口.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「前置」在Dynv6和Cloudflare上更新TXT记录",
+    "permalink": "/文章/lucky-STUN系列/在dynv6和CF上更新TXT"
+  },
+  "next": {
+    "title": "有关比特彗星若干历史遗留问题的整理",
+    "permalink": "/文章/实验记录系列/BC历史遗留问题"
+  }
+}

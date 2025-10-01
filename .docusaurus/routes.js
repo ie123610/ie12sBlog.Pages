@@ -49,15 +49,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', '8f9'),
+    component: ComponentCreator('/', '49f'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', 'ffb'),
+        component: ComponentCreator('/', 'b38'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'b46'),
+            component: ComponentCreator('/', '5d6'),
             routes: [
               {
                 path: '/索引',
@@ -110,6 +110,12 @@ export default [
               {
                 path: '/文章/比特彗星-常见问题/BC反吸血',
                 component: ComponentCreator('/文章/比特彗星-常见问题/BC反吸血', '3b2'),
+                exact: true,
+                sidebar: "mySidebar"
+              },
+              {
+                path: '/文章/比特彗星-常见问题/BC反吸血2',
+                component: ComponentCreator('/文章/比特彗星-常见问题/BC反吸血2', '46c'),
                 exact: true,
                 sidebar: "mySidebar"
               },
@@ -342,6 +348,12 @@ export default [
                 sidebar: "mySidebar"
               },
               {
+                path: '/文章/实验记录系列/Docusaurus/showLastUpdateTime',
+                component: ComponentCreator('/文章/实验记录系列/Docusaurus/showLastUpdateTime', 'c96'),
+                exact: true,
+                sidebar: "mySidebar"
+              },
+              {
                 path: '/文章/实验记录系列/emule的ip绑定',
                 component: ComponentCreator('/文章/实验记录系列/emule的ip绑定', 'c37'),
                 exact: true,
@@ -408,6 +420,12 @@ export default [
                 sidebar: "mySidebar"
               },
               {
+                path: '/文章/lucky-STUN系列/邮件通知端口',
+                component: ComponentCreator('/文章/lucky-STUN系列/邮件通知端口', '9dc'),
+                exact: true,
+                sidebar: "mySidebar"
+              },
+              {
                 path: '/文章/lucky-STUN系列/在dynv6和CF上更新TXT',
                 component: ComponentCreator('/文章/lucky-STUN系列/在dynv6和CF上更新TXT', 'f40'),
                 exact: true,
@@ -450,6 +468,12 @@ export default [
                 sidebar: "mySidebar"
               },
               {
+                path: '/文章/lucky-STUN系列/stun-mc-srv',
+                component: ComponentCreator('/文章/lucky-STUN系列/stun-mc-srv', '6d3'),
+                exact: true,
+                sidebar: "mySidebar"
+              },
+              {
                 path: '/文章/lucky-STUN系列/stun-qb端口自动化',
                 component: ComponentCreator('/文章/lucky-STUN系列/stun-qb端口自动化', '57b'),
                 exact: true,
@@ -488,6 +512,12 @@ export default [
               {
                 path: '/文章/lucky-STUN系列/svcb记录隐藏端口',
                 component: ComponentCreator('/文章/lucky-STUN系列/svcb记录隐藏端口', 'fb5'),
+                exact: true,
+                sidebar: "mySidebar"
+              },
+              {
+                path: '/文章/lucky-STUN系列/uptime-upnp保活',
+                component: ComponentCreator('/文章/lucky-STUN系列/uptime-upnp保活', '9a5'),
                 exact: true,
                 sidebar: "mySidebar"
               },

@@ -1,0 +1,25 @@
+{
+  "id": "文章/实验记录系列/Docusaurus/showLastUpdateTime",
+  "title": "Docusaurus-解决showLastUpdateTime总是显示相同日期问题",
+  "description": "在Docusaurus中可以通过 showLastUpdateTime 在文章的末尾自动显示其最后更新时间",
+  "source": "@site/docs/文章/实验记录系列/Docusaurus/showLastUpdateTime.md",
+  "sourceDirName": "文章/实验记录系列/Docusaurus",
+  "slug": "/文章/实验记录系列/Docusaurus/showLastUpdateTime",
+  "permalink": "/文章/实验记录系列/Docusaurus/showLastUpdateTime",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/实验记录系列/Docusaurus/showLastUpdateTime.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "B站专栏文本复制问题",
+    "permalink": "/文章/实验记录系列/B站专栏文本复制问题"
+  },
+  "next": {
+    "title": "L2TP 特性研究",
+    "permalink": "/文章/实验记录系列/L2TP特性研究"
+  }
+}

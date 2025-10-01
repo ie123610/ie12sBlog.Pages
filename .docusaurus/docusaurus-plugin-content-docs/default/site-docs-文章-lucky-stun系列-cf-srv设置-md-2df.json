@@ -1,7 +1,7 @@
 {
   "id": "文章/lucky-STUN系列/cf-srv设置",
   "title": "「补充篇」在Cloudflare上设置并更新SRV记录",
-  "description": "关于本教程",
+  "description": "文章结构",
   "source": "@site/docs/文章/lucky-STUN系列/cf-srv设置.md",
   "sourceDirName": "文章/lucky-STUN系列",
   "slug": "/文章/lucky-STUN系列/cf-srv设置",

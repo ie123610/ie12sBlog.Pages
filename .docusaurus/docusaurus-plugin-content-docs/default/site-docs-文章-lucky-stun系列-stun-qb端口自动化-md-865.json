@@ -15,8 +15,8 @@
   "frontMatter": {},
   "sidebar": "mySidebar",
   "previous": {
-    "title": "「LUCKY STUN穿透」在Docker中使用MiniUPnP为BT客户端自动添加内外端口不同的映射规则",
-    "permalink": "/文章/lucky-STUN系列/stun-docker-upnp"
+    "title": "stun-mc-srv",
+    "permalink": "/文章/lucky-STUN系列/stun-mc-srv"
   },
   "next": {
     "title": "「LUCKY STUN穿透」使用 cURL 自动修改 Transmission 的监听端口",

@@ -56,6 +56,11 @@
               "sidebar": "mySidebar"
             },
             {
+              "id": "文章/比特彗星-常见问题/BC反吸血2",
+              "path": "/文章/比特彗星-常见问题/BC反吸血2",
+              "sidebar": "mySidebar"
+            },
+            {
               "id": "文章/比特彗星-常见问题/BC分块校验失败问题",
               "path": "/文章/比特彗星-常见问题/BC分块校验失败问题",
               "sidebar": "mySidebar"
@@ -246,6 +251,11 @@
               "sidebar": "mySidebar"
             },
             {
+              "id": "文章/实验记录系列/Docusaurus/showLastUpdateTime",
+              "path": "/文章/实验记录系列/Docusaurus/showLastUpdateTime",
+              "sidebar": "mySidebar"
+            },
+            {
               "id": "文章/实验记录系列/emule的ip绑定",
               "path": "/文章/实验记录系列/emule的ip绑定",
               "sidebar": "mySidebar"
@@ -301,6 +311,11 @@
               "sidebar": "mySidebar"
             },
             {
+              "id": "文章/lucky-STUN系列/邮件通知端口",
+              "path": "/文章/lucky-STUN系列/邮件通知端口",
+              "sidebar": "mySidebar"
+            },
+            {
               "id": "文章/lucky-STUN系列/在dynv6和CF上更新TXT",
               "path": "/文章/lucky-STUN系列/在dynv6和CF上更新TXT",
               "sidebar": "mySidebar"
@@ -336,6 +351,11 @@
               "sidebar": "mySidebar"
             },
             {
+              "id": "文章/lucky-STUN系列/stun-mc-srv",
+              "path": "/文章/lucky-STUN系列/stun-mc-srv",
+              "sidebar": "mySidebar"
+            },
+            {
               "id": "文章/lucky-STUN系列/stun-qb端口自动化",
               "path": "/文章/lucky-STUN系列/stun-qb端口自动化",
               "sidebar": "mySidebar"
@@ -368,6 +388,11 @@
             {
               "id": "文章/lucky-STUN系列/svcb记录隐藏端口",
               "path": "/文章/lucky-STUN系列/svcb记录隐藏端口",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "文章/lucky-STUN系列/uptime-upnp保活",
+              "path": "/文章/lucky-STUN系列/uptime-upnp保活",
               "sidebar": "mySidebar"
             },
             {

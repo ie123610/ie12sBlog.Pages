@@ -1,7 +1,7 @@
 {
   "id": "文章/IPv6过渡方案/CF双栈代理",
   "title": "使用Cloudflare代理为纯IPv6站点添加IPv4访问",
-  "description": "---",
+  "description": "文章结构",
   "source": "@site/docs/文章/IPv6过渡方案/CF双栈代理.md",
   "sourceDirName": "文章/IPv6过渡方案",
   "slug": "/文章/IPv6过渡方案/CF双栈代理",
