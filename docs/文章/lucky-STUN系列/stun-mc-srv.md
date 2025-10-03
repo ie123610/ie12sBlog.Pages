@@ -1,5 +1,6 @@
-# [LUCKY]在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录
+# [LUCKY]在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录 WIP
 
+```
 2024.02.18  
 
 **本教程目标：**  
@@ -612,4 +613,4 @@ https://www.mcmod.cn/class/10643.html
 https://www.bilibili.com/read/cv25389887/
 
 https://dusays.com/383/
-
+```
