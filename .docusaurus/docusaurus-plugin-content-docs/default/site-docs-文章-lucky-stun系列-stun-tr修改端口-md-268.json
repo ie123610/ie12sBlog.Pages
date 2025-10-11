@@ -1,0 +1,25 @@
+{
+  "id": "文章/lucky-STUN系列/stun-tr修改端口",
+  "title": "「LUCKY STUN穿透」使用 cURL 自动修改 Transmission 的监听端口",
+  "description": "关于本教程",
+  "source": "@site/docs/文章/lucky-STUN系列/stun-tr修改端口.md",
+  "sourceDirName": "文章/lucky-STUN系列",
+  "slug": "/文章/lucky-STUN系列/stun-tr修改端口",
+  "permalink": "/文章/lucky-STUN系列/stun-tr修改端口",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/lucky-STUN系列/stun-tr修改端口.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「LUCKY STUN穿透」使用webhook自动修改 qbittorrent 的监听端口",
+    "permalink": "/文章/lucky-STUN系列/stun-qb端口自动化"
+  },
+  "next": {
+    "title": "「LUCKY STUN穿透」IPv4和IPv6分离重定向",
+    "permalink": "/文章/lucky-STUN系列/stun-v4-v6分离"
+  }
+}

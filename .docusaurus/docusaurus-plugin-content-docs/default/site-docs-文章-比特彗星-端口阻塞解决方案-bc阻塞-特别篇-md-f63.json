@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇",
+  "title": "「特别篇」在关闭光猫、路由器IPv6防火墙后可能遇到的安全问题",
+  "description": "背景信息",
+  "source": "@site/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇.md",
+  "sourceDirName": "文章/比特彗星-端口阻塞解决方案",
+  "slug": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇",
+  "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "前言",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_前言"
+  },
+  "next": {
+    "title": "BC阻塞_目录",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目录"
+  }
+}

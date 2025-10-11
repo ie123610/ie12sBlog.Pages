@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-常见问题/BC反吸血",
+  "title": "比特彗星常见问题-屏蔽吸血客户端和设置自动反吸血",
+  "description": "问： 如何屏蔽迅雷等吸血客户端？",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC反吸血.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC反吸血",
+  "permalink": "/文章/比特彗星-常见问题/BC反吸血",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-常见问题/BC反吸血.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-分块校验失败问题",
+    "permalink": "/文章/比特彗星-常见问题/BC分块校验失败问题"
+  },
+  "next": {
+    "title": "比特彗星常见问题-反吸血 设置IP过滤和客户端过滤 WIP",
+    "permalink": "/文章/比特彗星-常见问题/BC反吸血2"
+  }
+}

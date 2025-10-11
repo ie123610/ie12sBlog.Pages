@@ -1,0 +1,25 @@
+{
+  "id": "文章/实验记录系列/有关BC的奇谈怪论",
+  "title": "有关比特彗星的奇谈怪论",
+  "description": "本文是 有关比特彗星若干历史遗留问题的整理 的续",
+  "source": "@site/docs/文章/实验记录系列/有关BC的奇谈怪论.md",
+  "sourceDirName": "文章/实验记录系列",
+  "slug": "/文章/实验记录系列/有关BC的奇谈怪论",
+  "permalink": "/文章/实验记录系列/有关BC的奇谈怪论",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/实验记录系列/有关BC的奇谈怪论.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "废弃方案-使用lucky端口转发固定STUN穿透端口",
+    "permalink": "/文章/实验记录系列/废弃方案-使用lucky端口转发固定STUN穿透端口"
+  },
+  "next": {
+    "title": "爱奇艺HCDN",
+    "permalink": "/文章/实验记录系列/爱奇艺HCDN"
+  }
+}

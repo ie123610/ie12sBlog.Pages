@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫",
+  "title": "2.2 可用的解决方法 （光猫部分）",
+  "description": "问： 既然有这么多困难我们该如何解决呢？（在2.1节中）",
+  "source": "@site/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫.md",
+  "sourceDirName": "文章/比特彗星-端口阻塞解决方案",
+  "slug": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫",
+  "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "1.4 路由器 交换机 和 光猫 的作用",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器"
+  },
+  "next": {
+    "title": "前言",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_前言"
+  }
+}

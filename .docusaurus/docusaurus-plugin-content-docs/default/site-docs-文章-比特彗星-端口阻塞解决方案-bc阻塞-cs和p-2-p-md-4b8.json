@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p",
+  "title": "1.7 P2P模式和C/S模式",
+  "description": "问： 为什么使用bt下载的时候会涉及到开端口的问题？",
+  "source": "@site/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p.md",
+  "sourceDirName": "文章/比特彗星-端口阻塞解决方案",
+  "slug": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p",
+  "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "2.2 可用的解决方法 （Windows部分）",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞-win"
+  },
+  "next": {
+    "title": "1.3 什么是IPV6",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_ipv6"
+  }
+}

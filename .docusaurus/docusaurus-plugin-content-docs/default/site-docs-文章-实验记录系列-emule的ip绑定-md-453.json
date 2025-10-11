@@ -1,0 +1,25 @@
+{
+  "id": "文章/实验记录系列/emule的ip绑定",
+  "title": "eMule设置IP绑定",
+  "description": "eMule在图形界面中无法设置IP绑定",
+  "source": "@site/docs/文章/实验记录系列/emule的ip绑定.md",
+  "sourceDirName": "文章/实验记录系列",
+  "slug": "/文章/实验记录系列/emule的ip绑定",
+  "permalink": "/文章/实验记录系列/emule的ip绑定",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/实验记录系列/emule的ip绑定.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "L2TP 特性研究",
+    "permalink": "/文章/实验记录系列/L2TP特性研究"
+  },
+  "next": {
+    "title": "关于 qbittorrent 在匿名模式下能否以被比特彗星正确识别问题的研究",
+    "permalink": "/文章/实验记录系列/qb匿名模式名称显示研究"
+  }
+}

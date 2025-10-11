@@ -1,0 +1,25 @@
+{
+  "id": "文章/实验记录系列/L2TP特性研究",
+  "title": "L2TP 特性研究",
+  "description": "其实这些内容发现的比较早 但直到现在才想到将其记录下来",
+  "source": "@site/docs/文章/实验记录系列/L2TP特性研究.md",
+  "sourceDirName": "文章/实验记录系列",
+  "slug": "/文章/实验记录系列/L2TP特性研究",
+  "permalink": "/文章/实验记录系列/L2TP特性研究",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/实验记录系列/L2TP特性研究.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "Docusaurus-解决showLastUpdateTime总是显示相同日期问题",
+    "permalink": "/文章/实验记录系列/Docusaurus/showLastUpdateTime"
+  },
+  "next": {
+    "title": "eMule设置IP绑定",
+    "permalink": "/文章/实验记录系列/emule的ip绑定"
+  }
+}

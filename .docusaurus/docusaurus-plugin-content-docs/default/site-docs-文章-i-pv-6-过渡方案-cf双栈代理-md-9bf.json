@@ -1,0 +1,25 @@
+{
+  "id": "文章/IPv6过渡方案/CF双栈代理",
+  "title": "使用Cloudflare代理为纯IPv6站点添加IPv4访问",
+  "description": "文章结构",
+  "source": "@site/docs/文章/IPv6过渡方案/CF双栈代理.md",
+  "sourceDirName": "文章/IPv6过渡方案",
+  "slug": "/文章/IPv6过渡方案/CF双栈代理",
+  "permalink": "/文章/IPv6过渡方案/CF双栈代理",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/IPv6过渡方案/CF双栈代理.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "索引",
+    "permalink": "/索引"
+  },
+  "next": {
+    "title": "使用Windows自带的端口转发功能让不支持IPv6的程序间接的用上IPv6",
+    "permalink": "/文章/IPv6过渡方案/Win端口转发"
+  }
+}

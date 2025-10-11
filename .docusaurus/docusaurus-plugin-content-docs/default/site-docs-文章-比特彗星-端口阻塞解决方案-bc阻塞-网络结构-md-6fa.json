@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构",
+  "title": "2.3 网络环境检测和优化",
+  "description": "在之前的教程中我们已经讲解了基础知识以及各种具体的操作方法并确定了最终目标",
+  "source": "@site/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构.md",
+  "sourceDirName": "文章/比特彗星-端口阻塞解决方案",
+  "slug": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构",
+  "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "1.6 端口转发 DMZ 以及 UPnP 的作用和原理",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_端口转发DMZ和UPnP"
+  },
+  "next": {
+    "title": "2.2 可用的解决方法（路由器部分）",
+    "permalink": "/文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器"
+  }
+}

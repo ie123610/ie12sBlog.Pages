@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-常见问题/BC分块校验失败问题",
+  "title": "比特彗星常见问题-分块校验失败问题",
+  "description": "问： 任务的下载速度很快 但任务进度涨的很慢",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC分块校验失败问题.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC分块校验失败问题",
+  "permalink": "/文章/比特彗星-常见问题/BC分块校验失败问题",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-常见问题/BC分块校验失败问题.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-内存占用过高问题",
+    "permalink": "/文章/比特彗星-常见问题/BC内存占用过高"
+  },
+  "next": {
+    "title": "比特彗星常见问题-屏蔽吸血客户端和设置自动反吸血",
+    "permalink": "/文章/比特彗星-常见问题/BC反吸血"
+  }
+}

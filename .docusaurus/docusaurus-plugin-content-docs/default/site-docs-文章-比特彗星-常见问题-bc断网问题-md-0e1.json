@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-常见问题/BC断网问题",
+  "title": "比特彗星常见问题-断网问题",
+  "description": "问： 使用彗星进行下载的时候网络会变得缓慢甚至会断网",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC断网问题.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC断网问题",
+  "permalink": "/文章/比特彗星-常见问题/BC断网问题",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-常见问题/BC断网问题.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-设置视频预览播放器",
+    "permalink": "/文章/比特彗星-常见问题/BC播放器路径设置"
+  },
+  "next": {
+    "title": "比特彗星常见问题-用户列表显示问题",
+    "permalink": "/文章/比特彗星-常见问题/BC用户列表显示问题"
+  }
+}

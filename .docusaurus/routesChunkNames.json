@@ -1,0 +1,383 @@
+{
+  "/__docusaurus/debug-5ff": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/config-5ba": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/content-a2b": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    },
+    "__props": "__props---docusaurus-debug-content-3-c-0-be2"
+  },
+  "/__docusaurus/debug/globalData-c3c": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/metadata-156": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/registry-88c": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/__docusaurus/debug/routes-000": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debugb-38-ad3"
+    }
+  },
+  "/markdown-page-3d7": {
+    "__comp": "__comp---theme-mdx-page-1-f-3-b90",
+    "__context": {
+      "plugin": "plugin---markdown-pagea-74-7b5"
+    },
+    "content": "content---markdown-page-393-028"
+  },
+  "/search-822": {
+    "__comp": "__comp---theme-search-page-1-a-4-d6f",
+    "__context": {
+      "plugin": "plugin---search-138-688"
+    }
+  },
+  "/-49f": {
+    "__comp": "__comp---theme-docs-root-5-e-9-0b6",
+    "__context": {
+      "plugin": "plugin---aba-d70"
+    }
+  },
+  "/-b38": {
+    "__comp": "__comp---theme-doc-version-roota-7-b-5de",
+    "__props": "__props---22-d-307"
+  },
+  "/-5d6": {
+    "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/索引-d91": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---索引c-8-b-9e7"
+  },
+  "/文章/比特彗星-常见问题/堡垒防火墙反吸血-fe6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-堡垒防火墙反吸血-567-bca"
+  },
+  "/文章/比特彗星-常见问题/补档-像素帝的bc教程-ba3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-补档-像素帝的bc教程-6-bb-96a"
+  },
+  "/文章/比特彗星-常见问题/BC播放器路径设置-1d9": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c播放器路径设置c-2-f-bc6"
+  },
+  "/文章/比特彗星-常见问题/BC磁力链接格式问题-a5a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c磁力链接格式问题-933-8e1"
+  },
+  "/文章/比特彗星-常见问题/BC磁力链接长度问题-bfa": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c磁力链接长度问题ce-8-d33"
+  },
+  "/文章/比特彗星-常见问题/BC磁盘提速服务-9bb": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c磁盘提速服务f-45-2e6"
+  },
+  "/文章/比特彗星-常见问题/BC断网问题-43a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c断网问题-0-e-1-f0f"
+  },
+  "/文章/比特彗星-常见问题/BC反吸血-3b2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c反吸血-4-e-1-6e6"
+  },
+  "/文章/比特彗星-常见问题/BC反吸血2-46c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c反吸血-2-ebb-ffd"
+  },
+  "/文章/比特彗星-常见问题/BC分块校验失败问题-bfc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c分块校验失败问题-90-d-3e6"
+  },
+  "/文章/比特彗星-常见问题/BC截图和评论-3e3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c截图和评论-5-e-3-b92"
+  },
+  "/文章/比特彗星-常见问题/BC绿灯常见问题-c15": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c绿灯常见问题-2-e-4-faa"
+  },
+  "/文章/比特彗星-常见问题/BC内存占用过高-217": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c内存占用过高e-90-a5e"
+  },
+  "/文章/比特彗星-常见问题/BC配置恢复-390": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c配置恢复-87-a-de1"
+  },
+  "/文章/比特彗星-常见问题/BC下载测速-cdf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c下载测速bd-5-a17"
+  },
+  "/文章/比特彗星-常见问题/BC下载缓慢问题-重置-927": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-bc下载缓慢问题-重置-592-787"
+  },
+  "/文章/比特彗星-常见问题/BC下载卡99问题-43a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c下载卡-99-问题-76-b-222"
+  },
+  "/文章/比特彗星-常见问题/BC用户列表显示问题-eb8": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c用户列表显示问题-420-22f"
+  },
+  "/文章/比特彗星-常见问题/BC元数据获取问题-853": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c元数据获取问题-685-358"
+  },
+  "/文章/比特彗星-常见问题/BC种子补档99问题-3e7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c种子补档-99-问题ec-9-6cb"
+  },
+  "/文章/比特彗星-常见问题/BC种子市场-419": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c种子市场bf-9-7b9"
+  },
+  "/文章/比特彗星-常见问题/BC专家模式及其作用-d6a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-b-c专家模式及其作用-517-d1b"
+  },
+  "/文章/比特彗星-常见问题/win防火墙反吸血-62c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-常见问题-win防火墙反吸血-927-0c1"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_端口转发DMZ和UPnP-12f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-端口转发dmz和u-pn-p-86-a-fb2"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_防火墙和nat-ac6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-防火墙和nat-4-be-08c"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_光猫-dc7": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-光猫cdc-6d2"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_交换机和路由器-2d3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-交换机和路由器c-4-e-6af"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_路由器-932": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-路由器-90-a-c61"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目标与困难-dff": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-目标与困难-78-b-59c"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_目录-060": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-目录c-5-a-bb0"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_前言-074": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-前言f-8-a-b09"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_特别篇-ad6": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-特别篇f-63-d42"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_网络结构-d38": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-网络结构-6-fa-b03"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_cs和p2p-ba5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-cs和p-2-p-4-b-8-3b1"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_ip和端口-aaf": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-ip和端口-55-d-548"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_ipv6-1d2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-ipv-6-e-93-42b"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞_nat-a5f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-nat-03-c-e69"
+  },
+  "/文章/比特彗星-端口阻塞解决方案/BC阻塞-win-12c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-比特彗星-端口阻塞解决方案-bc阻塞-win-82-f-f73"
+  },
+  "/文章/实验记录系列/爱奇艺HCDN-1e4": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-爱奇艺hcd-nadb-c4e"
+  },
+  "/文章/实验记录系列/废弃方案-使用lucky端口转发固定STUN穿透端口-89f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-废弃方案-使用lucky端口转发固定-stu-n穿透端口-70-a-102"
+  },
+  "/文章/实验记录系列/实验记录索引-c03": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-实验记录索引d-6-d-3d7"
+  },
+  "/文章/实验记录系列/小米路由更多IPv6获取方式-a4f": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-小米路由更多i-pv-6-获取方式d-8-c-23f"
+  },
+  "/文章/实验记录系列/已知bittorrent客户端生存调查/已知客户端调查-说明-cf2": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-已知bittorrent客户端生存调查-已知客户端调查-说明eea-c35"
+  },
+  "/文章/实验记录系列/有关BC的奇谈怪论-0da": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-有关b-c的奇谈怪论a-57-a68"
+  },
+  "/文章/实验记录系列/B站专栏文本复制问题-073": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-b站专栏文本复制问题a-77-154"
+  },
+  "/文章/实验记录系列/BC改进建议-617": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-b-c改进建议-08-b-a07"
+  },
+  "/文章/实验记录系列/BC历史遗留问题-0a5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-b-c历史遗留问题-495-805"
+  },
+  "/文章/实验记录系列/Docusaurus/showLastUpdateTime-c96": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-docusaurus-show-last-update-time-8-f-2-d89"
+  },
+  "/文章/实验记录系列/emule的ip绑定-c37": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-emule的ip绑定-453-832"
+  },
+  "/文章/实验记录系列/L2TP特性研究-d46": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-l-2-t-p特性研究e-07-8a5"
+  },
+  "/文章/实验记录系列/qb匿名模式名称显示研究-903": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-qb匿名模式名称显示研究b-3-d-55b"
+  },
+  "/文章/实验记录系列/win休眠问题-a60": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-实验记录系列-win休眠问题ea-5-d90"
+  },
+  "/文章/虚拟专用网络系列/et从记录获取端口-45d": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-虚拟专用网络系列-et从记录获取端口-336-089"
+  },
+  "/文章/虚拟专用网络系列/gost-bt-穿透-074": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-虚拟专用网络系列-gost-bt-穿透dfe-b64"
+  },
+  "/文章/虚拟专用网络系列/SE解决不支持此功能问题-63c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-虚拟专用网络系列-s-e解决不支持此功能问题-18-f-9fe"
+  },
+  "/文章/虚拟专用网络系列/win搭建easytier公共服务器-a1e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-虚拟专用网络系列-win搭建easytier公共服务器-74-c-38f"
+  },
+  "/文章/IPv6过渡方案/CF双栈代理-89e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-i-pv-6-过渡方案-c-f双栈代理-9-bf-57c"
+  },
+  "/文章/IPv6过渡方案/Win端口转发-90b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-i-pv-6-过渡方案-win端口转发bc-1-d8d"
+  },
+  "/文章/IPv6过渡方案/win防火墙拦截IPv6-65a": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-i-pv-6-过渡方案-win防火墙拦截-i-pv-66-ae-e8b"
+  },
+  "/文章/lucky-STUN系列/邮件通知端口-9dc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-邮件通知端口fb-8-5de"
+  },
+  "/文章/lucky-STUN系列/在dynv6和CF上更新TXT-f40": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-在dynv-6-和c-f上更新-txt-131-827"
+  },
+  "/文章/lucky-STUN系列/cf-srv设置-602": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-cf-srv设置-2-df-d10"
+  },
+  "/文章/lucky-STUN系列/lucky-ddns-2.15-74c": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-lucky-ddns-2-151-c-8-031"
+  },
+  "/文章/lucky-STUN系列/lucky-vxkex兼容-e10": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-lucky-vxkex兼容-488-011"
+  },
+  "/文章/lucky-STUN系列/stun-bc端口自动化-e76": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-bc端口自动化-85-f-978"
+  },
+  "/文章/lucky-STUN系列/stun-cf重定向-ecc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-cf重定向-61-f-ffa"
+  },
+  "/文章/lucky-STUN系列/stun-docker-upnp-d22": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-docker-upnp-6-b-7-575"
+  },
+  "/文章/lucky-STUN系列/stun-mc-srv-6d3": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-mc-srv-108-d55"
+  },
+  "/文章/lucky-STUN系列/stun-qb端口自动化-57b": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-qb端口自动化-865-2de"
+  },
+  "/文章/lucky-STUN系列/stun-tr修改端口-874": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-tr修改端口-268-2ac"
+  },
+  "/文章/lucky-STUN系列/stun-v4-v6分离-806": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-v-4-v-6-分离bb-4-ae9"
+  },
+  "/文章/lucky-STUN系列/stun-VNT组网-ffc": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-vn-t组网bd-6-ed5"
+  },
+  "/文章/lucky-STUN系列/stun-web服务-CF-be5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun-web服务-cf-6-ba-5b7"
+  },
+  "/文章/lucky-STUN系列/stun穿透-bt-37e": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-stun穿透-bt-023-f74"
+  },
+  "/文章/lucky-STUN系列/svcb记录隐藏端口-fb5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-svcb记录隐藏端口-569-2ec"
+  },
+  "/文章/lucky-STUN系列/uptime-upnp保活-9a5": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---文章-lucky-stun系列-uptime-upnp保活-61-d-dda"
+  },
+  "/-a40": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---233-28b"
+  }
+}

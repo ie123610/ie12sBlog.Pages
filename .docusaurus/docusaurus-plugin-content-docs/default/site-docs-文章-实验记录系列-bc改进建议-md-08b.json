@@ -1,0 +1,25 @@
+{
+  "id": "文章/实验记录系列/BC改进建议",
+  "title": "BC改进建议",
+  "description": "核心修复",
+  "source": "@site/docs/文章/实验记录系列/BC改进建议.md",
+  "sourceDirName": "文章/实验记录系列",
+  "slug": "/文章/实验记录系列/BC改进建议",
+  "permalink": "/文章/实验记录系列/BC改进建议",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/实验记录系列/BC改进建议.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "有关比特彗星若干历史遗留问题的整理",
+    "permalink": "/文章/实验记录系列/BC历史遗留问题"
+  },
+  "next": {
+    "title": "B站专栏文本复制问题",
+    "permalink": "/文章/实验记录系列/B站专栏文本复制问题"
+  }
+}

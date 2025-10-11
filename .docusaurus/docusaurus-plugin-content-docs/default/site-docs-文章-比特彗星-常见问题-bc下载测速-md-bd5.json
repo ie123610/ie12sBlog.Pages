@@ -1,0 +1,25 @@
+{
+  "id": "文章/比特彗星-常见问题/BC下载测速",
+  "title": "测试BT下载速度的方法和测速种子的选择",
+  "description": "进行测速的原因和目的",
+  "source": "@site/docs/文章/比特彗星-常见问题/BC下载测速.md",
+  "sourceDirName": "文章/比特彗星-常见问题",
+  "slug": "/文章/比特彗星-常见问题/BC下载测速",
+  "permalink": "/文章/比特彗星-常见问题/BC下载测速",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/文章/比特彗星-常见问题/BC下载测速.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-下载进度卡在 99.9% 问题",
+    "permalink": "/文章/比特彗星-常见问题/BC下载卡99问题"
+  },
+  "next": {
+    "title": "比特彗星常见问题-下载缓慢和无法下载问题[重置]",
+    "permalink": "/文章/比特彗星-常见问题/BC下载缓慢问题-重置"
+  }
+}
