@@ -1,0 +1,25 @@
+{
+  "id": "articles/lucky-STUN/cf-srv设置",
+  "title": "「补充篇」在Cloudflare上设置并更新SRV记录",
+  "description": "2024.08.21",
+  "source": "@site/docs/articles/lucky-STUN/cf-srv设置.md",
+  "sourceDirName": "articles/lucky-STUN",
+  "slug": "/articles/lucky-STUN/cf-srv设置",
+  "permalink": "/articles/lucky-STUN/cf-srv设置",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/cf-srv设置.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "LCUKY系列教程",
+    "permalink": "/lucky-STUN"
+  },
+  "next": {
+    "title": "Lucky v2.15 版本后的DDNS配置方法",
+    "permalink": "/articles/lucky-STUN/lucky-ddns-2.15"
+  }
+}

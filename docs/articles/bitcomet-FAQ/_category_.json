@@ -1,0 +1,9 @@
+{
+  "label": "比特彗星-常见问题",
+  "position": 10,
+  "link": {
+    "slug": "bitcomet-FAQ",
+    "type": "generated-index",
+    "description": "解决比特彗星使用过程中遇到的常见问题"
+  }
+}

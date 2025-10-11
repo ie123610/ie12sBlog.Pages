@@ -1,0 +1,25 @@
+{
+  "id": "articles/bitcomet-FAQ/BC断网问题",
+  "title": "比特彗星常见问题-断网问题",
+  "description": "2023.09.10",
+  "source": "@site/docs/articles/bitcomet-FAQ/BC断网问题.md",
+  "sourceDirName": "articles/bitcomet-FAQ",
+  "slug": "/articles/bitcomet-FAQ/BC断网问题",
+  "permalink": "/articles/bitcomet-FAQ/BC断网问题",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-FAQ/BC断网问题.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-设置视频预览播放器",
+    "permalink": "/articles/bitcomet-FAQ/BC播放器路径设置"
+  },
+  "next": {
+    "title": "比特彗星常见问题-用户列表显示问题",
+    "permalink": "/articles/bitcomet-FAQ/BC用户列表显示问题"
+  }
+}

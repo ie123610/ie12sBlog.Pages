@@ -1,0 +1,25 @@
+{
+  "id": "articles/research-logs/B站专栏文本复制问题",
+  "title": "B站专栏文本复制问题",
+  "description": "B站专栏文本复制问题",
+  "source": "@site/docs/articles/research-logs/B站专栏文本复制问题.md",
+  "sourceDirName": "articles/research-logs",
+  "slug": "/articles/research-logs/B站专栏文本复制问题",
+  "permalink": "/articles/research-logs/B站专栏文本复制问题",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/research-logs/B站专栏文本复制问题.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "BC改进建议",
+    "permalink": "/articles/research-logs/BC改进建议"
+  },
+  "next": {
+    "title": "Docusaurus-解决showLastUpdateTime总是显示相同日期问题",
+    "permalink": "/articles/research-logs/Docusaurus-最后修改时间"
+  }
+}

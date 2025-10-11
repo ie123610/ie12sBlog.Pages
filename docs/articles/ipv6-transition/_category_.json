@@ -1,0 +1,9 @@
+{
+  "label": "IPv6过渡方案",
+  "position": 50,
+  "link": {
+    "slug": "ipv6-transition",
+    "type": "generated-index",
+    "description": "在向IPv6过渡的漫长时间里我们将面临许多问题"
+  }
+}

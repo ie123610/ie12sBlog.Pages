@@ -1,0 +1,9 @@
+{
+  "label": "研究记录",
+  "position": 60,
+  "link": {
+    "slug": "research-logs",
+    "type": "generated-index",
+    "description": "研究过程和操作方法的备忘录"
+  }
+}

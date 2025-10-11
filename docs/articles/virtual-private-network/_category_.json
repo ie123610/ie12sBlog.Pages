@@ -1,0 +1,9 @@
+{
+  "label": "虚拟专用网络系列教程",
+  "position": 40,
+  "link": {
+    "slug": "virtual-private-network",
+    "type": "generated-index",
+    "description": "虚拟专用网络组网教程"
+  }
+}

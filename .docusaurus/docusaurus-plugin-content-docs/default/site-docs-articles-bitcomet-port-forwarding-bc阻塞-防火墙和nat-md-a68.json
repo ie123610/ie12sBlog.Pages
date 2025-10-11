@@ -1,0 +1,25 @@
+{
+  "id": "articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat",
+  "title": "1.5 防火墙和NAT的异同",
+  "description": "2023.08.08",
+  "source": "@site/docs/articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat.md",
+  "sourceDirName": "articles/bitcomet-port-forwarding",
+  "slug": "/articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat",
+  "permalink": "/articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "2.2 可用的解决方法（路由器部分）",
+    "permalink": "/articles/bitcomet-port-forwarding/BC阻塞_路由器"
+  },
+  "next": {
+    "title": "LCUKY系列教程",
+    "permalink": "/lucky-STUN"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "articles/bitcomet-FAQ/补档-像素帝的bc教程",
+  "title": "「补档」 像素帝的比特彗星教程",
+  "description": "2024.04.22",
+  "source": "@site/docs/articles/bitcomet-FAQ/补档-像素帝的bc教程.md",
+  "sourceDirName": "articles/bitcomet-FAQ",
+  "slug": "/articles/bitcomet-FAQ/补档-像素帝的bc教程",
+  "permalink": "/articles/bitcomet-FAQ/补档-像素帝的bc教程",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-FAQ/补档-像素帝的bc教程.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "有关比特彗星的奇谈怪论",
+    "permalink": "/articles/bitcomet-FAQ/有关BC的奇谈怪论"
+  },
+  "next": {
+    "title": "比特彗星-端口阻塞解决方案",
+    "permalink": "/bitcomet-port-forwarding"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "articles/research-logs/爱奇艺HCDN",
+  "title": "爱奇艺HCDN",
+  "description": "为通过Internet向海量用户传输高清晰度、高码率的视频节目，爱奇艺融合CDN和P2P技术，开发",
+  "source": "@site/docs/articles/research-logs/爱奇艺HCDN.md",
+  "sourceDirName": "articles/research-logs",
+  "slug": "/articles/research-logs/爱奇艺HCDN",
+  "permalink": "/articles/research-logs/爱奇艺HCDN",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/research-logs/爱奇艺HCDN.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "废弃方案-使用lucky端口转发固定STUN穿透端口",
+    "permalink": "/articles/research-logs/废弃方案-使用lucky端口转发固定STUN穿透端口"
+  }
+}

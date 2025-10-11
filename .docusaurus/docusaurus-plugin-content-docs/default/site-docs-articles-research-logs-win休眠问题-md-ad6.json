@@ -1,0 +1,25 @@
+{
+  "id": "articles/research-logs/win休眠问题",
+  "title": "Windows无法启用休眠问题",
+  "description": "win10/win11系统 运行 powercfg -h on 尝试启用休眠功能 返回",
+  "source": "@site/docs/articles/research-logs/win休眠问题.md",
+  "sourceDirName": "articles/research-logs",
+  "slug": "/articles/research-logs/win休眠问题",
+  "permalink": "/articles/research-logs/win休眠问题",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/research-logs/win休眠问题.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "实验记录索引",
+    "permalink": "/articles/research-logs/research-index"
+  },
+  "next": {
+    "title": "小米路由器固件支持更多IPv6获取方式",
+    "permalink": "/articles/research-logs/小米路由更多IPv6获取方式"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "articles/research-logs/Docusaurus-最后修改时间",
+  "title": "Docusaurus-解决showLastUpdateTime总是显示相同日期问题",
+  "description": "在Docusaurus中可以通过 showLastUpdateTime 在文章的末尾自动显示其最后更新时间",
+  "source": "@site/docs/articles/research-logs/Docusaurus-最后修改时间.md",
+  "sourceDirName": "articles/research-logs",
+  "slug": "/articles/research-logs/Docusaurus-最后修改时间",
+  "permalink": "/articles/research-logs/Docusaurus-最后修改时间",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/research-logs/Docusaurus-最后修改时间.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "B站专栏文本复制问题",
+    "permalink": "/articles/research-logs/B站专栏文本复制问题"
+  },
+  "next": {
+    "title": "L2TP 特性研究",
+    "permalink": "/articles/research-logs/L2TP特性研究"
+  }
+}
