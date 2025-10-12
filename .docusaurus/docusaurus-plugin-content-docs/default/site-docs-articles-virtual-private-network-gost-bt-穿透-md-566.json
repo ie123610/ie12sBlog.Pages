@@ -1,0 +1,25 @@
+{
+  "id": "articles/virtual-private-network/gost-bt-穿透",
+  "title": "使用Gost替换Frp实现内网穿透为BT下载开放端口",
+  "description": "2025.08.25",
+  "source": "@site/docs/articles/virtual-private-network/gost-bt-穿透.md",
+  "sourceDirName": "articles/virtual-private-network",
+  "slug": "/articles/virtual-private-network/gost-bt-穿透",
+  "permalink": "/articles/virtual-private-network/gost-bt-穿透",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/virtual-private-network/gost-bt-穿透.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「EasyTier」使用SRV TXT HTTP重定向获取对端IP端口",
+    "permalink": "/articles/virtual-private-network/et从记录获取端口"
+  },
+  "next": {
+    "title": "在Windows上搭建 EasyTier 公共服务器",
+    "permalink": "/articles/virtual-private-network/win搭建easytier公共服务器"
+  }
+}

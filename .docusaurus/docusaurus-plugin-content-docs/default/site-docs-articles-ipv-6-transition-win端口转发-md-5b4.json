@@ -1,0 +1,25 @@
+{
+  "id": "articles/ipv6-transition/Win端口转发",
+  "title": "使用Windows自带的端口转发功能让不支持IPv6的程序间接的用上IPv6",
+  "description": "2024.07.19",
+  "source": "@site/docs/articles/ipv6-transition/Win端口转发.md",
+  "sourceDirName": "articles/ipv6-transition",
+  "slug": "/articles/ipv6-transition/Win端口转发",
+  "permalink": "/articles/ipv6-transition/Win端口转发",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/ipv6-transition/Win端口转发.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "使用Cloudflare代理为纯IPv6站点添加IPv4访问",
+    "permalink": "/articles/ipv6-transition/CF双栈代理"
+  },
+  "next": {
+    "title": "「权宜之计」使用Windows防火墙拦截浏览器IPv6请求迫使其使用IPv4",
+    "permalink": "/articles/ipv6-transition/win防火墙拦截IPv6"
+  }
+}

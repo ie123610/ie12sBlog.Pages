@@ -1,0 +1,9 @@
+{
+  "label": "LCUKY系列教程",
+  "position": 30,
+  "link": {
+    "slug": "lucky-STUN",
+    "type": "generated-index",
+    "description": "使用 STUN 穿透运营商NAT无需IPv4公网即可开放端口"
+  }
+}

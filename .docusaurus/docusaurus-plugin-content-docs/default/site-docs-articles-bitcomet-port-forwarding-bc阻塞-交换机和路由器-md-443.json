@@ -1,0 +1,25 @@
+{
+  "id": "articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器",
+  "title": "1.4 路由器 交换机 和 光猫 的作用",
+  "description": "2023.08.03",
+  "source": "@site/docs/articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器.md",
+  "sourceDirName": "articles/bitcomet-port-forwarding",
+  "slug": "/articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器",
+  "permalink": "/articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "1.2 什么是 NAT",
+    "permalink": "/articles/bitcomet-port-forwarding/BC阻塞_nat"
+  },
+  "next": {
+    "title": "2.2 可用的解决方法 （光猫部分）",
+    "permalink": "/articles/bitcomet-port-forwarding/BC阻塞_光猫"
+  }
+}

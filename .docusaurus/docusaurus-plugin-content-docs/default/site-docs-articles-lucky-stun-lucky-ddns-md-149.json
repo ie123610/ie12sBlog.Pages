@@ -1,0 +1,25 @@
+{
+  "id": "articles/lucky-STUN/lucky-ddns",
+  "title": "在Windows下使用lucky更新动态域名",
+  "description": "2024.06.03",
+  "source": "@site/docs/articles/lucky-STUN/lucky-ddns.md",
+  "sourceDirName": "articles/lucky-STUN",
+  "slug": "/articles/lucky-STUN/lucky-ddns",
+  "permalink": "/articles/lucky-STUN/lucky-ddns",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/lucky-ddns.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "Lucky v2.15 版本后的DDNS配置方法",
+    "permalink": "/articles/lucky-STUN/lucky-ddns-2.15"
+  },
+  "next": {
+    "title": "在Windows下使用lucky实现TLS/SSL证书自动化",
+    "permalink": "/articles/lucky-STUN/lucky-tls-自动化"
+  }
+}

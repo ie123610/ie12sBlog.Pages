@@ -1,0 +1,25 @@
+{
+  "id": "articles/research-logs/小米路由更多IPv6获取方式",
+  "title": "小米路由器固件支持更多IPv6获取方式",
+  "description": "2024.09.14",
+  "source": "@site/docs/articles/research-logs/小米路由更多IPv6获取方式.md",
+  "sourceDirName": "articles/research-logs",
+  "slug": "/articles/research-logs/小米路由更多IPv6获取方式",
+  "permalink": "/articles/research-logs/小米路由更多IPv6获取方式",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/research-logs/小米路由更多IPv6获取方式.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1539502055000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "Windows无法启用休眠问题",
+    "permalink": "/articles/research-logs/win休眠问题"
+  },
+  "next": {
+    "title": "已知Bittorrent客户端生存调查",
+    "permalink": "/articles/research-logs/已知bittorrent客户端生存调查/已知客户端调查-说明"
+  }
+}
