@@ -11,228 +11,223 @@
           "mainDocId": "README",
           "docs": [
             {
-              "id": "articles/bitcomet-FAQ/堡垒防火墙反吸血",
-              "path": "/articles/bitcomet-FAQ/堡垒防火墙反吸血",
+              "id": "articles/bitcomet-FAQ/BC-anti-leech",
+              "path": "/articles/bitcomet-FAQ/BC-anti-leech",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/补档-像素帝的bc教程",
-              "path": "/articles/bitcomet-FAQ/补档-像素帝的bc教程",
+              "id": "articles/bitcomet-FAQ/BC-anti-leech-2",
+              "path": "/articles/bitcomet-FAQ/BC-anti-leech-2",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/有关BC的奇谈怪论",
-              "path": "/articles/bitcomet-FAQ/有关BC的奇谈怪论",
+              "id": "articles/bitcomet-FAQ/BC-config-recovery",
+              "path": "/articles/bitcomet-FAQ/BC-config-recovery",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC播放器路径设置",
-              "path": "/articles/bitcomet-FAQ/BC播放器路径设置",
+              "id": "articles/bitcomet-FAQ/BC-disk-boost-service",
+              "path": "/articles/bitcomet-FAQ/BC-disk-boost-service",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC磁力链接格式问题",
-              "path": "/articles/bitcomet-FAQ/BC磁力链接格式问题",
+              "id": "articles/bitcomet-FAQ/BC-download-99",
+              "path": "/articles/bitcomet-FAQ/BC-download-99",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC磁力链接长度问题",
-              "path": "/articles/bitcomet-FAQ/BC磁力链接长度问题",
+              "id": "articles/bitcomet-FAQ/BC-download-speed-issues-2",
+              "path": "/articles/bitcomet-FAQ/BC-download-speed-issues-2",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC磁盘提速服务",
-              "path": "/articles/bitcomet-FAQ/BC磁盘提速服务",
+              "id": "articles/bitcomet-FAQ/BC-download-speed-test",
+              "path": "/articles/bitcomet-FAQ/BC-download-speed-test",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC断网问题",
-              "path": "/articles/bitcomet-FAQ/BC断网问题",
+              "id": "articles/bitcomet-FAQ/BC-expert-mode",
+              "path": "/articles/bitcomet-FAQ/BC-expert-mode",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC反吸血",
-              "path": "/articles/bitcomet-FAQ/BC反吸血",
+              "id": "articles/bitcomet-FAQ/BC-failed-piece",
+              "path": "/articles/bitcomet-FAQ/BC-failed-piece",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC反吸血2",
-              "path": "/articles/bitcomet-FAQ/BC反吸血2",
+              "id": "articles/bitcomet-FAQ/BC-get-metadata-error",
+              "path": "/articles/bitcomet-FAQ/BC-get-metadata-error",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC分块校验失败问题",
-              "path": "/articles/bitcomet-FAQ/BC分块校验失败问题",
+              "id": "articles/bitcomet-FAQ/BC-historical-issues",
+              "path": "/articles/bitcomet-FAQ/BC-historical-issues",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC截图和评论",
-              "path": "/articles/bitcomet-FAQ/BC截图和评论",
+              "id": "articles/bitcomet-FAQ/BC-magnet-link-form",
+              "path": "/articles/bitcomet-FAQ/BC-magnet-link-form",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC历史遗留问题",
-              "path": "/articles/bitcomet-FAQ/BC历史遗留问题",
+              "id": "articles/bitcomet-FAQ/BC-magnet-link-length",
+              "path": "/articles/bitcomet-FAQ/BC-magnet-link-length",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC绿灯常见问题",
-              "path": "/articles/bitcomet-FAQ/BC绿灯常见问题",
+              "id": "articles/bitcomet-FAQ/BC-OOM",
+              "path": "/articles/bitcomet-FAQ/BC-OOM",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC内存占用过高",
-              "path": "/articles/bitcomet-FAQ/BC内存占用过高",
+              "id": "articles/bitcomet-FAQ/BC-player-path",
+              "path": "/articles/bitcomet-FAQ/BC-player-path",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC配置恢复",
-              "path": "/articles/bitcomet-FAQ/BC配置恢复",
+              "id": "articles/bitcomet-FAQ/BC-poor-internet",
+              "path": "/articles/bitcomet-FAQ/BC-poor-internet",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC下载测速",
-              "path": "/articles/bitcomet-FAQ/BC下载测速",
+              "id": "articles/bitcomet-FAQ/BC-port-forwarding-FAQ",
+              "path": "/articles/bitcomet-FAQ/BC-port-forwarding-FAQ",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC下载缓慢问题-重置",
-              "path": "/articles/bitcomet-FAQ/BC下载缓慢问题-重置",
+              "id": "articles/bitcomet-FAQ/BC-reseed-99",
+              "path": "/articles/bitcomet-FAQ/BC-reseed-99",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC下载卡99问题",
-              "path": "/articles/bitcomet-FAQ/BC下载卡99问题",
+              "id": "articles/bitcomet-FAQ/BC-rumor",
+              "path": "/articles/bitcomet-FAQ/BC-rumor",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC用户列表显示问题",
-              "path": "/articles/bitcomet-FAQ/BC用户列表显示问题",
+              "id": "articles/bitcomet-FAQ/BC-screenshots-and-comments",
+              "path": "/articles/bitcomet-FAQ/BC-screenshots-and-comments",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC元数据获取问题",
-              "path": "/articles/bitcomet-FAQ/BC元数据获取问题",
+              "id": "articles/bitcomet-FAQ/BC-torrent-market",
+              "path": "/articles/bitcomet-FAQ/BC-torrent-market",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC种子补档99问题",
-              "path": "/articles/bitcomet-FAQ/BC种子补档99问题",
+              "id": "articles/bitcomet-FAQ/BC-user-list",
+              "path": "/articles/bitcomet-FAQ/BC-user-list",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC种子市场",
-              "path": "/articles/bitcomet-FAQ/BC种子市场",
+              "id": "articles/bitcomet-FAQ/fort-firewall-anti-leech",
+              "path": "/articles/bitcomet-FAQ/fort-firewall-anti-leech",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/BC专家模式及其作用",
-              "path": "/articles/bitcomet-FAQ/BC专家模式及其作用",
+              "id": "articles/bitcomet-FAQ/reupload-xiang-su-di-bc-tutorial",
+              "path": "/articles/bitcomet-FAQ/reupload-xiang-su-di-bc-tutorial",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-FAQ/win防火墙反吸血",
-              "path": "/articles/bitcomet-FAQ/win防火墙反吸血",
+              "id": "articles/bitcomet-FAQ/win-firewall-anti-leech",
+              "path": "/articles/bitcomet-FAQ/win-firewall-anti-leech",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_端口转发DMZ和UPnP",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_端口转发DMZ和UPnP",
+              "id": "articles/bitcomet-port-forwarding/cs-and-p2p",
+              "path": "/articles/bitcomet-port-forwarding/cs-and-p2p",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat",
+              "id": "articles/bitcomet-port-forwarding/firewall-and-nat",
+              "path": "/articles/bitcomet-port-forwarding/firewall-and-nat",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_光猫",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_光猫",
+              "id": "articles/bitcomet-port-forwarding/goals-and-difficulties",
+              "path": "/articles/bitcomet-port-forwarding/goals-and-difficulties",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器",
+              "id": "articles/bitcomet-port-forwarding/ip-and-port",
+              "path": "/articles/bitcomet-port-forwarding/ip-and-port",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_路由器",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_路由器",
+              "id": "articles/bitcomet-port-forwarding/modem-settings",
+              "path": "/articles/bitcomet-port-forwarding/modem-settings",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_目标与困难",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_目标与困难",
+              "id": "articles/bitcomet-port-forwarding/network-structure",
+              "path": "/articles/bitcomet-port-forwarding/network-structure",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_前言",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_前言",
+              "id": "articles/bitcomet-port-forwarding/port-forwarding-DMZ-and-UPnP",
+              "path": "/articles/bitcomet-port-forwarding/port-forwarding-DMZ-and-UPnP",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_特别篇",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_特别篇",
+              "id": "articles/bitcomet-port-forwarding/preface",
+              "path": "/articles/bitcomet-port-forwarding/preface",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_网络结构",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_网络结构",
+              "id": "articles/bitcomet-port-forwarding/router-settings",
+              "path": "/articles/bitcomet-port-forwarding/router-settings",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_cs和p2p",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_cs和p2p",
+              "id": "articles/bitcomet-port-forwarding/special-episode",
+              "path": "/articles/bitcomet-port-forwarding/special-episode",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_ip和端口",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_ip和端口",
+              "id": "articles/bitcomet-port-forwarding/switches-and-routers",
+              "path": "/articles/bitcomet-port-forwarding/switches-and-routers",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_ipv6",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_ipv6",
+              "id": "articles/bitcomet-port-forwarding/what-is-ipv6",
+              "path": "/articles/bitcomet-port-forwarding/what-is-ipv6",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞_nat",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞_nat",
+              "id": "articles/bitcomet-port-forwarding/what-is-nat",
+              "path": "/articles/bitcomet-port-forwarding/what-is-nat",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/bitcomet-port-forwarding/BC阻塞-win",
-              "path": "/articles/bitcomet-port-forwarding/BC阻塞-win",
+              "id": "articles/bitcomet-port-forwarding/win-settings",
+              "path": "/articles/bitcomet-port-forwarding/win-settings",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/ipv6-transition/CF双栈代理",
-              "path": "/articles/ipv6-transition/CF双栈代理",
+              "id": "articles/ipv6-transition/cf-IPv6-dual-stack-proxy",
+              "path": "/articles/ipv6-transition/cf-IPv6-dual-stack-proxy",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/ipv6-transition/Win端口转发",
-              "path": "/articles/ipv6-transition/Win端口转发",
+              "id": "articles/ipv6-transition/win-firewall-block-IPv6",
+              "path": "/articles/ipv6-transition/win-firewall-block-IPv6",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/ipv6-transition/win防火墙拦截IPv6",
-              "path": "/articles/ipv6-transition/win防火墙拦截IPv6",
+              "id": "articles/ipv6-transition/win-port-forwarding",
+              "path": "/articles/ipv6-transition/win-port-forwarding",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/邮件通知端口",
-              "path": "/articles/lucky-STUN/邮件通知端口",
+              "id": "articles/lucky-STUN/cf-srv-record-settings",
+              "path": "/articles/lucky-STUN/cf-srv-record-settings",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/在dynv6和CF上更新TXT",
-              "path": "/articles/lucky-STUN/在dynv6和CF上更新TXT",
-              "sidebar": "mySidebar"
-            },
-            {
-              "id": "articles/lucky-STUN/cf-srv设置",
-              "path": "/articles/lucky-STUN/cf-srv设置",
+              "id": "articles/lucky-STUN/email-notification-port",
+              "path": "/articles/lucky-STUN/email-notification-port",
               "sidebar": "mySidebar"
             },
             {
@@ -246,13 +241,13 @@
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/lucky-tls-自动化",
-              "path": "/articles/lucky-STUN/lucky-tls-自动化",
+              "id": "articles/lucky-STUN/lucky-tls-automation",
+              "path": "/articles/lucky-STUN/lucky-tls-automation",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/lucky-vxkex兼容",
-              "path": "/articles/lucky-STUN/lucky-vxkex兼容",
+              "id": "articles/lucky-STUN/lucky-vxkex-compatible",
+              "path": "/articles/lucky-STUN/lucky-vxkex-compatible",
               "sidebar": "mySidebar"
             },
             {
@@ -261,13 +256,18 @@
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun-bc端口自动化",
-              "path": "/articles/lucky-STUN/stun-bc端口自动化",
+              "id": "articles/lucky-STUN/stun-bc-port-automation",
+              "path": "/articles/lucky-STUN/stun-bc-port-automation",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun-cf重定向",
-              "path": "/articles/lucky-STUN/stun-cf重定向",
+              "id": "articles/lucky-STUN/stun-bt",
+              "path": "/articles/lucky-STUN/stun-bt",
+              "sidebar": "mySidebar"
+            },
+            {
+              "id": "articles/lucky-STUN/stun-cf-redirection",
+              "path": "/articles/lucky-STUN/stun-cf-redirection",
               "sidebar": "mySidebar"
             },
             {
@@ -281,43 +281,43 @@
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun-qb端口自动化",
-              "path": "/articles/lucky-STUN/stun-qb端口自动化",
+              "id": "articles/lucky-STUN/stun-qb-port-automation",
+              "path": "/articles/lucky-STUN/stun-qb-port-automation",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun-tr修改端口",
-              "path": "/articles/lucky-STUN/stun-tr修改端口",
+              "id": "articles/lucky-STUN/stun-tr-modify-port",
+              "path": "/articles/lucky-STUN/stun-tr-modify-port",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun-v4-v6分离",
-              "path": "/articles/lucky-STUN/stun-v4-v6分离",
+              "id": "articles/lucky-STUN/stun-v4-v6-redirect",
+              "path": "/articles/lucky-STUN/stun-v4-v6-redirect",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun-VNT组网",
-              "path": "/articles/lucky-STUN/stun-VNT组网",
+              "id": "articles/lucky-STUN/stun-VNT-networkin",
+              "path": "/articles/lucky-STUN/stun-VNT-networkin",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun-web服务-CF",
-              "path": "/articles/lucky-STUN/stun-web服务-CF",
+              "id": "articles/lucky-STUN/stun-web-serve-CF",
+              "path": "/articles/lucky-STUN/stun-web-serve-CF",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/stun穿透-bt",
-              "path": "/articles/lucky-STUN/stun穿透-bt",
+              "id": "articles/lucky-STUN/svcb-records-hidden-ports",
+              "path": "/articles/lucky-STUN/svcb-records-hidden-ports",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/svcb记录隐藏端口",
-              "path": "/articles/lucky-STUN/svcb记录隐藏端口",
+              "id": "articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6",
+              "path": "/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/lucky-STUN/uptime-upnp保活",
-              "path": "/articles/lucky-STUN/uptime-upnp保活",
+              "id": "articles/lucky-STUN/uptime-upnp-keep-alive",
+              "path": "/articles/lucky-STUN/uptime-upnp-keep-alive",
               "sidebar": "mySidebar"
             },
             {
@@ -381,23 +381,23 @@
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/virtual-private-network/et从记录获取端口",
-              "path": "/articles/virtual-private-network/et从记录获取端口",
+              "id": "articles/virtual-private-network/easytier-get-port-form-dns-record",
+              "path": "/articles/virtual-private-network/easytier-get-port-form-dns-record",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/virtual-private-network/gost-bt-穿透",
-              "path": "/articles/virtual-private-network/gost-bt-穿透",
+              "id": "articles/virtual-private-network/gost-bt-NAT-Penetration",
+              "path": "/articles/virtual-private-network/gost-bt-NAT-Penetration",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/virtual-private-network/SE解决不支持此功能问题",
-              "path": "/articles/virtual-private-network/SE解决不支持此功能问题",
+              "id": "articles/virtual-private-network/setup-easytier-server-on-win",
+              "path": "/articles/virtual-private-network/setup-easytier-server-on-win",
               "sidebar": "mySidebar"
             },
             {
-              "id": "articles/virtual-private-network/win搭建easytier公共服务器",
-              "path": "/articles/virtual-private-network/win搭建easytier公共服务器",
+              "id": "articles/virtual-private-network/softether-enterprise-functions-unlock",
+              "path": "/articles/virtual-private-network/softether-enterprise-functions-unlock",
               "sidebar": "mySidebar"
             },
             {

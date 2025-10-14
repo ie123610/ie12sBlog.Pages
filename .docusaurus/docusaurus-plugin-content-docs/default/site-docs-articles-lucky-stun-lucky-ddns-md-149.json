@@ -11,7 +11,7 @@
   "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/lucky-ddns.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedAt": 1539502055000,
+  "lastUpdatedAt": 1760184231000,
   "frontMatter": {},
   "sidebar": "mySidebar",
   "previous": {
@@ -20,6 +20,6 @@
   },
   "next": {
     "title": "在Windows下使用lucky实现TLS/SSL证书自动化",
-    "permalink": "/articles/lucky-STUN/lucky-tls-自动化"
+    "permalink": "/articles/lucky-STUN/lucky-tls-automation"
   }
 }

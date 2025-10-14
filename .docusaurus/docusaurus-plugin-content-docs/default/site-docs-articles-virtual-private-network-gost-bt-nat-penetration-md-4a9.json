@@ -1,0 +1,25 @@
+{
+  "id": "articles/virtual-private-network/gost-bt-NAT-Penetration",
+  "title": "使用Gost替换Frp实现内网穿透为BT下载开放端口",
+  "description": "2025.08.25",
+  "source": "@site/docs/articles/virtual-private-network/gost-bt-NAT-Penetration.md",
+  "sourceDirName": "articles/virtual-private-network",
+  "slug": "/articles/virtual-private-network/gost-bt-NAT-Penetration",
+  "permalink": "/articles/virtual-private-network/gost-bt-NAT-Penetration",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/virtual-private-network/gost-bt-NAT-Penetration.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760253214000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「EasyTier」使用SRV TXT HTTP重定向获取对端IP端口",
+    "permalink": "/articles/virtual-private-network/easytier-get-port-form-dns-record"
+  },
+  "next": {
+    "title": "在Windows上搭建 EasyTier 公共服务器",
+    "permalink": "/articles/virtual-private-network/setup-easytier-server-on-win"
+  }
+}

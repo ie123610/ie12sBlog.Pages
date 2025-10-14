@@ -1,0 +1,26 @@
+{
+  "id": "articles/bitcomet-port-forwarding/ip-and-port",
+  "title": "1.1 IP和端口",
+  "description": "2023.07.30",
+  "source": "@site/docs/articles/bitcomet-port-forwarding/02-ip-and-port.md",
+  "sourceDirName": "articles/bitcomet-port-forwarding",
+  "slug": "/articles/bitcomet-port-forwarding/ip-and-port",
+  "permalink": "/articles/bitcomet-port-forwarding/ip-and-port",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-port-forwarding/02-ip-and-port.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760249816000,
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "前言",
+    "permalink": "/articles/bitcomet-port-forwarding/preface"
+  },
+  "next": {
+    "title": "1.2 什么是 NAT",
+    "permalink": "/articles/bitcomet-port-forwarding/what-is-nat"
+  }
+}

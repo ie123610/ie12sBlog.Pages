@@ -11,12 +11,12 @@
   "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/lucky-ddns-2.15.md",
   "tags": [],
   "version": "current",
-  "lastUpdatedAt": 1539502055000,
+  "lastUpdatedAt": 1760243164000,
   "frontMatter": {},
   "sidebar": "mySidebar",
   "previous": {
-    "title": "「补充篇」在Cloudflare上设置并更新SRV记录",
-    "permalink": "/articles/lucky-STUN/cf-srv设置"
+    "title": "「LUCKY STUN穿透」使用邮件通知端口变化情况",
+    "permalink": "/articles/lucky-STUN/email-notification-port"
   },
   "next": {
     "title": "在Windows下使用lucky更新动态域名",

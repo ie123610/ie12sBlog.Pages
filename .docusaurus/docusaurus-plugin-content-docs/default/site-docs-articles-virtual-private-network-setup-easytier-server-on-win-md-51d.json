@@ -1,0 +1,25 @@
+{
+  "id": "articles/virtual-private-network/setup-easytier-server-on-win",
+  "title": "在Windows上搭建 EasyTier 公共服务器",
+  "description": "2024.10.01",
+  "source": "@site/docs/articles/virtual-private-network/setup-easytier-server-on-win.md",
+  "sourceDirName": "articles/virtual-private-network",
+  "slug": "/articles/virtual-private-network/setup-easytier-server-on-win",
+  "permalink": "/articles/virtual-private-network/setup-easytier-server-on-win",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/virtual-private-network/setup-easytier-server-on-win.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760237837000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "使用Gost替换Frp实现内网穿透为BT下载开放端口",
+    "permalink": "/articles/virtual-private-network/gost-bt-NAT-Penetration"
+  },
+  "next": {
+    "title": "解决Softether开源版本中“不支持此功能。它尚未在开源版本上实施”的问题",
+    "permalink": "/articles/virtual-private-network/softether-enterprise-functions-unlock"
+  }
+}

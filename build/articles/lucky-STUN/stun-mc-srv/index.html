@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-articles/lucky-STUN/stun-mc-srv" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">[LUCKY」在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录 | ie12sBlog</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://ie12blog.36102025.xyz/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://ie12blog.36102025.xyz/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://ie12blog.36102025.xyz/articles/lucky-STUN/stun-mc-srv"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="[LUCKY」在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录 | ie12sBlog"><meta data-rh="true" name="description" content="2024.02.18"><meta data-rh="true" property="og:description" content="2024.02.18"><link data-rh="true" rel="icon" href="/img/Internet_Explorer_10.svg"><link data-rh="true" rel="canonical" href="https://ie12blog.36102025.xyz/articles/lucky-STUN/stun-mc-srv"><link data-rh="true" rel="alternate" href="https://ie12blog.36102025.xyz/articles/lucky-STUN/stun-mc-srv" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://ie12blog.36102025.xyz/articles/lucky-STUN/stun-mc-srv" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"LCUKY系列教程","item":"https://ie12blog.36102025.xyz/lucky-STUN"},{"@type":"ListItem","position":2,"name":"[LUCKY」在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录","item":"https://ie12blog.36102025.xyz/articles/lucky-STUN/stun-mc-srv"}]}</script><link rel="stylesheet" href="/assets/css/styles.0d822372.css">
+<script src="/assets/js/runtime~main.db2f80fc.js" defer="defer"></script>
+<script src="/assets/js/main.acb224f4.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.png"><link rel="preload" as="image" href="../../images/stun-mc-srv/MyZones-More.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/Create-new-Zone.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/创建ddns域名.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/添加srv记录.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/填写srv内容.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/srv填写效果.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/srv查询效果.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/隐藏ip.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/隐藏ip-2.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/keys.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/HTTP_Tokens.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/计划任务.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/任务-获取ID.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/手动触发任务.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/返回的区域ID.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/返回的记录ID.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/测试更新srv记录.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/测试更新srv记录-返回.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/添加ddns.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/ddns配置.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/ddns效果.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/添加stun.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/添加stun-2.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/stun规则配置.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/stun规则-webhook.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/webhook提示.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/stun规则-webhook-返回.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/stun规则最终效果.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/mc建立服务端.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/mc添加服务器.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/mc服务器状态.webp"><link rel="preload" as="image" href="../../images/stun-mc-srv/mc登录成功.webp"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ie12sBlog</b></a><a href="https://github.com/ie123610/ie12sBlog" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub版博客<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://space.bilibili.com/390936347/article" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">B站专栏<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://www.cnblogs.com/ie123610/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">博客园<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://www.cometbbs.com/t/%E6%AF%94%E7%89%B9%E5%BD%97%E6%98%9F-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E6%94%B6%E9%9B%86%E4%B8%8E%E8%A7%A3%E5%86%B3/86304" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">彗星论坛<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/ie123610/ie12sBlog.Pages/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub后端<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/">关于</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/the-index">索引</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href="https://bc.36102025.xyz/" target="_blank" rel="noopener noreferrer" class="menu__link menuExternalLink_NmtK">比特彗星资源导航<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/bitcomet-FAQ">比特彗星-常见问题</a><button aria-label="展开侧边栏分类 &#x27;比特彗星-常见问题&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/bitcomet-port-forwarding">比特彗星-端口阻塞解决方案</a><button aria-label="展开侧边栏分类 &#x27;比特彗星-端口阻塞解决方案&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/lucky-STUN">LCUKY系列教程</a><button aria-label="折叠侧边栏分类 &#x27;LCUKY系列教程&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/cf-srv-record-settings">「补充篇」在Cloudflare上设置并更新SRV记录</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/email-notification-port">「LUCKY STUN穿透」使用邮件通知端口变化情况</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/lucky-ddns-2.15">Lucky v2.15 版本后的DDNS配置方法</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/lucky-ddns">在Windows下使用lucky更新动态域名</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/lucky-tls-automation">在Windows下使用lucky实现TLS/SSL证书自动化</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/lucky-vxkex-compatible">使用VxKex使高版本LCUKY可在win7上运行</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/lucky-web">在Windows下使用lucky配置反向代理以实现较为安全的WEB访问</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-VNT-networkin">「LUCKY STUN穿透」在Windows下使用VNT组网为非HTTP服务固定STUN穿透端口</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-bc-port-automation">「LUCKY STUN穿透」使用脚本自动修改比特彗星的监听端口</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-bt">LUCKY STUN穿透在Windows上使用UPnP工具为BT客户端自动添加内外端口号不同的映射规则</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-cf-redirection">「扩展篇」使用Cloudflare的重定向规则传递资源路径和查询字符串</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-docker-upnp">「LUCKY STUN穿透」在Docker中使用MiniUPnP为BT客户端自动添加内外端口不同的映射规则</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/articles/lucky-STUN/stun-mc-srv">[LUCKY」在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-qb-port-automation">「LUCKY STUN穿透」使用webhook自动修改 qbittorrent 的监听端口</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-tr-modify-port">「LUCKY STUN穿透」使用 cURL 自动修改 Transmission 的监听端口</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-v4-v6-redirect">「LUCKY STUN穿透」IPv4和IPv6分离重定向</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/stun-web-serve-CF">「LUCKY STUN穿透」使用Cloudflare的页面规则固定和隐藏网页端口</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/svcb-records-hidden-ports">使用SVCB/HTTPS记录隐藏和固定Web服务端口</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6">「前置」在Dynv6和Cloudflare上更新TXT记录</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/lucky-STUN/uptime-upnp-keep-alive">「LUCKY STUN穿透」使用UptimeRobot使UPnP映射的TCP规则保持活跃</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/virtual-private-network">虚拟专用网络系列教程</a><button aria-label="展开侧边栏分类 &#x27;虚拟专用网络系列教程&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/ipv6-transition">IPv6过渡方案</a><button aria-label="展开侧边栏分类 &#x27;IPv6过渡方案&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/research-logs">研究记录</a><button aria-label="展开侧边栏分类 &#x27;研究记录&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav><button type="button" title="收起侧边栏" aria-label="收起侧边栏" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_z5aJ"><div class="docItemContainer_c0TR"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/lucky-STUN"><span>LCUKY系列教程</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">[LUCKY」在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>[LUCKY」在Windows下使用STUN穿透实现Minecraft联机并设置SRV记录</h1></header>
+<p>2024.02.18</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="本教程目标">本教程目标<a href="#本教程目标" class="hash-link" aria-label="本教程目标的直接链接" title="本教程目标的直接链接">​</a></h2>
+<p>在无公网环境低成本的实现较为稳定的 Minecraft Java版联机（服务器）<br>
+<!-- -->目前常见的联机(服务器）方法及其问题（针对好友联机和小/微型服务器）</p>
+<ul>
+<li>
+<p><strong>家庭宽带 公网直连（IPv4或IPv6）</strong><br>
+<!-- -->优点：完全原生 网络效率和稳定性上不存在问题<br>
+<!-- -->缺点：IPv4公网难获取 而IPv6普及率仍然不够高 玩家不一定有IPv6</p>
+</li>
+<li>
+<p><strong>组网方案 （比如EasyN2N）</strong><br>
+<!-- -->优点：对玩家网络要求不是很高可以实现P2P直连即使P2P直连不成功也可以走服务器中转<br>
+<!-- -->缺点：中转状态下速度和稳定性受限于中转服务器 同时需要在设备上额外安装客户端</p>
+</li>
+<li>
+<p><strong>租用高性能VPS直接开服</strong><br>
+<!-- -->优点：网络方面相当于原生公网<br>
+<!-- -->缺点：高性能服务器价格较高 对于好友联机和微型服务器来讲</p>
+</li>
+<li>
+<p><strong>租用低性能VPS+frp穿透 在个人电脑上开服</strong><br>
+<!-- -->优点：网络方面相当于原生公网（算是是买了个公网IP）
+缺点：即使是低性能服务器依然要些花钱（主要是带宽）
+如果VPS离开玩家和mc服务端较远延迟可能还是较高毕竟比直接部署在VPS上要多绕一些路径</p>
+</li>
+<li>
+<p><strong>免费frp穿透服务</strong><br>
+<!-- -->优点：对玩家网络要求不高<br>
+<!-- -->缺点：和组网方案类似 稳定性和速度等受限于穿透节点</p>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="stun穿透法">STUN穿透法<a href="#stun穿透法" class="hash-link" aria-label="STUN穿透法的直接链接" title="STUN穿透法的直接链接">​</a></h2>
+<p><strong>本教程将介绍STUN穿透法</strong></p>
+<ul>
+<li><strong>优点：</strong> 几乎相当于原生公网并有较大的带宽其上限为家庭宽带本身的上限<br>
+<!-- -->（ 即使是一般的100M家庭宽带都有30Mbps的上传 ）</li>
+<li><strong>缺点：</strong> 端口号不定期变化</li>
+<li><strong>解决方法：</strong> 设置srv记录（其可以记录端口号）Minecraft Java 版 支持解析srv记录 <strong>无需手动输入端口号</strong></li>
+</ul>
+<p><strong>这是除了租用VPS外最接近公网直连的方法</strong></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="配置思路">配置思路<a href="#配置思路" class="hash-link" aria-label="配置思路的直接链接" title="配置思路的直接链接">​</a></h2>
+<p>得益于lucky将 stun穿透 端口转发 webhook 以及DDNS更新 等功能整合在一起<br>
+<!-- -->我们可以轻松的实现stun穿透联机的设想</p>
+<ol>
+<li>在dynv6上创建免费动态域名 并添SRV记录</li>
+<li>使用lucky 的stun穿透和端口转发功能打开端口并将流量导向服务端</li>
+<li>在stun传穿透的IP或者端口发生变化时可以触发webhook请求
+使用其向dynv6的更新api发送请求更新srv记录中的端口</li>
+<li>玩家输入仅需动态域名 客户端将自动解析srv记录中的地址和端口即可登入游戏</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="网络环境检测和优化">网络环境检测和优化<a href="#网络环境检测和优化" class="hash-link" aria-label="网络环境检测和优化的直接链接" title="网络环境检测和优化的直接链接">​</a></h2>
+<p><strong>尽管大部分stun穿透教程都会强调必须是全锥型NAT才能穿透</strong><br>
+<strong>但这其实指的是最外面一层的运营商NAT</strong> 而大部分的运营商NAT都是全锥型的</p>
+<p>不过现在的家庭网络环境中 <strong>几乎都存在多层NAT</strong> 而NAT类型测试只能测出其“最差”的一层 其很可能显示为“端口受限（锥）型NAT” <strong>这其实是由于 路由器/光猫上的NAT造成的</strong></p>
+<p>不过这并不会影响我们使用stun穿透 可以按照这篇教程进行网络优化
+教程：网络环境检测和优化</p>
+<p>优化到只剩一层运营商NAT和 和一层光猫/路由器 NAT
+共两层NAT 且NAT类型检查结果不为对称型即可进行穿透</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="下载和安装lucky">下载和安装lucky<a href="#下载和安装lucky" class="hash-link" aria-label="下载和安装lucky的直接链接" title="下载和安装lucky的直接链接">​</a></h2>
+<p>在之前的教程中已经讲解过<br>
+<a href="/articles/lucky-STUN/stun-bt">LUCKY STUN穿透在Windows上使用UPnP工具为BT客户端自动添加内外端口号不同的映射规则</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="注册dynv6">注册dynv6<a href="#注册dynv6" class="hash-link" aria-label="注册dynv6的直接链接" title="注册dynv6的直接链接">​</a></h2>
+<p>访问 <code>dynv6.com</code> <strong>点击右上角的 sign up</strong>
+填写邮箱和密码后即可</p>
+<p>邮箱中会收到一封确认邮件要点击邮件内的链接确认账户<br>
+<!-- -->值得注意的是确认页面有谷歌人机验证可能需要代理才能正常显示</p>
+<p>如果没有代理可以使用下面链接中的方法使验证显示出来<br>
+<a href="https://blog.azurezeng.com/recaptcha-use-in-china/" target="_blank" rel="noopener noreferrer">链接</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="设置-动态域名和srv记录">设置 动态域名和srv记录<a href="#设置-动态域名和srv记录" class="hash-link" aria-label="设置 动态域名和srv记录的直接链接" title="设置 动态域名和srv记录的直接链接">​</a></h2>
+<p>登录账户 点击右上角的 <strong>My Zones 选择 More</strong></p>
+<img src="../../images/stun-mc-srv/MyZones-More.webp" width="60%" height="60%">
+<p>再点击右侧的 Create new Zone</p>
+<img src="../../images/stun-mc-srv/Create-new-Zone.webp" width="60%" height="60%">
+<ol>
+<li>名称可以设置 你喜欢的名字 只能为数字和字母</li>
+<li>选择一个方便记忆的一级域名这里选择 dynv6.net</li>
+<li>IP地址先不设置 之后会设置解析</li>
+<li>创建</li>
+</ol>
+<img src="../../images/stun-mc-srv/创建ddns域名.webp" width="60%" height="60%">
+<p>创建完成后会自动切换到该域名的配置页面<br>
+<!-- -->选择 <strong>Records</strong> 选项卡<br>
+<!-- -->添加 记录类型选择 <strong>SRV</strong></p>
+<img src="../../images/stun-mc-srv/添加srv记录.webp" width="60%" height="60%">
+<p>填写 Name Server Port 这几个选项（后面会解释为什么这样填）</p>
+<img src="../../images/stun-mc-srv/填写srv内容.webp" width="60%" height="60%">
+<p>Port:任意填写之后还要修改 这里使用25565<br>
+<!-- -->Name: <code>_minecraft._tcp.mc</code><br>
+<!-- -->Server 中填写的则是之前创建的域名（注意最后有一个点）<br>
+<!-- -->例如：<code>ie12test.dynv6.net.</code></p>
+<p><strong>配置效果</strong></p>
+<img src="../../images/stun-mc-srv/srv填写效果.webp" width="60%" height="60%">
+<p><strong>检查解析效果</strong></p>
+<p>命令提示符运行命令 <code>nslookup -q=srv 你的域名</code><br>
+<!-- -->例如: <code>nslookup -q=srv _minecraft._tcp.mc.ie12test.dynv6.net</code></p>
+<p>注意前面的 <code>_minecraft._tcp.</code> 不能少<br>
+<!-- -->看到如下中的内容表示设置正确</p>
+<img src="../../images/stun-mc-srv/srv查询效果.webp" width="60%" height="60%">
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="关于srv记录">关于SRV记录<a href="#关于srv记录" class="hash-link" aria-label="关于SRV记录的直接链接" title="关于SRV记录的直接链接">​</a></h2>
+<p>其中的 <code>_minecraft._tcp</code> 表示服务类型为 Minecraft  协议为TCP<br>
+<strong>这个部分是必须要有的且不能修改的</strong></p>
+<p>而后面的 <code>.mc</code> 相当于一个三级域名可以自由修改 游玩时在地址栏里输入  <code>mc.ie12test.dynv6.net</code></p>
+<p>若改为 <code>.abc</code> 那游玩时就要输入 <code>abc.ie12test.dynv6.net</code></p>
+<p>前面的 <code>_minecraft._tcp</code> <strong>在游玩时不用输入</strong><br>
+<!-- -->mc客户端会在你输入的域名前面自动加上 进行查询</p>
+<p>server 选项 <strong>表示使用的实际域名或者IP</strong>
+这里直接使用的是它的上级域名即 <code>ie12test.dynv6.net</code> 也可以使用任意的其他域名<br>
+<!-- -->填写的时候别忘了后面要加上一个点即英文状态下的句号</p>
+<p>一些教程会说srv记录可以隐藏地址 <strong>但这其实是不准确的</strong></p>
+<p>之所以srv看起来可以隐藏地址是因为在服务器地址栏中输入的是<br>
+<code>mc.ie12test.dynv6.net</code></p>
+<p>而实际客户端查询的是 <code>_minecraft._tcp.mc.ie12test.dynv6.net</code><br>
+<code>mc.ie12test.dynv6.net</code> 这个地址不需要设置IP地址 自然解析不出IP来</p>
+<img src="../../images/stun-mc-srv/隐藏ip.webp" width="60%" height="60%">
+<p>而且实际使用的地址是 <code>_minecraft._tcp.mc.ie12test.dynv6.net</code> 中srv记录里指定的地址
+直接解析这个地址也是解析不出来IP的<br>
+<!-- -->因为DNS解析一般默认解析的都是 A（IPv4地址）和AAAA（IPv6地址）记录</p>
+<img src="../../images/stun-mc-srv/隐藏ip-2.webp" width="60%" height="60%">
+<p>必须要像刚才检查解析效果时那样指定查询记录类型为srv才行<br>
+<!-- -->所以这 <strong>只能算是一种障眼法</strong> 对不了解srv记录的人有一定效果
+不能真的隐藏服务器的源IP地址</p>
+<hr>
+<p>文中更新SRV记录的方法已经过时 <strong>lucky在2.15版本后已经支持SRV记录</strong><br>
+<strong>这使得配置方法极大简化 请移步至此教程：</strong> <a href="/articles/lucky-STUN/lucky-ddns-2.15">链接</a></p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="获取域名id和记录id以及token">获取域名ID和记录ID以及token<a href="#获取域名id和记录id以及token" class="hash-link" aria-label="获取域名ID和记录ID以及token的直接链接" title="获取域名ID和记录ID以及token的直接链接">​</a></h2>
+<p>通过dynv6的 REST API 我们可以更新srv 记录中的端口号<br>
+<!-- -->API定义：<code>https://dynv6.github.io/api-spec/</code></p>
+<p>但是在这之前我们需要先获取两个ID号和一个Token<br>
+<!-- -->一个是域名ID即zoneID另一个是记录ID（srv记录的）即recordID<br>
+<strong>而Token 相当于是一串密码用来进行身份验证</strong></p>
+<p><strong>我们先从token开始</strong><br>
+<!-- -->点击右上角的账户名选择 keys</p>
+<img src="../../images/stun-mc-srv/keys.webp" width="60%" height="60%">
+<p>在HTTP Tokens 应该已经有了一个默认的Token<br>
+<!-- -->点开 details 查看内容<br>
+<strong>注意不要泄露token 如果泄露应马上更换</strong></p>
+<img src="../../images/stun-mc-srv/HTTP_Tokens.webp" width="60%" height="60%">
+<p>将token复制下来获取ID的时候要用到<br>
+<!-- -->ID的获取相对麻烦一些 dynv6的文档中用的是curl<br>
+<strong>我们直接使用lucky中的 webhook 功能就不用再去下curl了</strong></p>
+<p>打开lucky 点击左侧的 计划任务 添加计划任务</p>
+<img src="../../images/stun-mc-srv/计划任务.webp" width="60%" height="60%">
+<p>设置内容如下：</p>
+<ul>
+<li>开关：关闭</li>
+<li>执行周期和时间：任意 这个只是测试用的</li>
+<li>添加子任务<br>
+<!-- -->类型 callweb<br>
+<!-- -->接口地址：<code>https://dynv6.com/api/v2/zones</code><br>
+<!-- -->请求方法：GET<br>
+<!-- -->请求头：<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Authorization: Bearer 之前获取的TOKEN</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Accept: application/json</span><br></span></code></pre></div></div>
+<!-- -->启用 禁用成功字符检测<br>
+<strong>保存任务</strong></li>
+</ul>
+<img src="../../images/stun-mc-srv/任务-获取ID.webp" title="设置效果" width="60%" height="60%">
+<p>点击手动触发</p>
+<img src="../../images/stun-mc-srv/手动触发任务.webp" width="60%" height="60%">
+<p>查看日志中输出的信息<br>
+<!-- -->如果配置正确会 <strong>返回域名和ID</strong><br>
+<!-- -->这里的ID就是域名ID即zoneID 有了这个我们才能获取记录ID</p>
+<img src="../../images/stun-mc-srv/返回的区域ID.webp" width="60%" height="60%">
+<p><strong>接下来获取record ID</strong></p>
+<p>修改计划任务中的内容 将请求地址修改为：<br>
+<code>https://dynv6.com/api/v2/zones/刚才获取的ID/records</code></p>
+<p><strong>其他都不变</strong>
+保存规则再次点击手动触发
+查看日志中的返回内容如果配置正确会返回域名和ID</p>
+<img src="../../images/stun-mc-srv/返回的记录ID.webp" width="60%" height="60%">
+<p>这次的ID就是 <strong>记录ID</strong> 了即recordID<br>
+<!-- -->现在我们就可以进行srv记录的端口更新了<br>
+<!-- -->这个要到stun穿透里面设置不过 <strong>我们可以先在这测试一下</strong></p>
+<p><strong>再次修改任务</strong></p>
+<p>接口地址改为：<code>https://dynv6.com/api/v2/zones/你的域名ID/records/你的记录ID</code></p>
+<p>请求方法：PATCH</p>
+<p>请求主体填写：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;name&quot;: &quot;记录名称&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;port&quot;: 1024</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p>记录名称是刚才获取记录ID时返回的 <strong>Name的值</strong><br>
+<strong>端口号任意 仅用于测试</strong></p>
+<p>例如</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;name&quot;: &quot;_minecraft._tcp.mc&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;port&quot;: 1024</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<img src="../../images/stun-mc-srv/测试更新srv记录.webp" title="配置效果" width="60%" height="60%">
+<p><strong>保存规则点击手动触发</strong><br>
+<!-- -->查看日志中的返回内容如果配置正确会返回srv记录的详细信息
+同时查看端口是否已经更新</p>
+<img src="../../images/stun-mc-srv/测试更新srv记录-返回.webp" width="60%" height="60%">
+<p>记录下刚才填写的配置一会儿要在stun穿透里面设置<br>
+<!-- -->（这里踩了个坑 name 必须要有不然会报错 之前没加上导致一直报错 还在QQ群友帮助测试后才发现这个问题）</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="设置ddns解析">设置DDNS解析<a href="#设置ddns解析" class="hash-link" aria-label="设置DDNS解析的直接链接" title="设置DDNS解析的直接链接">​</a></h2>
+<p>选择左侧的动态域名解析</p>
+<p>添加任务</p>
+<img src="../../images/stun-mc-srv/添加ddns.webp" width="60%" height="60%">
+<ul>
+<li><strong>名称：</strong> 任意</li>
+<li><strong>托管服务商：</strong> dynv6</li>
+<li><strong>Token：</strong> 填写之前获得的token</li>
+<li><strong>类型：</strong> 选择IPv4</li>
+<li><strong>域名列表：</strong> 填写 之前SRV记录指向的域名</li>
+<li><strong>保存规则</strong></li>
+</ul>
+<img src="../../images/stun-mc-srv/ddns配置.webp" width="60%" height="60%">
+<p><strong>配置效果</strong><br>
+<!-- -->等待片刻后显示 <strong>公网IP未改变</strong> 或 <strong>更新成功</strong> 即设置正确</p>
+<img src="../../images/stun-mc-srv/ddns效果.webp" width="60%" height="60%">
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="设置stun穿透">设置STUN穿透<a href="#设置stun穿透" class="hash-link" aria-label="设置STUN穿透的直接链接" title="设置STUN穿透的直接链接">​</a></h2>
+<p>选择左侧的stun内网穿透 添加穿透规则</p>
+<img src="../../images/stun-mc-srv/添加stun.webp">
+<img src="../../images/stun-mc-srv/添加stun-2.webp" width="60%" height="60%">
+<p><strong>名称：</strong> 任意<br>
+<strong>穿透类型：</strong> IPv4 TCP<br>
+<strong>监听端口：</strong> 可自定义 不和其他程序冲突即可 这里使用 22333<br>
+<strong>目标地址：</strong> 设置为mc服务端运行的地址 如果和lucky运行在同一设备上使用127.0.0.1即可<br>
+<strong>目标端口：</strong> 设置为mc服务端监听的端口 这里用的是25678</p>
+<img src="../../images/stun-mc-srv/stun规则配置.webp" width="60%" height="60%">
+<p><strong>打开webook开关</strong></p>
+<p>填写的内容和之前在计划任务中测试时的基本相同</p>
+<p>接口地址：<code>https://dynv6.com/api/v2/zones/你的域名ID/records/你的记录ID</code><br>
+<!-- -->请求方法：PATCH</p>
+<p>请求头：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Authorization: Bearer 之前获取的TOKEN</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Accept: application/json</span><br></span></code></pre></div></div>
+<p>请求主体:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;name&quot;: &quot;记录名称&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;port&quot;: #{port}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p>记录名称是之前获取记录ID时返回的 Name 的值</p>
+<p><strong>例如</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">{</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;name&quot;: &quot;_minecraft._tcp.mc&quot;,</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&quot;port&quot;: #{port}</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">}</span><br></span></code></pre></div></div>
+<p>调用成功字符串检检测：SRV（要大写）</p>
+<img src="../../images/stun-mc-srv/stun规则-webhook.webp" width="60%" height="60%">
+<p>填写完成后点击 <strong>右上角的手动触发</strong> 查看是否调用成功<br>
+<strong>成功</strong> 会返回记录的详细信息 注意这里的端口号变成了 <strong>6666</strong>
+保存规则</p>
+<img src="../../images/stun-mc-srv/webhook提示.webp" width="60%" height="60%">
+<img src="../../images/stun-mc-srv/stun规则-webhook-返回.webp" width="60%" height="60%">
+<p><strong>最终效果</strong></p>
+<img src="../../images/stun-mc-srv/stun规则最终效果.webp" width="60%" height="60%">
+<p><strong>至此我们已经完成了配置</strong><br>
+<!-- -->当stun穿透的端口或者IP发生变化时DDNS记录会自动更新</p>
+<p>玩家无需从新输入地址和端口 只不过在变化瞬间会掉线 重新登录一下即可<br>
+<!-- -->当然这种变化一般不会太频繁 不过这要看地区和运营商 毕竟运营商NAT配置方式各不相同</p>
+<p>不过有时候DNS缓存及时没有更新 可以使用下列命令刷新 Windows DNS 缓存<br>
+<code>ipconfig /flushdns</code></p>
+<p>或者制作成批处理使用起来更方便</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@echo off</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ipconfig /flushdns</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pause</span><br></span></code></pre></div></div>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="游戏测试环节">游戏测试环节<a href="#游戏测试环节" class="hash-link" aria-label="游戏测试环节的直接链接" title="游戏测试环节的直接链接">​</a></h2>
+<p>游戏版本：Minecraft 1.16.5 Java  Forge 36.2.41<br>
+<!-- -->使用 <a href="https://www.mcmod.cn/class/2754.html" target="_blank" rel="noopener noreferrer">自定义局域网联机</a>（Lan Server Properties） mod固定端口</p>
+<p>值得注意的是在1.16.5下有一个bug<br>
+<!-- -->离线登录玩家无法进行多人游戏即多人游戏按钮被禁用 加个<a href="https://www.mcmod.cn/class/10643.html" target="_blank" rel="noopener noreferrer">Mod</a>即可修复</p>
+<img src="../../images/stun-mc-srv/mc建立服务端.webp" title="对局域网开放" width="60%" height="60%">
+<img src="../../images/stun-mc-srv/mc添加服务器.webp" title="填写地址" width="60%" height="60%">
+<img src="../../images/stun-mc-srv/mc服务器状态.webp" title="服务器已正常显示" width="60%" height="60%">
+<img src="../../images/stun-mc-srv/mc登录成功.webp" title="登录成功" width="60%" height="60%">
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="参考资料">参考资料<a href="#参考资料" class="hash-link" aria-label="参考资料的直接链接" title="参考资料的直接链接">​</a></h2>
+<ul>
+<li><a href="https://www.bilibili.com/read/cv25389887/" target="_blank" rel="noopener noreferrer">https://www.bilibili.com/read/cv25389887/</a></li>
+<li><a href="https://dusays.com/383/" target="_blank" rel="noopener noreferrer">https://dusays.com/383/</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/stun-mc-srv.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">最后<!-- -->于 <b><time datetime="2025-10-12T04:26:04.000Z" itemprop="dateModified">2025年10月12日</time></b> <!-- -->更新</span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/articles/lucky-STUN/stun-docker-upnp"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">「LUCKY STUN穿透」在Docker中使用MiniUPnP为BT客户端自动添加内外端口不同的映射规则</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/articles/lucky-STUN/stun-qb-port-automation"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">「LUCKY STUN穿透」使用webhook自动修改 qbittorrent 的监听端口</div></a></nav></div><br></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#本教程目标" class="table-of-contents__link toc-highlight">本教程目标</a></li><li><a href="#stun穿透法" class="table-of-contents__link toc-highlight">STUN穿透法</a></li><li><a href="#配置思路" class="table-of-contents__link toc-highlight">配置思路</a></li><li><a href="#网络环境检测和优化" class="table-of-contents__link toc-highlight">网络环境检测和优化</a></li><li><a href="#下载和安装lucky" class="table-of-contents__link toc-highlight">下载和安装lucky</a></li><li><a href="#注册dynv6" class="table-of-contents__link toc-highlight">注册dynv6</a></li><li><a href="#设置-动态域名和srv记录" class="table-of-contents__link toc-highlight">设置 动态域名和srv记录</a></li><li><a href="#关于srv记录" class="table-of-contents__link toc-highlight">关于SRV记录</a></li><li><a href="#获取域名id和记录id以及token" class="table-of-contents__link toc-highlight">获取域名ID和记录ID以及token</a></li><li><a href="#设置ddns解析" class="table-of-contents__link toc-highlight">设置DDNS解析</a></li><li><a href="#设置stun穿透" class="table-of-contents__link toc-highlight">设置STUN穿透</a></li><li><a href="#游戏测试环节" class="table-of-contents__link toc-highlight">游戏测试环节</a></li><li><a href="#参考资料" class="table-of-contents__link toc-highlight">参考资料</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p>文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>
+Powered by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a> &amp; <a href="https://docusaurus.io/" target="_blank">Docusaurus</a><br><a href="https://icp.gov.moe/?keyword=20253610" target="_blank">萌ICP备20253610号</a></p></div></div></div></footer></div>
+</body>
+</html>

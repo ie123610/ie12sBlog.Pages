@@ -1,0 +1,25 @@
+{
+  "id": "articles/lucky-STUN/stun-bc-port-automation",
+  "title": "「LUCKY STUN穿透」使用脚本自动修改比特彗星的监听端口",
+  "description": "2024.12.05",
+  "source": "@site/docs/articles/lucky-STUN/stun-bc-port-automation.md",
+  "sourceDirName": "articles/lucky-STUN",
+  "slug": "/articles/lucky-STUN/stun-bc-port-automation",
+  "permalink": "/articles/lucky-STUN/stun-bc-port-automation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/stun-bc-port-automation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760247532000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「LUCKY STUN穿透」在Windows下使用VNT组网为非HTTP服务固定STUN穿透端口",
+    "permalink": "/articles/lucky-STUN/stun-VNT-networkin"
+  },
+  "next": {
+    "title": "LUCKY STUN穿透在Windows上使用UPnP工具为BT客户端自动添加内外端口号不同的映射规则",
+    "permalink": "/articles/lucky-STUN/stun-bt"
+  }
+}

@@ -53,6 +53,7 @@ export {
   type MultiColumnFooter,
   type SimpleFooter,
   type Footer,
+  type FooterColumnItem,
   type FooterLogo,
   type FooterLinkItem,
   type ColorModeConfig,
@@ -123,6 +124,8 @@ export {
   useQueryString,
   useQueryStringList,
   useClearQueryString,
+  mergeSearchParams,
+  mergeSearchStrings,
 } from './utils/historyUtils';
 
 export {
