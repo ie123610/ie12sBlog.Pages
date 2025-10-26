@@ -1,2 +1,1 @@
-/docs/文章/图片/* /图片/:splat 200
-
+/articles/images/* /images/:splat 200
