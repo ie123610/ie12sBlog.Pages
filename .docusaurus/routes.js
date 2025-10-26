@@ -14,15 +14,15 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'e51'),
+    component: ComponentCreator('/', '81b'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '6d4'),
+        component: ComponentCreator('/', '714'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'a74'),
+            component: ComponentCreator('/', '42a'),
             routes: [
               {
                 path: '/articles/bitcomet-FAQ/BC-anti-leech',
@@ -44,7 +44,7 @@ export default [
               },
               {
                 path: '/articles/bitcomet-FAQ/BC-disk-boost-service',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC-disk-boost-service', '7bc'),
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-disk-boost-service', 'd74'),
                 exact: true,
                 sidebar: "mySidebar"
               },
@@ -140,7 +140,7 @@ export default [
               },
               {
                 path: '/articles/bitcomet-FAQ/BC-screenshots-and-comments',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC-screenshots-and-comments', 'd20'),
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-screenshots-and-comments', '380'),
                 exact: true,
                 sidebar: "mySidebar"
               },
@@ -254,7 +254,7 @@ export default [
               },
               {
                 path: '/articles/bitcomet-port-forwarding/win-settings',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/win-settings', 'd41'),
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/win-settings', '53b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
@@ -278,121 +278,121 @@ export default [
               },
               {
                 path: '/articles/lucky-STUN/cf-srv-record-settings',
-                component: ComponentCreator('/articles/lucky-STUN/cf-srv-record-settings', '7d6'),
+                component: ComponentCreator('/articles/lucky-STUN/cf-srv-record-settings', 'a3b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/email-notification-port',
-                component: ComponentCreator('/articles/lucky-STUN/email-notification-port', 'c5d'),
+                component: ComponentCreator('/articles/lucky-STUN/email-notification-port', '8d0'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-ddns',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns', '1a7'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns', '059'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-ddns-2.15',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns-2.15', 'fab'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns-2.15', 'fdd'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-tls-automation',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-tls-automation', 'b95'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-tls-automation', '2de'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-vxkex-compatible',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-vxkex-compatible', '749'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-vxkex-compatible', '047'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-web',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-web', 'f18'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-web', '00b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-bc-port-automation',
-                component: ComponentCreator('/articles/lucky-STUN/stun-bc-port-automation', 'fcb'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-bc-port-automation', 'cba'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-bt',
-                component: ComponentCreator('/articles/lucky-STUN/stun-bt', 'e6c'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-bt', '6e4'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-cf-redirection',
-                component: ComponentCreator('/articles/lucky-STUN/stun-cf-redirection', 'd07'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-cf-redirection', '145'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-docker-upnp',
-                component: ComponentCreator('/articles/lucky-STUN/stun-docker-upnp', 'd88'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-docker-upnp', '664'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-mc-srv',
-                component: ComponentCreator('/articles/lucky-STUN/stun-mc-srv', 'bbb'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-mc-srv', 'dce'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-qb-port-automation',
-                component: ComponentCreator('/articles/lucky-STUN/stun-qb-port-automation', '301'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-qb-port-automation', '8b7'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-tr-modify-port',
-                component: ComponentCreator('/articles/lucky-STUN/stun-tr-modify-port', '101'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-tr-modify-port', 'a55'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-v4-v6-redirect',
-                component: ComponentCreator('/articles/lucky-STUN/stun-v4-v6-redirect', '43d'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-v4-v6-redirect', '16d'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-VNT-networkin',
-                component: ComponentCreator('/articles/lucky-STUN/stun-VNT-networkin', '4c5'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-VNT-networkin', '683'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-web-serve-CF',
-                component: ComponentCreator('/articles/lucky-STUN/stun-web-serve-CF', 'ce2'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-web-serve-CF', '2e3'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/svcb-records-hidden-ports',
-                component: ComponentCreator('/articles/lucky-STUN/svcb-records-hidden-ports', '8f1'),
+                component: ComponentCreator('/articles/lucky-STUN/svcb-records-hidden-ports', '598'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6',
-                component: ComponentCreator('/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6', 'f4c'),
+                component: ComponentCreator('/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6', '317'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/uptime-upnp-keep-alive',
-                component: ComponentCreator('/articles/lucky-STUN/uptime-upnp-keep-alive', '0f5'),
+                component: ComponentCreator('/articles/lucky-STUN/uptime-upnp-keep-alive', 'c3e'),
                 exact: true,
                 sidebar: "mySidebar"
               },
@@ -470,19 +470,19 @@ export default [
               },
               {
                 path: '/articles/virtual-private-network/easytier-get-port-form-dns-record',
-                component: ComponentCreator('/articles/virtual-private-network/easytier-get-port-form-dns-record', 'b71'),
+                component: ComponentCreator('/articles/virtual-private-network/easytier-get-port-form-dns-record', '680'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/virtual-private-network/gost-bt-NAT-Penetration',
-                component: ComponentCreator('/articles/virtual-private-network/gost-bt-NAT-Penetration', '0c6'),
+                component: ComponentCreator('/articles/virtual-private-network/gost-bt-NAT-Penetration', '8b2'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/virtual-private-network/setup-easytier-server-on-win',
-                component: ComponentCreator('/articles/virtual-private-network/setup-easytier-server-on-win', '16f'),
+                component: ComponentCreator('/articles/virtual-private-network/setup-easytier-server-on-win', 'd51'),
                 exact: true,
                 sidebar: "mySidebar"
               },

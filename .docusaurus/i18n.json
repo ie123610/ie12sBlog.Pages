@@ -11,7 +11,10 @@
       "direction": "ltr",
       "htmlLang": "zh-Hans",
       "calendar": "gregory",
-      "path": "zh-Hans"
+      "path": "zh-Hans",
+      "translate": false,
+      "url": "https://ie12blog.36102025.xyz",
+      "baseUrl": "/"
     }
   }
 }
