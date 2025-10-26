@@ -1,0 +1,25 @@
+{
+  "id": "articles/bitcomet-FAQ/BC-OOM",
+  "title": "比特彗星常见问题-内存占用过高问题",
+  "description": "2023.10.04",
+  "source": "@site/docs/articles/bitcomet-FAQ/BC-OOM.md",
+  "sourceDirName": "articles/bitcomet-FAQ",
+  "slug": "/articles/bitcomet-FAQ/BC-OOM",
+  "permalink": "/articles/bitcomet-FAQ/BC-OOM",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-FAQ/BC-OOM.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760253214000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星-常见问题",
+    "permalink": "/bitcomet-FAQ"
+  },
+  "next": {
+    "title": "比特彗星常见问题-反吸血 设置IP过滤和客户端过滤",
+    "permalink": "/articles/bitcomet-FAQ/BC-anti-leech-2"
+  }
+}

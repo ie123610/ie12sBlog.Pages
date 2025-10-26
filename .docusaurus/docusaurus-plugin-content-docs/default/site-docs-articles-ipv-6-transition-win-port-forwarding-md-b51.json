@@ -1,0 +1,25 @@
+{
+  "id": "articles/ipv6-transition/win-port-forwarding",
+  "title": "使用Windows自带的端口转发功能让不支持IPv6的程序间接的用上IPv6",
+  "description": "2024.07.19",
+  "source": "@site/docs/articles/ipv6-transition/win-port-forwarding.md",
+  "sourceDirName": "articles/ipv6-transition",
+  "slug": "/articles/ipv6-transition/win-port-forwarding",
+  "permalink": "/articles/ipv6-transition/win-port-forwarding",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/ipv6-transition/win-port-forwarding.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760240367000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「权宜之计」使用Windows防火墙拦截浏览器IPv6请求迫使其使用IPv4",
+    "permalink": "/articles/ipv6-transition/win-firewall-block-IPv6"
+  },
+  "next": {
+    "title": "研究记录",
+    "permalink": "/research-logs"
+  }
+}

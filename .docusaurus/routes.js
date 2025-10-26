@@ -3,41 +3,6 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', '5ff'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', '5ba'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'a2b'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', 'c3c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '156'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '88c'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '000'),
-    exact: true
-  },
-  {
     path: '/markdown-page',
     component: ComponentCreator('/markdown-page', '3d7'),
     exact: true
@@ -49,481 +14,481 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'ef4'),
+    component: ComponentCreator('/', '81b'),
     routes: [
       {
         path: '/',
-        component: ComponentCreator('/', '10c'),
+        component: ComponentCreator('/', '714'),
         routes: [
           {
             path: '/',
-            component: ComponentCreator('/', 'ef7'),
+            component: ComponentCreator('/', '42a'),
             routes: [
               {
-                path: '/articles/bitcomet-FAQ/堡垒防火墙反吸血',
-                component: ComponentCreator('/articles/bitcomet-FAQ/堡垒防火墙反吸血', '3e1'),
+                path: '/articles/bitcomet-FAQ/BC-anti-leech',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-anti-leech', 'f06'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/补档-像素帝的bc教程',
-                component: ComponentCreator('/articles/bitcomet-FAQ/补档-像素帝的bc教程', 'ff2'),
+                path: '/articles/bitcomet-FAQ/BC-anti-leech-2',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-anti-leech-2', '298'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/有关BC的奇谈怪论',
-                component: ComponentCreator('/articles/bitcomet-FAQ/有关BC的奇谈怪论', '22d'),
+                path: '/articles/bitcomet-FAQ/BC-config-recovery',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-config-recovery', '2b3'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC播放器路径设置',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC播放器路径设置', 'f4a'),
+                path: '/articles/bitcomet-FAQ/BC-disk-boost-service',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-disk-boost-service', 'd74'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC磁力链接格式问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC磁力链接格式问题', '83b'),
+                path: '/articles/bitcomet-FAQ/BC-download-99',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-download-99', 'dc6'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC磁力链接长度问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC磁力链接长度问题', 'bd5'),
+                path: '/articles/bitcomet-FAQ/BC-download-speed-issues-2',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-download-speed-issues-2', '9f9'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC磁盘提速服务',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC磁盘提速服务', 'aae'),
+                path: '/articles/bitcomet-FAQ/BC-download-speed-test',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-download-speed-test', '1cc'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC断网问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC断网问题', '76b'),
+                path: '/articles/bitcomet-FAQ/BC-expert-mode',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-expert-mode', '2f3'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC反吸血',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC反吸血', '38a'),
+                path: '/articles/bitcomet-FAQ/BC-failed-piece',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-failed-piece', '136'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC反吸血2',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC反吸血2', '573'),
+                path: '/articles/bitcomet-FAQ/BC-get-metadata-error',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-get-metadata-error', '75e'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC分块校验失败问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC分块校验失败问题', '610'),
+                path: '/articles/bitcomet-FAQ/BC-historical-issues',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-historical-issues', 'a1d'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC截图和评论',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC截图和评论', '793'),
+                path: '/articles/bitcomet-FAQ/BC-magnet-link-form',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-magnet-link-form', 'c98'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC历史遗留问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC历史遗留问题', 'a8e'),
+                path: '/articles/bitcomet-FAQ/BC-magnet-link-length',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-magnet-link-length', '5e4'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC绿灯常见问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC绿灯常见问题', '05a'),
+                path: '/articles/bitcomet-FAQ/BC-OOM',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-OOM', '27b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC内存占用过高',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC内存占用过高', '62d'),
+                path: '/articles/bitcomet-FAQ/BC-player-path',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-player-path', 'faa'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC配置恢复',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC配置恢复', '33f'),
+                path: '/articles/bitcomet-FAQ/BC-poor-internet',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-poor-internet', 'b34'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC下载测速',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC下载测速', '9e7'),
+                path: '/articles/bitcomet-FAQ/BC-port-forwarding-FAQ',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-port-forwarding-FAQ', '56c'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC下载缓慢问题-重置',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC下载缓慢问题-重置', 'c5c'),
+                path: '/articles/bitcomet-FAQ/BC-reseed-99',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-reseed-99', '32e'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC下载卡99问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC下载卡99问题', 'd66'),
+                path: '/articles/bitcomet-FAQ/BC-rumor',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-rumor', 'c94'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC用户列表显示问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC用户列表显示问题', '4f8'),
+                path: '/articles/bitcomet-FAQ/BC-screenshots-and-comments',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-screenshots-and-comments', '380'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC元数据获取问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC元数据获取问题', 'b8b'),
+                path: '/articles/bitcomet-FAQ/BC-torrent-market',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-torrent-market', '557'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC种子补档99问题',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC种子补档99问题', '2a6'),
+                path: '/articles/bitcomet-FAQ/BC-user-list',
+                component: ComponentCreator('/articles/bitcomet-FAQ/BC-user-list', '3b0'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC种子市场',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC种子市场', '308'),
+                path: '/articles/bitcomet-FAQ/fort-firewall-anti-leech',
+                component: ComponentCreator('/articles/bitcomet-FAQ/fort-firewall-anti-leech', '092'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/BC专家模式及其作用',
-                component: ComponentCreator('/articles/bitcomet-FAQ/BC专家模式及其作用', 'c24'),
+                path: '/articles/bitcomet-FAQ/reupload-xiang-su-di-bc-tutorial',
+                component: ComponentCreator('/articles/bitcomet-FAQ/reupload-xiang-su-di-bc-tutorial', 'ed1'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-FAQ/win防火墙反吸血',
-                component: ComponentCreator('/articles/bitcomet-FAQ/win防火墙反吸血', '869'),
+                path: '/articles/bitcomet-FAQ/win-firewall-anti-leech',
+                component: ComponentCreator('/articles/bitcomet-FAQ/win-firewall-anti-leech', '6c2'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_端口转发DMZ和UPnP',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_端口转发DMZ和UPnP', '7e0'),
+                path: '/articles/bitcomet-port-forwarding/cs-and-p2p',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/cs-and-p2p', '5b8'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_防火墙和nat', '235'),
+                path: '/articles/bitcomet-port-forwarding/firewall-and-nat',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/firewall-and-nat', 'b08'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_光猫',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_光猫', 'f4e'),
+                path: '/articles/bitcomet-port-forwarding/goals-and-difficulties',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/goals-and-difficulties', '20a'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_交换机和路由器', '8eb'),
+                path: '/articles/bitcomet-port-forwarding/ip-and-port',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/ip-and-port', '58f'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_路由器',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_路由器', '3cb'),
+                path: '/articles/bitcomet-port-forwarding/modem-settings',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/modem-settings', '0cf'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_目标与困难',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_目标与困难', '9c6'),
+                path: '/articles/bitcomet-port-forwarding/network-structure',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/network-structure', 'a88'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_前言',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_前言', '170'),
+                path: '/articles/bitcomet-port-forwarding/port-forwarding-DMZ-and-UPnP',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/port-forwarding-DMZ-and-UPnP', '68b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_特别篇',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_特别篇', '541'),
+                path: '/articles/bitcomet-port-forwarding/preface',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/preface', '796'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_网络结构',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_网络结构', '52f'),
+                path: '/articles/bitcomet-port-forwarding/router-settings',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/router-settings', '87c'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_cs和p2p',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_cs和p2p', 'fed'),
+                path: '/articles/bitcomet-port-forwarding/special-episode',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/special-episode', '1ad'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_ip和端口',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_ip和端口', '709'),
+                path: '/articles/bitcomet-port-forwarding/switches-and-routers',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/switches-and-routers', '677'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_ipv6',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_ipv6', '37e'),
+                path: '/articles/bitcomet-port-forwarding/what-is-ipv6',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/what-is-ipv6', '52f'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞_nat',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞_nat', '481'),
+                path: '/articles/bitcomet-port-forwarding/what-is-nat',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/what-is-nat', '50f'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/bitcomet-port-forwarding/BC阻塞-win',
-                component: ComponentCreator('/articles/bitcomet-port-forwarding/BC阻塞-win', 'f03'),
+                path: '/articles/bitcomet-port-forwarding/win-settings',
+                component: ComponentCreator('/articles/bitcomet-port-forwarding/win-settings', '53b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/ipv6-transition/CF双栈代理',
-                component: ComponentCreator('/articles/ipv6-transition/CF双栈代理', '3ef'),
+                path: '/articles/ipv6-transition/cf-IPv6-dual-stack-proxy',
+                component: ComponentCreator('/articles/ipv6-transition/cf-IPv6-dual-stack-proxy', '135'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/ipv6-transition/Win端口转发',
-                component: ComponentCreator('/articles/ipv6-transition/Win端口转发', 'a53'),
+                path: '/articles/ipv6-transition/win-firewall-block-IPv6',
+                component: ComponentCreator('/articles/ipv6-transition/win-firewall-block-IPv6', 'da4'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/ipv6-transition/win防火墙拦截IPv6',
-                component: ComponentCreator('/articles/ipv6-transition/win防火墙拦截IPv6', 'c76'),
+                path: '/articles/ipv6-transition/win-port-forwarding',
+                component: ComponentCreator('/articles/ipv6-transition/win-port-forwarding', 'd11'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/邮件通知端口',
-                component: ComponentCreator('/articles/lucky-STUN/邮件通知端口', '9b6'),
+                path: '/articles/lucky-STUN/cf-srv-record-settings',
+                component: ComponentCreator('/articles/lucky-STUN/cf-srv-record-settings', 'a3b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/在dynv6和CF上更新TXT',
-                component: ComponentCreator('/articles/lucky-STUN/在dynv6和CF上更新TXT', '026'),
-                exact: true,
-                sidebar: "mySidebar"
-              },
-              {
-                path: '/articles/lucky-STUN/cf-srv设置',
-                component: ComponentCreator('/articles/lucky-STUN/cf-srv设置', '872'),
+                path: '/articles/lucky-STUN/email-notification-port',
+                component: ComponentCreator('/articles/lucky-STUN/email-notification-port', '8d0'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-ddns',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns', 'f22'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns', '059'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-ddns-2.15',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns-2.15', 'e89'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-ddns-2.15', 'fdd'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/lucky-tls-自动化',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-tls-自动化', '007'),
+                path: '/articles/lucky-STUN/lucky-tls-automation',
+                component: ComponentCreator('/articles/lucky-STUN/lucky-tls-automation', '2de'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/lucky-vxkex兼容',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-vxkex兼容', '34e'),
+                path: '/articles/lucky-STUN/lucky-vxkex-compatible',
+                component: ComponentCreator('/articles/lucky-STUN/lucky-vxkex-compatible', '047'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/lucky-web',
-                component: ComponentCreator('/articles/lucky-STUN/lucky-web', 'a2a'),
+                component: ComponentCreator('/articles/lucky-STUN/lucky-web', '00b'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun-bc端口自动化',
-                component: ComponentCreator('/articles/lucky-STUN/stun-bc端口自动化', '2f2'),
+                path: '/articles/lucky-STUN/stun-bc-port-automation',
+                component: ComponentCreator('/articles/lucky-STUN/stun-bc-port-automation', 'cba'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun-cf重定向',
-                component: ComponentCreator('/articles/lucky-STUN/stun-cf重定向', '026'),
+                path: '/articles/lucky-STUN/stun-bt',
+                component: ComponentCreator('/articles/lucky-STUN/stun-bt', '6e4'),
+                exact: true,
+                sidebar: "mySidebar"
+              },
+              {
+                path: '/articles/lucky-STUN/stun-cf-redirection',
+                component: ComponentCreator('/articles/lucky-STUN/stun-cf-redirection', '145'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-docker-upnp',
-                component: ComponentCreator('/articles/lucky-STUN/stun-docker-upnp', 'eda'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-docker-upnp', '664'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/lucky-STUN/stun-mc-srv',
-                component: ComponentCreator('/articles/lucky-STUN/stun-mc-srv', '9d4'),
+                component: ComponentCreator('/articles/lucky-STUN/stun-mc-srv', 'dce'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun-qb端口自动化',
-                component: ComponentCreator('/articles/lucky-STUN/stun-qb端口自动化', '4bc'),
+                path: '/articles/lucky-STUN/stun-qb-port-automation',
+                component: ComponentCreator('/articles/lucky-STUN/stun-qb-port-automation', '8b7'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun-tr修改端口',
-                component: ComponentCreator('/articles/lucky-STUN/stun-tr修改端口', 'd29'),
+                path: '/articles/lucky-STUN/stun-tr-modify-port',
+                component: ComponentCreator('/articles/lucky-STUN/stun-tr-modify-port', 'a55'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun-v4-v6分离',
-                component: ComponentCreator('/articles/lucky-STUN/stun-v4-v6分离', '7f7'),
+                path: '/articles/lucky-STUN/stun-v4-v6-redirect',
+                component: ComponentCreator('/articles/lucky-STUN/stun-v4-v6-redirect', '16d'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun-VNT组网',
-                component: ComponentCreator('/articles/lucky-STUN/stun-VNT组网', '997'),
+                path: '/articles/lucky-STUN/stun-VNT-networkin',
+                component: ComponentCreator('/articles/lucky-STUN/stun-VNT-networkin', '683'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun-web服务-CF',
-                component: ComponentCreator('/articles/lucky-STUN/stun-web服务-CF', '558'),
+                path: '/articles/lucky-STUN/stun-web-serve-CF',
+                component: ComponentCreator('/articles/lucky-STUN/stun-web-serve-CF', '2e3'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/stun穿透-bt',
-                component: ComponentCreator('/articles/lucky-STUN/stun穿透-bt', '79d'),
+                path: '/articles/lucky-STUN/svcb-records-hidden-ports',
+                component: ComponentCreator('/articles/lucky-STUN/svcb-records-hidden-ports', '598'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/svcb记录隐藏端口',
-                component: ComponentCreator('/articles/lucky-STUN/svcb记录隐藏端口', '147'),
+                path: '/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6',
+                component: ComponentCreator('/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6', '317'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/lucky-STUN/uptime-upnp保活',
-                component: ComponentCreator('/articles/lucky-STUN/uptime-upnp保活', '4ed'),
+                path: '/articles/lucky-STUN/uptime-upnp-keep-alive',
+                component: ComponentCreator('/articles/lucky-STUN/uptime-upnp-keep-alive', 'c3e'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/爱奇艺HCDN',
-                component: ComponentCreator('/articles/research-logs/爱奇艺HCDN', '286'),
+                component: ComponentCreator('/articles/research-logs/爱奇艺HCDN', 'fee'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/废弃方案-使用lucky端口转发固定STUN穿透端口',
-                component: ComponentCreator('/articles/research-logs/废弃方案-使用lucky端口转发固定STUN穿透端口', '9ac'),
+                component: ComponentCreator('/articles/research-logs/废弃方案-使用lucky端口转发固定STUN穿透端口', '3c3'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/小米路由更多IPv6获取方式',
-                component: ComponentCreator('/articles/research-logs/小米路由更多IPv6获取方式', 'c9d'),
+                component: ComponentCreator('/articles/research-logs/小米路由更多IPv6获取方式', '496'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/已知bittorrent客户端生存调查/已知客户端调查-说明',
-                component: ComponentCreator('/articles/research-logs/已知bittorrent客户端生存调查/已知客户端调查-说明', '801'),
+                component: ComponentCreator('/articles/research-logs/已知bittorrent客户端生存调查/已知客户端调查-说明', 'fa7'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/B站专栏文本复制问题',
-                component: ComponentCreator('/articles/research-logs/B站专栏文本复制问题', '888'),
+                component: ComponentCreator('/articles/research-logs/B站专栏文本复制问题', 'f52'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/BC改进建议',
-                component: ComponentCreator('/articles/research-logs/BC改进建议', '137'),
+                component: ComponentCreator('/articles/research-logs/BC改进建议', '37d'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/Docusaurus-最后修改时间',
-                component: ComponentCreator('/articles/research-logs/Docusaurus-最后修改时间', '7b2'),
+                component: ComponentCreator('/articles/research-logs/Docusaurus-最后修改时间', '470'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/emule的ip绑定',
-                component: ComponentCreator('/articles/research-logs/emule的ip绑定', '455'),
+                component: ComponentCreator('/articles/research-logs/emule的ip绑定', 'e66'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/L2TP特性研究',
-                component: ComponentCreator('/articles/research-logs/L2TP特性研究', 'c88'),
+                component: ComponentCreator('/articles/research-logs/L2TP特性研究', 'c45'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/qb匿名模式名称显示研究',
-                component: ComponentCreator('/articles/research-logs/qb匿名模式名称显示研究', '497'),
+                component: ComponentCreator('/articles/research-logs/qb匿名模式名称显示研究', '7f5'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/research-index',
-                component: ComponentCreator('/articles/research-logs/research-index', '9a2'),
+                component: ComponentCreator('/articles/research-logs/research-index', 'cb1'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
                 path: '/articles/research-logs/win休眠问题',
-                component: ComponentCreator('/articles/research-logs/win休眠问题', '725'),
+                component: ComponentCreator('/articles/research-logs/win休眠问题', 'a19'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/virtual-private-network/et从记录获取端口',
-                component: ComponentCreator('/articles/virtual-private-network/et从记录获取端口', 'daf'),
+                path: '/articles/virtual-private-network/easytier-get-port-form-dns-record',
+                component: ComponentCreator('/articles/virtual-private-network/easytier-get-port-form-dns-record', '680'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/virtual-private-network/gost-bt-穿透',
-                component: ComponentCreator('/articles/virtual-private-network/gost-bt-穿透', 'd1d'),
+                path: '/articles/virtual-private-network/gost-bt-NAT-Penetration',
+                component: ComponentCreator('/articles/virtual-private-network/gost-bt-NAT-Penetration', '8b2'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/virtual-private-network/SE解决不支持此功能问题',
-                component: ComponentCreator('/articles/virtual-private-network/SE解决不支持此功能问题', 'cf8'),
+                path: '/articles/virtual-private-network/setup-easytier-server-on-win',
+                component: ComponentCreator('/articles/virtual-private-network/setup-easytier-server-on-win', 'd51'),
                 exact: true,
                 sidebar: "mySidebar"
               },
               {
-                path: '/articles/virtual-private-network/win搭建easytier公共服务器',
-                component: ComponentCreator('/articles/virtual-private-network/win搭建easytier公共服务器', 'd2a'),
+                path: '/articles/virtual-private-network/softether-enterprise-functions-unlock',
+                component: ComponentCreator('/articles/virtual-private-network/softether-enterprise-functions-unlock', '444'),
                 exact: true,
                 sidebar: "mySidebar"
               },
@@ -559,7 +524,7 @@ export default [
               },
               {
                 path: '/the-index',
-                component: ComponentCreator('/the-index', 'b5b'),
+                component: ComponentCreator('/the-index', '4af'),
                 exact: true,
                 sidebar: "mySidebar"
               },
@@ -571,7 +536,7 @@ export default [
               },
               {
                 path: '/',
-                component: ComponentCreator('/', 'a40'),
+                component: ComponentCreator('/', 'e0f'),
                 exact: true,
                 sidebar: "mySidebar"
               }

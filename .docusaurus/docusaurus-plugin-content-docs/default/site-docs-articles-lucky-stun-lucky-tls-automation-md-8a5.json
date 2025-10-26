@@ -1,0 +1,25 @@
+{
+  "id": "articles/lucky-STUN/lucky-tls-automation",
+  "title": "在Windows下使用lucky实现TLS/SSL证书自动化",
+  "description": "2024.06.06",
+  "source": "@site/docs/articles/lucky-STUN/lucky-tls-automation.md",
+  "sourceDirName": "articles/lucky-STUN",
+  "slug": "/articles/lucky-STUN/lucky-tls-automation",
+  "permalink": "/articles/lucky-STUN/lucky-tls-automation",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/lucky-tls-automation.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1761452653000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "在Windows下使用lucky更新动态域名",
+    "permalink": "/articles/lucky-STUN/lucky-ddns"
+  },
+  "next": {
+    "title": "使用VxKex使高版本LCUKY可在win7上运行",
+    "permalink": "/articles/lucky-STUN/lucky-vxkex-compatible"
+  }
+}

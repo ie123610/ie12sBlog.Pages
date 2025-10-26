@@ -1,0 +1,25 @@
+{
+  "id": "articles/bitcomet-FAQ/BC-download-99",
+  "title": "比特彗星常见问题-下载进度卡在 99.9% 问题",
+  "description": "2023.10.22",
+  "source": "@site/docs/articles/bitcomet-FAQ/BC-download-99.md",
+  "sourceDirName": "articles/bitcomet-FAQ",
+  "slug": "/articles/bitcomet-FAQ/BC-download-99",
+  "permalink": "/articles/bitcomet-FAQ/BC-download-99",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-FAQ/BC-download-99.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760253214000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-磁盘提速服务问题",
+    "permalink": "/articles/bitcomet-FAQ/BC-disk-boost-service"
+  },
+  "next": {
+    "title": "比特彗星常见问题-下载缓慢和无法下载问题[重置]",
+    "permalink": "/articles/bitcomet-FAQ/BC-download-speed-issues-2"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "articles/bitcomet-port-forwarding/cs-and-p2p",
+  "title": "1.7 P2P模式和C/S模式",
+  "description": "2023.08.20",
+  "source": "@site/docs/articles/bitcomet-port-forwarding/08-cs-and-p2p.md",
+  "sourceDirName": "articles/bitcomet-port-forwarding",
+  "slug": "/articles/bitcomet-port-forwarding/cs-and-p2p",
+  "permalink": "/articles/bitcomet-port-forwarding/cs-and-p2p",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-port-forwarding/08-cs-and-p2p.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760249816000,
+  "sidebarPosition": 8,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "1.6 端口转发 DMZ 以及 UPnP 的作用和原理",
+    "permalink": "/articles/bitcomet-port-forwarding/port-forwarding-DMZ-and-UPnP"
+  },
+  "next": {
+    "title": "2.1 目标与困难",
+    "permalink": "/articles/bitcomet-port-forwarding/goals-and-difficulties"
+  }
+}

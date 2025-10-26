@@ -1,0 +1,25 @@
+{
+  "id": "articles/lucky-STUN/uptime-upnp-keep-alive",
+  "title": "「LUCKY STUN穿透」使用UptimeRobot使UPnP映射的TCP规则保持活跃",
+  "description": "2024.05.04",
+  "source": "@site/docs/articles/lucky-STUN/uptime-upnp-keep-alive.md",
+  "sourceDirName": "articles/lucky-STUN",
+  "slug": "/articles/lucky-STUN/uptime-upnp-keep-alive",
+  "permalink": "/articles/lucky-STUN/uptime-upnp-keep-alive",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/lucky-STUN/uptime-upnp-keep-alive.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1761452653000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "「前置」在Dynv6和Cloudflare上更新TXT记录",
+    "permalink": "/articles/lucky-STUN/update-TXT-record-on-cf-and-dynv6"
+  },
+  "next": {
+    "title": "虚拟专用网络系列教程",
+    "permalink": "/virtual-private-network"
+  }
+}

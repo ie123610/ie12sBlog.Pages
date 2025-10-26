@@ -1,0 +1,25 @@
+{
+  "id": "articles/bitcomet-FAQ/BC-config-recovery",
+  "title": "比特彗星常见问题-意外退出程序后下载列表清空的解决方法",
+  "description": "2024.02.14",
+  "source": "@site/docs/articles/bitcomet-FAQ/BC-config-recovery.md",
+  "sourceDirName": "articles/bitcomet-FAQ",
+  "slug": "/articles/bitcomet-FAQ/BC-config-recovery",
+  "permalink": "/articles/bitcomet-FAQ/BC-config-recovery",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-FAQ/BC-config-recovery.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760253214000,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "比特彗星常见问题-屏蔽吸血客户端和设置自动反吸血",
+    "permalink": "/articles/bitcomet-FAQ/BC-anti-leech"
+  },
+  "next": {
+    "title": "比特彗星常见问题-磁盘提速服务问题",
+    "permalink": "/articles/bitcomet-FAQ/BC-disk-boost-service"
+  }
+}

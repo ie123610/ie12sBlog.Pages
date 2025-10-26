@@ -1,0 +1,26 @@
+{
+  "id": "articles/bitcomet-port-forwarding/router-settings",
+  "title": "2.2 可用的解决方法（路由器部分）",
+  "description": "2023.12.28",
+  "source": "@site/docs/articles/bitcomet-port-forwarding/11-router-settings.md",
+  "sourceDirName": "articles/bitcomet-port-forwarding",
+  "slug": "/articles/bitcomet-port-forwarding/router-settings",
+  "permalink": "/articles/bitcomet-port-forwarding/router-settings",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/bitcomet-port-forwarding/11-router-settings.md",
+  "tags": [],
+  "version": "current",
+  "lastUpdatedAt": 1760249816000,
+  "sidebarPosition": 11,
+  "frontMatter": {},
+  "sidebar": "mySidebar",
+  "previous": {
+    "title": "2.2 可用的解决方法 （光猫部分）",
+    "permalink": "/articles/bitcomet-port-forwarding/modem-settings"
+  },
+  "next": {
+    "title": "2.2 可用的解决方法 （Windows部分）",
+    "permalink": "/articles/bitcomet-port-forwarding/win-settings"
+  }
+}

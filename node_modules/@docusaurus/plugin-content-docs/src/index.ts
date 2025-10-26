@@ -7,7 +7,6 @@
 
 import path from 'path';
 import fs from 'fs-extra';
-import logger from '@docusaurus/logger';
 import {
   normalizeUrl,
   docuHash,
@@ -63,6 +62,12 @@ async function createMdxLoaderDependencyFile({
   options: PluginOptions;
   versionsMetadata: VersionMetadata[];
 }): Promise<string | undefined> {
+  // Disabled for unit tests, the side effect produces infinite watch loops
+  // TODO find a better way :/
+  if (process.env.NODE_ENV === 'test') {
+    return undefined;
+  }
+
   const filePath = path.join(dataDir, '__mdx-loader-dependency.json');
   // the cache is invalidated whenever this file content changes
   const fileContent = {
@@ -158,18 +163,12 @@ export default async function pluginContentDocs(
             sourceFilePath,
             versionsMetadata,
           );
-          const permalink = resolveMarkdownLinkPathname(linkPathname, {
+          return resolveMarkdownLinkPathname(linkPathname, {
             sourceFilePath,
             sourceToPermalink: contentHelpers.sourceToPermalink,
             siteDir,
             contentPaths: version,
           });
-          if (permalink === null) {
-            logger.report(
-              siteConfig.onBrokenMarkdownLinks,
-            )`Docs markdown link couldn't be resolved: (url=${linkPathname}) in source file path=${sourceFilePath} for version number=${version.versionName}`;
-          }
-          return permalink;
         },
       },
     });
