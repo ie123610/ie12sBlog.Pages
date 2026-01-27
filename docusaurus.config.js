@@ -35,11 +35,12 @@ const config = {
         websiteID: "5a9b4488-315d-4f1a-b5c5-1b1991bdb293", 
         // FIXME: 替换为你自建的域名或官方云地址 (不带 https://)
         // 例如: cloud.umami.is 或 analytics.mydomain.com
-        analyticsDomain: "cloud.umami.is", 
-        scriptName: "script.js",
+        analyticsDomain: "ie12blog.36102025.xyz", 
+        scriptName: "ie122025.js",
         dataAutoTrack: true,
         dataDoNotTrack: false,
         dataCache: false,
+        dataHostURL: "https://cloud.umami.is",
         // 推荐：填写你的实际访问域名，防止本地开发数据干扰
         dataDomains: "ie12blog.36102025.xyz", 
       }),
