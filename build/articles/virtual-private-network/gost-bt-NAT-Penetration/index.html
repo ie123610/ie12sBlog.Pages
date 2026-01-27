@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-articles/virtual-private-network/gost-bt-NAT-Penetration" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.1">
+<title data-rh="true">使用Gost替换Frp实现内网穿透为BT下载开放端口 | ie12sBlog</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://ie12blog.36102025.xyz/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://ie12blog.36102025.xyz/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://ie12blog.36102025.xyz/articles/virtual-private-network/gost-bt-NAT-Penetration"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="使用Gost替换Frp实现内网穿透为BT下载开放端口 | ie12sBlog"><meta data-rh="true" name="description" content="2025.08.25"><meta data-rh="true" property="og:description" content="2025.08.25"><link data-rh="true" rel="icon" href="/img/Internet_Explorer_10.svg"><link data-rh="true" rel="canonical" href="https://ie12blog.36102025.xyz/articles/virtual-private-network/gost-bt-NAT-Penetration"><link data-rh="true" rel="alternate" href="https://ie12blog.36102025.xyz/articles/virtual-private-network/gost-bt-NAT-Penetration" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://ie12blog.36102025.xyz/articles/virtual-private-network/gost-bt-NAT-Penetration" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"虚拟专用网络系列教程","item":"https://ie12blog.36102025.xyz/virtual-private-network"},{"@type":"ListItem","position":2,"name":"使用Gost替换Frp实现内网穿透为BT下载开放端口","item":"https://ie12blog.36102025.xyz/articles/virtual-private-network/gost-bt-NAT-Penetration"}]}</script><link rel="stylesheet" href="/assets/css/styles.0bfc4a4f.css">
+<script src="/assets/js/runtime~main.3e88349c.js" defer="defer"></script>
+<script src="/assets/js/main.0a4f6813.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/logo.png"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/gost-bt-NAT-Penetration-process.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/download-sysctl.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/edit-sysctl.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/nano-sysctl.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/sysctl-check-value.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/check-iptable-rules-1.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/check-iptable-rules-2.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/check-schema.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/download-gost.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/download-file-location.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/gost-command-parsing.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/Linux-reg-service-info.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/gost-service-info.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/gost-win_x64.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/firefox-proxy-settings.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/website-iptest.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/add-routing-table.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/check-routing-table-1.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/check-routing-table-2.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/ping.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/listening-port.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/bc-proxy-settings.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/green-light.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/green-light-2.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/remote-incoming-user.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/registered-services.jpg"><link rel="preload" as="image" href="../../images/gost-bt-NAT-Penetration/command-start-service.jpg"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">ie12sBlog</b></a><a href="https://github.com/ie123610/ie12sBlog" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub版博客<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://space.bilibili.com/390936347/article" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">B站专栏<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://www.cnblogs.com/ie123610/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">博客园<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><a href="https://www.cometbbs.com/t/%E6%AF%94%E7%89%B9%E5%BD%97%E6%98%9F-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E7%9A%84%E6%94%B6%E9%9B%86%E4%B8%8E%E8%A7%A3%E5%86%B3/86304" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">彗星论坛<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/ie123610/ie12sBlog.Pages/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub后端<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"><div class="navbar__search searchBarContainer_NW3z" dir="ltr"><input placeholder="搜索" aria-label="Search" class="navbar__search-input searchInput_YFbd" value=""><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/"><span title="关于" class="linkLabel_WmDU">关于</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/the-index"><span title="索引" class="linkLabel_WmDU">索引</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a href="https://bc.36102025.xyz/" target="_blank" rel="noopener noreferrer" class="menu__link menuExternalLink_NmtK"><span title="比特彗星资源导航" class="linkLabel_WmDU">比特彗星资源导航</span><svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/bitcomet-FAQ"><span title="比特彗星-常见问题" class="categoryLinkLabel_W154">比特彗星-常见问题</span></a><button aria-label="展开侧边栏分类 &#x27;比特彗星-常见问题&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/bitcomet-port-forwarding"><span title="比特彗星-端口阻塞解决方案" class="categoryLinkLabel_W154">比特彗星-端口阻塞解决方案</span></a><button aria-label="展开侧边栏分类 &#x27;比特彗星-端口阻塞解决方案&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/lucky-STUN"><span title="LCUKY系列教程" class="categoryLinkLabel_W154">LCUKY系列教程</span></a><button aria-label="展开侧边栏分类 &#x27;LCUKY系列教程&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href="/virtual-private-network"><span title="虚拟专用网络系列教程" class="categoryLinkLabel_W154">虚拟专用网络系列教程</span></a><button aria-label="折叠侧边栏分类 &#x27;虚拟专用网络系列教程&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/virtual-private-network/easytier-get-port-form-dns-record"><span title="「EasyTier」使用SRV TXT HTTP重定向获取对端IP端口" class="linkLabel_WmDU">「EasyTier」使用SRV TXT HTTP重定向获取对端IP端口</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/articles/virtual-private-network/gost-bt-NAT-Penetration"><span title="使用Gost替换Frp实现内网穿透为BT下载开放端口" class="linkLabel_WmDU">使用Gost替换Frp实现内网穿透为BT下载开放端口</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/virtual-private-network/setup-easytier-server-on-win"><span title="在Windows上搭建 EasyTier 公共服务器" class="linkLabel_WmDU">在Windows上搭建 EasyTier 公共服务器</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/articles/virtual-private-network/softether-enterprise-functions-unlock"><span title="解决Softether开源版本中“不支持此功能。它尚未在开源版本上实施”的问题" class="linkLabel_WmDU">解决Softether开源版本中“不支持此功能。它尚未在开源版本上实施”的问题</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/ipv6-transition"><span title="IPv6过渡方案" class="categoryLinkLabel_W154">IPv6过渡方案</span></a><button aria-label="展开侧边栏分类 &#x27;IPv6过渡方案&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist" href="/research-logs"><span title="研究记录" class="categoryLinkLabel_W154">研究记录</span></a><button aria-label="展开侧边栏分类 &#x27;研究记录&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav><button type="button" title="收起侧边栏" aria-label="收起侧边栏" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_z5aJ"><div class="docItemContainer_c0TR"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="主页面" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/virtual-private-network"><span>虚拟专用网络系列教程</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">使用Gost替换Frp实现内网穿透为BT下载开放端口</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>使用Gost替换Frp实现内网穿透为BT下载开放端口</h1></header>
+<p>2025.08.25</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="背景信息">背景信息<a href="#背景信息" class="hash-link" aria-label="背景信息的直接链接" title="背景信息的直接链接" translate="no">​</a></h2>
+<p>在本教程将使用gost替代frp来为bt客户端提供穿透<br>
+<!-- -->在之前的教程中我们已经实现了通过stun穿透运营商NAT<br>
+<!-- -->为BT客户端开放端口 <a href="/articles/lucky-STUN/stun-bt">链接</a></p>
+<p>但是此方案只使用于全锥形的运营商NAT<br>
+<!-- -->且没有配置防火墙的情况的情况<br>
+<!-- -->事实上现实中的情况非常复杂 该方案并不总是能成功</p>
+<p>尤其是随着对PCDN的严打<br>
+<!-- -->越来越多的地方运营商使用对称形NAT和关闭IPv6的方法<br>
+<!-- -->对PCDN实施打击</p>
+<p>这使得stun方案不再可以用<br>
+<!-- -->中继方案几乎成为了开放端口唯一的方法</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="frp-方案的弊端">Frp 方案的弊端<a href="#frp-方案的弊端" class="hash-link" aria-label="Frp 方案的弊端的直接链接" title="Frp 方案的弊端的直接链接" translate="no">​</a></h2>
+<p>frp穿透方案已广泛使用于各类场景<br>
+<!-- -->其配置起来也不算是非常复杂</p>
+<p>尤其是在有第三方的图形界面和配置生成器辅助的情况下<br>
+<!-- -->其可以胜任大部分的穿透场景</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="源ip和端口问题">源IP和端口问题<a href="#源ip和端口问题" class="hash-link" aria-label="源IP和端口问题的直接链接" title="源IP和端口问题的直接链接" translate="no">​</a></h3>
+<p>但是frp方案存在一个致命的缺陷<br>
+<strong>即其在应用层对流量进行转发 这会导致连接的源IP和端口号丢失</strong><br>
+<!-- -->这样一来通过frp穿透后远程传入的流量都会变成来自本地frp客户发出的<br>
+<!-- -->源地址为<code>127.0.0.1</code>的本地流量</p>
+<p>其实这对大部分的程序和应用来说不是个问题 毕竟只要连接可以接通就行了<br>
+<!-- -->至于来源是来着本地还是远程并不重要</p>
+<p>但对BT客户端来说情况就不一样了<br>
+<!-- -->这样一来在BT客户端中显示的其他用户的IP地址都会变成本地环回地址<br>
+<!-- -->当然如果只是看起来有些奇怪 倒也无妨</p>
+<p><strong>更大的问题是这会影响反吸血的效果</strong><br>
+<!-- -->确切的来讲是类似于<a href="https://github.com/PBH-BTN/PeerBanHelper" target="_blank" rel="noopener noreferrer">PBH</a>的较为复杂的外置反吸血程序<br>
+<!-- -->像比特彗星和其他一些客户端中所内置的较为简单的反吸血功能不太会受影响</p>
+<p>这又要从PCDN问题开始讲了<br>
+<!-- -->简而言之这个和PCDN所使用的刷流方法有关系</p>
+<p>其会在同一IP不同端口上发起多个线程进行下载<br>
+<!-- -->并丢弃下载到的数据 因为他们的目的只是提高自己宽带下载流量<br>
+<!-- -->关于PCDN刷流对BT反吸血带来了新的挑战在之后的文章可能会进行讲解</p>
+<p>而在通过frp转发后所有用户的源IP都会变成本地地址<br>
+<strong>使得外置反吸血程序无法识别这些多个线程刷流行为</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="附加代理问题">附加代理问题<a href="#附加代理问题" class="hash-link" aria-label="附加代理问题的直接链接" title="附加代理问题的直接链接" translate="no">​</a></h3>
+<p>在使用frp转发BT流量的基础上<br>
+<!-- -->我们还需要为BT客户端设置代理<br>
+<!-- -->这和BT客户端向 tracker 的汇报有关系</p>
+<p>若不通过代理连接tracker服务器 则在tracker服务器上<br>
+<strong>记录的仍然是客户端所在的本地对外IP而非穿透服务器的IP</strong><br>
+<!-- -->这样一来其他客户端在连接的时候依然会其他客户端依然会尝试连接这个本地对外IP<br>
+<!-- -->而非可以连接的穿透服务器IP</p>
+<p>所以让bt客户端通过代理来连接tracker服务器是必要的<br>
+<!-- -->frp本身并不支持代理功能 需要安装其他的代理服务端程序</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="gost方案所解决的问题">Gost方案所解决的问题<a href="#gost方案所解决的问题" class="hash-link" aria-label="Gost方案所解决的问题的直接链接" title="Gost方案所解决的问题的直接链接" translate="no">​</a></h2>
+<p>相比起frp方案存在的这些弊端<br>
+<!-- -->Gost方案可以有效避免这些问题</p>
+<p>Gost使用go语言编写 集成了非常多的网络功能<br>
+<!-- -->官方文档：<a href="https://gost.run/" target="_blank" rel="noopener noreferrer">链接</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="可保留源ip">可保留源IP<a href="#可保留源ip" class="hash-link" aria-label="可保留源IP的直接链接" title="可保留源IP的直接链接" translate="no">​</a></h3>
+<p>事实上本方案中不使用gost的自身的端口转发功能<br>
+<!-- -->其本质上也是在应用层进行转发 也会造成源IP丢失</p>
+<p>流量转发功能由iptable或nftable承担<br>
+<!-- -->gost负责建立隧道和创建虚拟网卡</p>
+<p>将gost和iptable或nftable配合使用可以达到<br>
+<!-- -->类似于传统VPN的效果 但又不完全一样</p>
+<p>其实frp也支持传递原始IP 但依靠的是 <a href="http://www.haproxy.org/download/1.8/doc/proxy-protocol.txt" target="_blank" rel="noopener noreferrer">Proxy Protocol</a> 实现的<br>
+<!-- -->其应该是通过在标准的TCP首部之前插入额外的字段来传递真实IP<br>
+<strong>这需要穿透后的客户端支持解析这些额外字段</strong><br>
+<!-- -->如果客户端不支持解析这部分内容 那连接便会发生错误</p>
+<p>而使用iptable或nftable的转发过程<br>
+<!-- -->对应用程序来说是透明的 客户端程序无需做任何额外的适配</p>
+<p>这也使得此方案不仅适用于BT下载穿透<br>
+<!-- -->也适用于其他需要保留源IP地址的场景</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="集成代理功能">集成代理功能<a href="#集成代理功能" class="hash-link" aria-label="集成代理功能的直接链接" title="集成代理功能的直接链接" translate="no">​</a></h3>
+<p>Gost集成了代理功能 其中包括socks5<br>
+<!-- -->这样一来UDP tracker和 http(s) tracker 都可以通过代理连接</p>
+<p>除此之外其还支持一定的<strong>分流功能</strong><br>
+<!-- -->可以实现在连接IPv4 tracker 服务器时通过代理<br>
+<!-- -->而在连接IPv6 tracker时则通过本地发起<br>
+<!-- -->这在本地有IPv6且端口开的时候非常有用</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="更高的转发效率">更高的转发效率<a href="#更高的转发效率" class="hash-link" aria-label="更高的转发效率的直接链接" title="更高的转发效率的直接链接" translate="no">​</a></h3>
+<p>相比起frp自身的转发功能 由iptable或nftable进行转发 效率会更高<br>
+<!-- -->gost的隧道部分则是基于 wireguard-go 实现的 其运行在用户空间的<br>
+<!-- -->这相比官方版本运行在内核wireguard 效率略低 但其仍然十分可观</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="工作流程">工作流程<a href="#工作流程" class="hash-link" aria-label="工作流程的直接链接" title="工作流程的直接链接" translate="no">​</a></h2>
+<p>感谢<a href="https://space.bilibili.com/14913" target="_blank" rel="noopener noreferrer">泥浆</a>提供的技术支持</p>
+<p><strong>示意图</strong></p>
+<img src="../../images/gost-bt-NAT-Penetration/gost-bt-NAT-Penetration-process.jpg" width="60%" height="60%">
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="linux服务端布置">Linux服务端布置<a href="#linux服务端布置" class="hash-link" aria-label="Linux服务端布置的直接链接" title="Linux服务端布置的直接链接" translate="no">​</a></h2>
+<p><strong>为方便之后的设置 这里推荐使用 finalshell 作为 ssh连接工具</strong><br>
+<strong>使用 Notepad3 作为文本编辑工具</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="开启linux-内核转发功能">开启Linux 内核转发功能<a href="#开启linux-内核转发功能" class="hash-link" aria-label="开启Linux 内核转发功能的直接链接" title="开启Linux 内核转发功能的直接链接" translate="no">​</a></h3>
+<p>编辑 <code>/etc/sysctl.conf</code> 文件<br>
+<!-- -->写入 <code>net.ipv4.ip_forward = 1</code> 以开启转发功能</p>
+<p>可以将 sysctl.conf 下载到win上 修改后再上传<br>
+<strong>需要注意换行符 Windows的换行符和Linux下的换行符不一样</strong></p>
+<img src="../../images/gost-bt-NAT-Penetration/download-sysctl.jpg" width="60%" height="60%">
+<img src="../../images/gost-bt-NAT-Penetration/edit-sysctl.jpg" width="60%" height="60%">
+<p>当然也可以使用直接在终端中使用文本编辑器进行编辑<br>
+<!-- -->这里推荐使用近似图形界面的编辑工具 <strong>nano</strong></p>
+<p>输入 <code>nano 文件路径</code> 以编辑文件<br>
+<!-- -->Ctrl + O 保存文件 保存时需要再次确认路径<br>
+<!-- -->Ctrl + X 退出编辑器</p>
+<img src="../../images/gost-bt-NAT-Penetration/nano-sysctl.jpg" width="60%" height="60%">
+<p>使用 <code>sysctl –p</code> 重载文件使配置生效 此命令无输出<br>
+<!-- -->输入 <code>sysctl net.ipv4.ip_forward</code>以检查值</p>
+<img src="../../images/gost-bt-NAT-Penetration/sysctl-check-value.jpg" width="60%" height="60%">
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="配置-nat-规则">配置 NAT 规则<a href="#配置-nat-规则" class="hash-link" aria-label="配置 NAT 规则的直接链接" title="配置 NAT 规则的直接链接" translate="no">​</a></h3>
+<p><strong>安装iptables</strong></p>
+<p><strong>不同的Linux发行版使用的包管理器不同</strong><br>
+<!-- -->所对应的命令也不同 使用 <code>uname -a</code> 查看Linux发行版本</p>
+<p><strong>添加转发</strong><br>
+<!-- -->逐条输入并回车 以添加规则</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">iptables -t nat -I PREROUTING -p tcp --dport 6666 -j DNAT --to-destination 192.168.123.2:6666</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">iptables -t nat -I PREROUTING -p udp --dport 6666 -j DNAT --to-destination 192.168.123.2:6666</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">iptables -I FORWARD -d 192.168.123.2 -j ACCEPT</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">iptables -I FORWARD -s 192.168.123.2 -j ACCEPT</span><br></span></code></pre></div></div>
+<p>其中前两条规则用于将 发到VPS的6666TCP和UDP端口的流量<br>
+<!-- -->NAT转换到 <code>192.168.123.2</code> 的6666TCP和UDP</p>
+<p>这里的 <code>192.168.123.2</code> 是之后 BT客户端将使用的IP<br>
+<!-- -->而6666则是BT需要监听的端口 这个IP和端口可自定义</p>
+<p>而后两条则分别是 放行源地址为任意 目标IP为<code>192.168.123.2</code>的流量<br>
+<!-- -->以及放行 源地址为<code>192.168.123.2</code>目标地址为任意 的流量</p>
+<p>即允许内部的 <code>192.168.123.2</code> 主动访问外部网络<br>
+<!-- -->也允许外部网络的流量到达 <code>192.168.123.2</code></p>
+<p>如果有多个客户端的话 这里其实可以使用虚拟TUN接口名称<br>
+<!-- -->这样无需为每个客户端的IP都设置转发<br>
+<!-- -->可参考：<a href="https://gost.run/tutorials/tuntap/#_8" target="_blank" rel="noopener noreferrer">链接</a></p>
+<p>不过我们这里只有一个客户端
+而且这样可以防止被其他IP偷走流量<br>
+<strong>就算被人连上了 如果没有正确的IP地址 也无法连通</strong></p>
+<p>使用 <code>iptables -L</code> 检查已经添加的规则<br>
+<!-- -->默认只列出 filter 表</p>
+<img src="../../images/gost-bt-NAT-Penetration/check-iptable-rules-1.jpg" width="60%" height="60%">
+<p>而 DNAT 是在 nat 表里面的<br>
+<!-- -->需要使用 <code>iptables -t nat -vL</code></p>
+<img src="../../images/gost-bt-NAT-Penetration/check-iptable-rules-2.jpg" width="60%" height="60%">
+<p>若要删除这些转发条目只需要将原先命令中的&quot;I&quot;都替换成&quot;D&quot;<br>
+<!-- -->再次运行即可 注意是大写字母</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="下载gost">下载Gost<a href="#下载gost" class="hash-link" aria-label="下载Gost的直接链接" title="下载Gost的直接链接" translate="no">​</a></h3>
+<p>查看 CPU 架构 输入 <code>lscpu</code></p>
+<img src="../../images/gost-bt-NAT-Penetration/check-schema.jpg" width="60%" height="60%">
+<p>Gost GitHub 仓库：<a href="https://github.com/go-gost/gost/releases" target="_blank" rel="noopener noreferrer">链接</a><br>
+<!-- -->下载 gost 建议放在 <code>/usr/local/bin</code><br>
+<!-- -->可下载文件到win上 解压并重命名后上传</p>
+<p>或者直接在Linux上下载 使用 wget<br>
+<code>wget -O /usr/local/bin/gost.tar.gz 要下载的连接</code></p>
+<p><strong>示例</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">wget -O /usr/local/bin/gost.tar.gz https://github.com/go-gost/gost/releases/download/v3.2.4/gost_3.2.4_linux_amd64.tar.gz</span><br></span></code></pre></div></div>
+<img src="../../images/gost-bt-NAT-Penetration/download-gost.jpg" width="60%" height="60%">
+<p><strong>查看目录下文件</strong>
+切换目录 <code>cd /usr/local/bin/</code>
+列出目录下载的文件 <code>ls -l</code></p>
+<img src="../../images/gost-bt-NAT-Penetration/download-file-location.jpg" width="60%" height="60%">
+<p><strong>创建gost文件夹</strong><br>
+<code>mkdir -p /usr/local/bin/gost</code></p>
+<p><strong>解压文件</strong><br>
+<code>tar –xzvf 文件名 -C 解压路径</code></p>
+<p><strong>示例</strong><br>
+<code>tar -xzvf gost.tar.gz -C ./gost/</code></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置gost参数">设置Gost参数<a href="#设置gost参数" class="hash-link" aria-label="设置Gost参数的直接链接" title="设置Gost参数的直接链接" translate="no">​</a></h3>
+<p>Gost 官方教程：<a href="https://gost.run/tutorials/tuntap/" target="_blank" rel="noopener noreferrer">链接</a></p>
+<p>此处需要设置一块tun网卡以及用于传输流量的隧道<br>
+<!-- -->还有用于传递tracker消息的 socks5 服务端</p>
+<p>隧道本身使用UDP协议进行传输<br>
+<!-- -->可以使用gost内置的转发器将其转换成其他协议</p>
+<p>此处将使用转发器将UDP转换成wss协议<br>
+<!-- -->为提高连通性同时也将socks5协议也转换成wss</p>
+<p><strong>示例参数</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">gost -L=tun://:8421?net=192.168.123.1/24 -L relay+wss://:8443?bind=true -L socks5+wss://:7080?udp=true&amp;notls=true</span><br></span></code></pre></div></div>
+<img src="../../images/gost-bt-NAT-Penetration/gost-command-parsing.jpg" width="60%" height="60%">
+<p>各端口号和转发协议可自定义 此处使用8443作为隧道最终的隧道端口<br>
+<!-- -->7080为socks5服务端端口 wss作为转发协议</p>
+<p>此处socks5的服务端未开启认证<br>
+<!-- -->由于其套上了一层 wss 这使得常规的 socks5 客户端无法连接<br>
+<!-- -->故无需开启认证功能</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="开放本机端口">开放本机端口<a href="#开放本机端口" class="hash-link" aria-label="开放本机端口的直接链接" title="开放本机端口的直接链接" translate="no">​</a></h3>
+<p>为隧道和socks5服务端开放端口 端口号和协议根据实际情况填写</p>
+<p><strong>示例</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">iptables -A INPUT -p tcp --dport 8443 -j ACCEPT</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">iptables -A INPUT -p tcp --dport 7080 -j ACCEPT</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="测试服务并检查端口">测试服务并检查端口<a href="#测试服务并检查端口" class="hash-link" aria-label="测试服务并检查端口的直接链接" title="测试服务并检查端口的直接链接" translate="no">​</a></h3>
+<p>测试参数运行效果并检查服务端各端口是否开放</p>
+<p>切换到 gost所在目录 此处为 <code>/usr/local/bin/gost</code><br>
+<!-- -->即<code>cd /usr/local/bin/gost</code></p>
+<p>运行gost并附加之前准备的参数 <code>./gost 参数</code> 示例参数：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">./gost -L=tun://:8421?net=192.168.123.1/24 -L relay+wss://:8443?bind=true -L socks5+wss://:7080?udp=true&amp;notls=true</span><br></span></code></pre></div></div>
+<p>检查输出内容是否有报错</p>
+<p><strong>检查端口</strong></p>
+<p>使用在线TCP端口扫描端口工具 检查端口<br>
+<!-- -->工具链接：<a href="https://zh.infobyip.com/tcpportchecker.php" target="_blank" rel="noopener noreferrer">链接</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="注册linux系统服务">注册Linux系统服务<a href="#注册linux系统服务" class="hash-link" aria-label="注册Linux系统服务的直接链接" title="注册Linux系统服务的直接链接" translate="no">​</a></h3>
+<p>在终端中直接运行程序 会占用终端无法进行其他操作<br>
+<!-- -->且关闭终端后程序会退出 而注册成服务即可实现开机自启动和后台运行</p>
+<p><strong>创建服务配置</strong></p>
+<p>方法参照上文中修改 sysctl 的方法<br>
+<!-- -->存放路径为 <code>/etc/systemd/system/</code> 文件名 <code>gost.service</code><br>
+<!-- -->即 <code>/etc/systemd/system/gost.service</code></p>
+<p>写入以下内容：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">[Unit]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Description=GOST_SERVER</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">After=network.target</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[Service]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Type=simple</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ExecStart=/usr/local/bin/gost/gost -L=tun://:8421?net=192.168.123.1/24 -L relay+wss://:8443?bind=true -L socks5+wss://:7080?udp=true&amp;notls=true</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Restart=on-failure</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">RestartSec=10s</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">[Install]</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">WantedBy=multi-user.target</span><br></span></code></pre></div></div>
+<p>其中最重要的部分为 <code>ExecStart</code><br>
+<strong>填写gost主程序所在的绝对路径 外加启动参数</strong></p>
+<img src="../../images/gost-bt-NAT-Penetration/Linux-reg-service-info.jpg" width="60%" height="60%">
+<p><strong>重新加载服务配置文件</strong><br>
+<code>systemctl daemon-reload</code></p>
+<p><strong>启动服务</strong><br>
+<code>systemctl start gost</code></p>
+<p><strong>查看服务状态</strong><br>
+<code>systemctl status gost</code></p>
+<p>检查服务状态 和 服务日志内容</p>
+<img src="../../images/gost-bt-NAT-Penetration/gost-service-info.jpg" width="60%" height="60%">
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="windows客户端布置">Windows客户端布置<a href="#windows客户端布置" class="hash-link" aria-label="Windows客户端布置的直接链接" title="Windows客户端布置的直接链接" translate="no">​</a></h2>
+<p>在设置完成服务端后 接下来设置客户端</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="下载gost-1">下载gost<a href="#下载gost-1" class="hash-link" aria-label="下载gost的直接链接" title="下载gost的直接链接" translate="no">​</a></h3>
+<p>Windows一般选 Windows_amd64 不要选 amdv3<br>
+<!-- -->看清是 AMD64不是ARM64</p>
+<img src="../../images/gost-bt-NAT-Penetration/gost-win_x64.jpg" width="60%" height="60%">
+<p>在Windows下使用TUN网卡还需要下载wintun 下载地址：<a href="https://www.wintun.net/" target="_blank" rel="noopener noreferrer">链接</a><br>
+<!-- -->打开压缩包的bin文件夹 根据系统架构选择对应的版本 <strong>一般选择amd64</strong><br>
+<strong>将其中的wintun.dll文件复制下来与gost.exe放置在同一目录下</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="测试效果">测试效果<a href="#测试效果" class="hash-link" aria-label="测试效果的直接链接" title="测试效果的直接链接" translate="no">​</a></h3>
+<p>测试与服务端进行连接情况<br>
+<!-- -->命令提示符加参数运行 检查输出内容是否有报错</p>
+<p><strong>示例参数</strong></p>
+<p>socks5本地服务端</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">gost.exe -L socks5://:5522?udp=true -F &quot;socks5+wss://服务端IP:7080?notls=true&amp;bypass=~0.0.0.0/0&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>TUN网卡和隧道</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">gost.exe -L=&quot;tun://:0/:8421?net=192.168.123.2/24&amp;name=gost_tun&quot; -F relay+wss://服务端IP:8443</span><br></span></code></pre></div></div>
+<p>两个功能放在一个进程运行时 似乎会产生问题<br>
+<!-- -->此处将其分解到两个进程 分别运行</p>
+<p>分别在两个命令提示符窗口中 加参数运行gost.exe<br>
+<!-- -->本地端口号可自定义 远程端口号要与服务端设置的相应的</p>
+<p>创建TUN网卡 设置IP为<code>192.168.123.2</code> 隧道本地端口8421（UDP）<br>
+<!-- -->此处name用于指定TUN网卡的名称（可选）<br>
+<!-- -->使用转发器通过WSS协议转发到服务端的8443端口</p>
+<p>socks5本地服务端监听5522端口 启用UDP<br>
+<!-- -->使用wss协议转发到远程服务端的7080端口<br>
+<!-- -->由wss负责加密 故关闭socks5自身加密功能（与服务端对应）</p>
+<p><strong>注意tun网卡和socks5转发部分的命令 使用了双引号进行包裹</strong><br>
+<strong>这个因为在批处理中单个 &quot;&amp;&quot; 符号用于在单个命令行中串联多个命令</strong><br>
+<!-- -->若不使用双引号将其框定为一个整体 则命令提示符会认为其是多条命令 从而逐条运行</p>
+<p>bypass部分用于实现IPv4和IPv6的分流<br>
+<!-- -->IPv4流量通过socks5代理 而IPv6直接从本地发出</p>
+<p><strong>测试socks5代理效果</strong></p>
+<p><strong>建议使用火狐浏览器 其可以非常方便的设置代理功能</strong><br>
+<!-- -->通过浏览网页来测试代理是否可以接通</p>
+<img src="../../images/gost-bt-NAT-Penetration/firefox-proxy-settings.jpg" width="60%" height="60%">
+<p><strong>IPv6分流测试</strong></p>
+<p>访问纯IP测试站点 例如 <code>ip138.com</code><br>
+<!-- -->测试出的对外IPv4地址为Linux服务器的地址</p>
+<p>而IPv6地址则是本机对外IPv6地址<br>
+<strong>若本地设备无IPv6 则跳过此步骤</strong></p>
+<img src="../../images/gost-bt-NAT-Penetration/website-iptest.jpg" width="60%" height="60%">
+<p><strong>测试虚拟网卡</strong></p>
+<p>添加路由条目 <strong>需要再tun网卡创建后再添加</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">route add 0.0.0.0 mask 0.0.0.0 192.168.123.2 metric 1000</span><br></span></code></pre></div></div>
+<p>该路由可以使本机对远程传入连接的响应 正确的发回到服务端<br>
+<!-- -->若无此条路由则本机的回应 无法传回 端口依然阻塞</p>
+<p>此处直接用<code>192.168.123.2</code>（虚拟网卡地址)做网关 这样就可以减少ARP请求<br>
+<!-- -->跃点数设置的很大 使此条路由表的优先级低于正常上网流量的路由<br>
+<!-- -->以防止影响正常上网</p>
+<img src="../../images/gost-bt-NAT-Penetration/add-routing-table.jpg" width="60%" height="60%">
+<p>检查路由表 <code>route print -4</code></p>
+<p><strong>接口一项 显示 &quot;在链路上&quot; 即为正常</strong><br>
+<strong>若显示 IP地址 则说明 路由在 TUN 网卡创建前就添加了</strong><br>
+<!-- -->其是无法正常工作的 需要删除 将原先添加命令中的 add 换成 delete 再次运行</p>
+<img src="../../images/gost-bt-NAT-Penetration/check-routing-table-1.jpg" width="60%" height="60%">
+<img src="../../images/gost-bt-NAT-Penetration/check-routing-table-2.jpg" width="60%" height="60%">
+<p><strong>ping对端</strong></p>
+<p>ping 服务端虚拟网卡使用的IP 应有回应</p>
+<img src="../../images/gost-bt-NAT-Penetration/ping.jpg" width="60%" height="60%">
+<p><strong>测试连通性</strong></p>
+<p>在确定隧道和代理畅通 以及添加路由表后 就可以打开 比特彗星进行测试了<br>
+<!-- -->修改 比特彗星 监听端口 为6666 对应iptables 上的NAT转发端口</p>
+<img src="../../images/gost-bt-NAT-Penetration/listening-port.jpg" width="60%" height="60%">
+<p><strong>设置代理服务器</strong></p>
+<p><strong>服务器类型：</strong> socks5<br>
+<strong>IP地址：</strong> <code>127.0.0.1</code><br>
+<strong>端口：</strong> 本地socks5服务端口</p>
+<p>勾选：</p>
+<ul>
+<li><strong>使用代理端口转发检测</strong></li>
+<li><strong>使用代理连接tracker</strong></li>
+</ul>
+<img src="../../images/gost-bt-NAT-Penetration/bc-proxy-settings.jpg" width="60%" height="60%">
+<p>点击右下角的黄灯选择重新检查端口 重新检查后 应变成绿灯<br>
+<!-- -->且显示的外网IP应该会变成 Linux服务器的IP 由于使用了代理 内网IP无法检测会显示为空</p>
+<img src="../../images/gost-bt-NAT-Penetration/green-light.jpg" width="60%" height="60%">
+<img src="../../images/gost-bt-NAT-Penetration/green-light-2.jpg" width="60%" height="60%">
+<p>下载任意热门种子 例如 <a href="/articles/bitcomet-FAQ/BC-download-speed-test">乌班图镜像</a><br>
+<!-- -->查看 <strong>用户选项卡</strong> 中的发起列 若看不到发起列 则需要右键表头弹出菜单勾选发起<br>
+<strong>若有远程发起 且传入用户的IP显示正常 则穿透功能已经实现</strong></p>
+<img src="../../images/gost-bt-NAT-Penetration/remote-incoming-user.jpg" width="60%" height="60%">
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置启动脚本">设置启动脚本<a href="#设置启动脚本" class="hash-link" aria-label="设置启动脚本的直接链接" title="设置启动脚本的直接链接" translate="no">​</a></h3>
+<p><strong>创建用于添加 路由条目的 批处理</strong><br>
+<!-- -->文件名 route_add.cmd 与gost.exe放置在 同一目录下</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@echo off</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">ping /n 10 127.1 &gt;nul</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">route add 0.0.0.0 mask 0.0.0.0 192.168.123.2 metric 1000</span><br></span></code></pre></div></div>
+<p>由于从gost开始运行到TUN网卡创建完成 有一段时间的延迟<br>
+<strong>而该路由条目需要在TUN网卡创建完成后再添加</strong><br>
+<!-- -->故通过ping一个无法ping通的地址来卡住脚本 以实现延迟</p>
+<p><strong>创建gost运行脚本</strong></p>
+<p>由于将tun和socks5放在同一进程里运行似乎会出现问题<br>
+<!-- -->这里将隧道服务和socks5服务拆分成两个</p>
+<p>分别为gost-tun.cmd和gost-socks5.cmd<br>
+<!-- -->一样存放在gost.exe的目录下</p>
+<p>gost-tun.cmd内容</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@echo off</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">start gost.exe所在的实际绝对路径\gost.exe -L=&quot;tun://:0/:8421?net=192.168.123.2/24&amp;name=gost_tun&quot; -F relay+wss://服务端IP:8443</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pause</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>示例</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@echo off</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">C:\Users\Administrator\Desktop\gost\gost.exe -L=&quot;tun://:0/:8421?net=192.168.123.2/24&amp;name=gost_tun&quot; -F relay+wss://服务端IP:8443</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pause</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>gost-socks5.cmd内容</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@echo off</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">gost.exe所在的实际绝对路径\gost.exe -L socks5://:5522?udp=true -F &quot;socks5+wss://服务端IP:7080?notls=true&amp;bypass=~0.0.0.0/0&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pause</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p><strong>示例</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">@echo off</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">start C:\Users\Administrator\Desktop\gost\gost.exe -L socks5://:5522?udp=true -F &quot;socks5+wss://服务端IP:7080?notls=true&amp;bypass=~0.0.0.0/0&quot;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">pause</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="注册windows服务">注册Windows服务<a href="#注册windows服务" class="hash-link" aria-label="注册Windows服务的直接链接" title="注册Windows服务的直接链接" translate="no">​</a></h3>
+<p>使用winSW将gost注册服务 方便自启动和启停控制<br>
+<!-- -->下载winSW的方法参考之前的教程：<a href="/articles/virtual-private-network/setup-easytier-server-on-win">链接</a></p>
+<p><strong>创建winSW服务注册文件</strong></p>
+<p>将WinSW-x64.exe复制到gost目录下<br>
+<!-- -->并将隧道功能和socks5功能所对应的批处理分别注册成服务</p>
+<p>配置文件名称与其批处理名称相对应<br>
+<!-- -->分别为gost-socks5.xml和gost-tun.xml</p>
+<p>gost-socks5.xml内容</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">&lt;service&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;id&gt;gostsocks&lt;/id&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;name&gt;Gost-socks5&lt;/name&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;description&gt;Gost_For_Bittorrent&lt;/description&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;executable&gt;实际路径\gost-socks5.cmd&lt;/executable&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;startmode&gt;Manual&lt;/startmode&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;stoptimeout&gt;5sec&lt;/stoptimeout&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;log mode=&quot;none&quot;/&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&lt;/service&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></span></code></pre></div></div>
+<p>gost-tun.xml内容</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">&lt;service&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;id&gt;gosttun&lt;/id&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;name&gt;Gost-TUN&lt;/name&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;description&gt;Gost_For_Bittorrent&lt;/description&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;executable&gt;实际路径\gost-tun.cmd&lt;/executable&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;startmode&gt;Manual&lt;/startmode&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;stoptimeout&gt;5sec&lt;/stoptimeout&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;log mode=&quot;none&quot;/&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  &lt;poststart&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    &lt;executable&gt;实际路径\route_add.cmd&lt;/executable&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&lt;/poststart&gt;</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">&lt;/service&gt;</span><br></span></code></pre></div></div>
+<p>这里设置的是手动启动服务 以便在有需要的时候才进行连接<br>
+<!-- -->如果 希望开机自动启动并持续保持连 则只需将 <code>Manual</code> 改成 <code>Automatic</code><br>
+<!-- -->或者直接删除 startmode 项</p>
+<p>stoptimeout 为停止超时时间 以防止任务启停时间过长<br>
+<!-- -->而executable项表示主进程即executable中的程序<br>
+<!-- -->运行后再执行的内容 此处填写的用于添加路由的批处理</p>
+<p>log 记录模式选择了无 因为socks5和隧道在处理网络流量<br>
+<!-- -->会输出大量的控制台日志 WinSW会将其作为服务日志记录下来</p>
+<p>如果遇到问题 需要排障 则可以在停止服务后手动运行批处理脚本<br>
+<!-- -->通过直接观察控制台输出的方式来实现</p>
+<p><strong>注册服务</strong></p>
+<p>使用install命令注册服务 将两个配置文件分别注册成服务</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">实际路径\WinSW-x64.exe install xml配置文件路径</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="最后检查">最后检查<a href="#最后检查" class="hash-link" aria-label="最后检查的直接链接" title="最后检查的直接链接" translate="no">​</a></h3>
+<p>启动服务 使用命令提示符或者图形界面管理</p>
+<img src="../../images/gost-bt-NAT-Penetration/registered-services.jpg" width="60%" height="60%">
+<p>命令：<code>net start 任务id</code><br>
+<!-- -->注意这里使用的是任务id而非任务的显示名称</p>
+<img src="../../images/gost-bt-NAT-Penetration/command-start-service.jpg" width="60%" height="60%">
+<p>ping网关并打开比特彗星<br>
+<!-- -->检查右下角的端口检测情况和对外IP<br>
+<!-- -->若和之前测试时一致则 各项设置均正确</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="结尾">结尾<a href="#结尾" class="hash-link" aria-label="结尾的直接链接" title="结尾的直接链接" translate="no">​</a></h2>
+<p>至此我们便 实现了用Gost替换Frp实现内网穿透为BT下载开放端口</p>
+<hr>
+<p>参考：</p>
+<ul>
+<li><a href="https://www.cnblogs.com/Magiclala/p/17732237.html" target="_blank" rel="noopener noreferrer">https://www.cnblogs.com/Magiclala/p/17732237.html</a></li>
+<li><a href="https://blog.yu-xiaoxian.me/2019/11/22/Mannual/install-gost-as-system-service/" target="_blank" rel="noopener noreferrer">https://blog.yu-xiaoxian.me/2019/11/22/Mannual/install-gost-as-system-service/</a></li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/ie123610/ie12sBlog.Pages/edit/main/docs/articles/virtual-private-network/gost-bt-NAT-Penetration.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"><span class="theme-last-updated">最后<!-- -->于 <b><time datetime="2025-10-26T04:24:13.000Z" itemprop="dateModified">2025年10月26日</time></b> <!-- -->更新</span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/articles/virtual-private-network/easytier-get-port-form-dns-record"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">「EasyTier」使用SRV TXT HTTP重定向获取对端IP端口</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/articles/virtual-private-network/setup-easytier-server-on-win"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">在Windows上搭建 EasyTier 公共服务器</div></a></nav></div><br></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#背景信息" class="table-of-contents__link toc-highlight">背景信息</a></li><li><a href="#frp-方案的弊端" class="table-of-contents__link toc-highlight">Frp 方案的弊端</a><ul><li><a href="#源ip和端口问题" class="table-of-contents__link toc-highlight">源IP和端口问题</a></li><li><a href="#附加代理问题" class="table-of-contents__link toc-highlight">附加代理问题</a></li></ul></li><li><a href="#gost方案所解决的问题" class="table-of-contents__link toc-highlight">Gost方案所解决的问题</a><ul><li><a href="#可保留源ip" class="table-of-contents__link toc-highlight">可保留源IP</a></li><li><a href="#集成代理功能" class="table-of-contents__link toc-highlight">集成代理功能</a></li><li><a href="#更高的转发效率" class="table-of-contents__link toc-highlight">更高的转发效率</a></li></ul></li><li><a href="#工作流程" class="table-of-contents__link toc-highlight">工作流程</a></li><li><a href="#linux服务端布置" class="table-of-contents__link toc-highlight">Linux服务端布置</a><ul><li><a href="#开启linux-内核转发功能" class="table-of-contents__link toc-highlight">开启Linux 内核转发功能</a></li><li><a href="#配置-nat-规则" class="table-of-contents__link toc-highlight">配置 NAT 规则</a></li><li><a href="#下载gost" class="table-of-contents__link toc-highlight">下载Gost</a></li><li><a href="#设置gost参数" class="table-of-contents__link toc-highlight">设置Gost参数</a></li><li><a href="#开放本机端口" class="table-of-contents__link toc-highlight">开放本机端口</a></li><li><a href="#测试服务并检查端口" class="table-of-contents__link toc-highlight">测试服务并检查端口</a></li><li><a href="#注册linux系统服务" class="table-of-contents__link toc-highlight">注册Linux系统服务</a></li></ul></li><li><a href="#windows客户端布置" class="table-of-contents__link toc-highlight">Windows客户端布置</a><ul><li><a href="#下载gost-1" class="table-of-contents__link toc-highlight">下载gost</a></li><li><a href="#测试效果" class="table-of-contents__link toc-highlight">测试效果</a></li><li><a href="#设置启动脚本" class="table-of-contents__link toc-highlight">设置启动脚本</a></li><li><a href="#注册windows服务" class="table-of-contents__link toc-highlight">注册Windows服务</a></li><li><a href="#最后检查" class="table-of-contents__link toc-highlight">最后检查</a></li></ul></li><li><a href="#结尾" class="table-of-contents__link toc-highlight">结尾</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright"><p>文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>
+Powered by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a> &amp; <a href="https://docusaurus.io/" target="_blank">Docusaurus</a><br><a href="https://icp.gov.moe/?keyword=20253610" target="_blank">萌ICP备20253610号</a></p></div></div></div></footer></div>
+</body>
+</html>
