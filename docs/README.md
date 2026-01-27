@@ -1,5 +1,7 @@
 ---
 slug: /
+title: 关于
+description: 欢迎来到 ie12 的个人博客。这里主要分享有关网络和计算机的教程包括比特彗星 (BitComet) 常见问题解决、Lucky stun穿法方法以及有关IPv6 过渡方案以及虚拟专用网络的研究。
 ---
 
 # ie12的博客
