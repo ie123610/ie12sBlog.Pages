@@ -7,14 +7,14 @@
 
 ### P2P类
 
-* [qb匿名模式名称显示研究](./qb匿名模式名称显示研究.md)
+* [qb匿名模式名称显示研究](./qb-anonymous-mode.md)
 * [已知bittorrent客户端生存调查](./已知bittorrent客户端生存调查/已知客户端调查-说明.md)
 * [比特彗星改进建议](./BC改进建议.md)
-* [eMule设置IP绑定](./emule的ip绑定.md)
+* [eMule设置IP绑定](./emule-ip-binding.md)
 
 ### Windows类
 
-* [Windows无法启用休眠问题](./win休眠问题.md)
+* [Windows无法启用休眠问题](./win-sleep-mode-issue.md)
 * [Windows 传输动画提取](./win-animation.md)
 
 
