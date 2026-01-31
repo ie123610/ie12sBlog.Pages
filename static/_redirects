@@ -1,2 +1,2 @@
 /articles/images/* /images/:splat 200
-/favicon.ico /Internet_Explorer_10.svg 200
+/favicon.ico /img/Internet_Explorer_10.svg 200
