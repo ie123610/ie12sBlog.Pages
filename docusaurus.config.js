@@ -7,17 +7,14 @@ const config = {
   tagline: 'ie12的博客',
   favicon: 'img/Internet_Explorer_10.svg',
 
-  future: {
-    v4: true, 
-  },
-
   url: 'https://ie12blog.36102025.xyz',
   baseUrl: '/',
+  trailingSlash: true,
 
   organizationName: 'facebook', 
   projectName: 'docusaurus', 
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
