@@ -78,8 +78,7 @@ const config = {
 
       metadata: [
         {name: 'yandex-verification', content: 'a4de8a4e31fae19b'},
-        // 你也可以顺便在这里加上 Google 验证或其他全局关键词
-        // {name: 'google-site-verification', content: '你的谷歌验证码'},
+        {name: 'google-site-verification', content: 'TtT1Swq11wrVYAWojVGRYbjfGxFJP6uW0kTWnjiHse8'},
       ],
 
       image: 'img/docusaurus-social-card.jpg',
