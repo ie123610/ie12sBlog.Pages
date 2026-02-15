@@ -1,6 +1,6 @@
 # SVCB/HTTPS记录与免费FRP穿透配合使用
 
-2023.2.13  
+2026.2.13  
 
 ## frp穿透和web服务
 
@@ -70,6 +70,27 @@ ftp连接的是专门的穿透节点
 <img src="../../images/svcb-frp/dns-1.jpg" width="60%" height="60%" />
 <img src="../../images/svcb-frp/dns-2.jpg" width="60%" height="60%" />
 <img src="../../images/svcb-frp/dns-3.jpg" width="60%" height="60%" />
+
+
+---
+
+## 纯HTTP3可能遇到的问题
+
+此问题似乎仅出现在 使用纯HTTP3才能到连接的站点 即只进行了UDP穿透  
+且同号TCP端口未打开 与此同时 SVCB/HTTPS 记录内alpn的值仅填写了 h3  
+
+在这种情况下火狐浏览器似乎会优先使用TCP访问 443端口  
+而不是直接向记录中指定的端口发起 HTTP3连接  
+
+导致连接上了穿透节点的HTTPS代理入口  
+又因为未设置对应的HTTPS隧道和域名导致名称不匹配返回报错  
+
+存在这样的行为也不难理解 毕竟现在纯HTTP3站点几乎不存在  
+可以通过在本地阻断目标IP的 443 端口 来解决此问题  
+但就目前的情况而言还是应该主要使用h2而非h3  
+
+
+
 
 
 
