@@ -28,3 +28,18 @@
   --ifm-color-primary-lightest: #69d2f4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+
+/* 图片基础占位背景 */
+.markdown img[loading="lazy"] {
+  /* 亮色模式：淡淡的灰色 */
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* 暗黑模式适配 */
+[data-theme='dark'] .markdown img[loading="lazy"] {
+  /* 暗色模式：微弱的白色半透明，看起来是深灰效果 */
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
