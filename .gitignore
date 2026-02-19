@@ -40,3 +40,6 @@ lerna-debug.log*
 # 如果你使用了本地搜索插件且启用了本地索引缓存
 .cache-loader
 
+# 本地测试图片软链接
+static/articles/images
+
