@@ -28,3 +28,22 @@
   --ifm-color-primary-lightest: #69d2f4;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* --- 图片懒加载占位优化部分 --- */
+
+/* 针对所有手动添加了 loading="lazy" 的图片标签 */
+img[loading="lazy"] {
+  display: block;           /* 块级显示，方便 margin 居中和间距控制 */
+  margin: 1.5rem 0;      /* 图片上下留白，取消水平居中 */
+  min-height: 300px;        /* 预留 300px 基础高度，显著减少页面加载时的跳动 */
+  background-color: rgba(0, 0, 0, 0.05); /* 浅色模式下的灰色占位背景 */
+  border-radius: 8px;       /* 让图片占位区域的边角更圆润 */
+  width: auto;              /* 配合你手写的 width 属性使用 */
+  max-width: 100%;          /* 确保图片不会超出容器宽度 */
+  height: auto;             /* 确保图片加载后保持原始长宽比 */
+}
+
+/* 在暗色模式下，使用微弱的白色半透明作为占位背景，避免太刺眼 */
+[data-theme='dark'] img[loading="lazy"] {
+  background-color: rgba(255, 255, 255, 0.05);
+}
