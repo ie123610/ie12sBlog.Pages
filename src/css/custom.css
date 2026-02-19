@@ -29,16 +29,5 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* --- 图片懒加载占位优化部分 --- */
 
-/* 针对所有手动添加了 loading="lazy" 的图片标签 */
-img[loading="lazy"] {
 
-  min-height: 300px;        /* 预留 300px 基础高度，显著减少页面加载时的跳动 */
-  background-color: rgba(0, 0, 0, 0.05); /* 浅色模式下的灰色占位背景 */
-}
-
-/* 在暗色模式下，使用微弱的白色半透明作为占位背景，避免太刺眼 */
-[data-theme='dark'] img[loading="lazy"] {
-  background-color: rgba(255, 255, 255, 0.05);
-}
