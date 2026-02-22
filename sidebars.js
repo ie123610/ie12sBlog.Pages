@@ -52,6 +52,11 @@ export default {
       label: '索引', // sidebar label
     },
     {
+      type: 'doc',
+      id: 'timeline', // document ID
+      label: '时间轴', // sidebar label
+    },
+    {
       type: 'link',
       label: '比特彗星资源导航', // 链接标签
       href: 'https://bc.36102025.xyz/', // 外部 URL

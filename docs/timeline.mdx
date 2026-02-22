@@ -1,0 +1,90 @@
+---
+title: 时间轴
+sidebar_position: 1
+---
+
+import Link from '@docusaurus/Link';
+import timelineData from '../src/plugins/timeline-generator/timeline-data.json';
+
+export const Timeline = () => {
+  // --- 分组逻辑 ---
+  const groupedData = timelineData.reduce((acc, item) => {
+    const year = item.date.split('.')[0];
+    if (!acc[year]) acc[year] = [];
+    acc[year].push(item);
+    return acc;
+  }, {});
+
+  const years = Object.keys(groupedData).sort((a, b) => b - a);
+
+  return (
+    <div style={{ marginTop: '2rem' }}>
+      {years.map((year) => (
+        <div key={year} className="margin-bottom--xl">
+          {/* 年份大标题 */}
+          <h2 style={{ 
+            display: 'flex', 
+            alignItems: 'center', 
+            fontSize: '2rem',
+            color: 'var(--ifm-color-primary)',
+            borderBottom: 'none' 
+          }}>
+            {year}
+            <span style={{ 
+              flex: 1, 
+              height: '2px', 
+              background: 'var(--ifm-color-emphasis-200)', 
+              marginLeft: '20px' 
+            }}></span>
+          </h2>
+
+          <section style={{
+            borderLeft: '3px solid var(--ifm-color-emphasis-300)',
+            paddingLeft: '30px',
+            marginLeft: '15px',
+            position: 'relative'
+          }}>
+            {groupedData[year].map((item, idx) => (
+              <div key={idx} style={{ marginBottom: '30px', position: 'relative' }}>
+                {/* 时间轴小圆点：调整 top 为 10px 左右以对齐标题第一行 */}
+                <div style={{
+                  position: 'absolute',
+                  left: '-38px',
+                  top: '10px',
+                  width: '12px',
+                  height: '12px',
+                  borderRadius: '50%',
+                  backgroundColor: 'var(--ifm-background-color)',
+                  border: '3px solid var(--ifm-color-primary)',
+                }} />
+
+                {/* 1. 标题在上 */}
+                <h3 style={{ margin: '0', border: 'none', lineHeight: '1.4' }}>
+                  <Link to={item.link} style={{ textDecoration: 'none' }}>
+                    {item.title}
+                  </Link>
+                </h3>
+
+                {/* 2. 日期在下 */}
+                <small style={{ 
+                  color: 'var(--ifm-color-emphasis-600)', 
+                  fontWeight: 'bold', 
+                  display: 'block',
+                  marginTop: '4px' 
+                }}>
+                  {item.date.split('.').slice(1).join('-')}
+                </small>
+              </div>
+            ))}
+          </section>
+        </div>
+      ))}
+
+      {years.length === 0 && (
+        <p>暂无记录。</p>
+      )}
+    </div>
+  );
+};
+
+<Timeline />
