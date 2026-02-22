@@ -93,7 +93,10 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `<p>文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>Powered by Cloudflare Pages & Docusaurus<br>萌ICP备20253610号 &nbsp; 茶ICP备2026010294号<br><a href="/sitemap.xml" target="_blank">网站地图</a>`,
+        copyright: `<p>文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans">CC BY-SA 4.0</a> 共享协议</p>
+<p>Powered by <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> &amp; <a href="https://docusaurus.io/">Docusaurus</a></p>
+<p><a href="https://icp.gov.moe/?keyword=20253610">萌ICP备20253610号</a> &nbsp; <a href="https://icp.redcha.cn/beian/ICP-2026010294.html">茶ICP备2026010294号</a></p>
+<a href="/sitemap.xml">网站地图</a></p>`,
       },
       prism: {
         theme: prismThemes.github,
