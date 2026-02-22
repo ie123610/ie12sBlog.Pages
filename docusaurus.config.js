@@ -38,6 +38,7 @@ const config = {
         dataDomains: "ie12blog.36102025.xyz", 
       }),
     ],
+    path.resolve(__dirname, 'src/plugins/timeline-generator'),
   ],
 
   themes: [
@@ -62,8 +63,7 @@ const config = {
           sidebarPath: './sidebars.js',
           showLastUpdateTime: true,
           editUrl: 'https://github.com/ie123610/ie12sBlog.Pages/edit/main',
-          // 放在这里
-          beforeDefaultRehypePlugins: [imgAspectRatioPlugin],
+          beforeDefaultRehypePlugins: [imgAspectRatioPlugin], // 图像固定尺寸
         },
         theme: {
           customCss: './src/css/custom.css',
