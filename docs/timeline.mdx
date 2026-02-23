@@ -46,16 +46,18 @@ export const Timeline = () => {
           }}>
             {groupedData[year].map((item, idx) => (
               <div key={idx} style={{ marginBottom: '30px', position: 'relative' }}>
-                {/* 时间轴小圆点：调整 top 为 10px 左右以对齐标题第一行 */}
+                {/* 时间轴实心小圆点 */}
                 <div style={{
                   position: 'absolute',
-                  left: '-38px',
+                  left: '-37px', // 微调位置使其居中对齐线条
                   top: '10px',
                   width: '12px',
                   height: '12px',
                   borderRadius: '50%',
-                  backgroundColor: 'var(--ifm-background-color)',
-                  border: '3px solid var(--ifm-color-primary)',
+                  // 关键修改：背景设为主色，边框设为背景色或不设，实现实心效果
+                  backgroundColor: 'var(--ifm-color-primary)',
+                  border: '2px solid var(--ifm-background-color)',
+                  boxShadow: '0 0 0 1px var(--ifm-color-primary)', // 可选：增加一圈极细的外发光感
                 }} />
 
                 {/* 1. 标题在上 */}
