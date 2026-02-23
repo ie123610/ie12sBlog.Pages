@@ -1,10 +1,7 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
 import imgAspectRatioPlugin from './src/plugins/imageAspectRatio.js' // 引入独立插件
-import probe from 'probe-image-size';
 import path from 'path';
-import fs from 'fs';
-import {visit} from 'unist-util-visit';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -23,6 +20,11 @@ const config = {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
+
+  // --- 注册全局客户端脚本 ---
+  clientModules: [
+    path.resolve(__dirname, 'src/client-scripts/image-handler.js'),
+  ],
 
   plugins: [
     [
