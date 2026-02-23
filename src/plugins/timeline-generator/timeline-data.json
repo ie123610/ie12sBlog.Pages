@@ -18,6 +18,18 @@
     "link": "/articles/research-logs/gost-softether-vpn-to-proxy"
   },
   {
+    "date": "2026.02.08",
+    "sortKey": 20260208,
+    "title": "HTTPS/SVCB记录和HTTP3/QUIC排障",
+    "link": "/articles/research-logs/https-record-http3-test"
+  },
+  {
+    "date": "2026.01.17",
+    "sortKey": 20260117,
+    "title": "Windows 传输动画提取",
+    "link": "/articles/research-logs/win-animation"
+  },
+  {
     "date": "2026.01.17",
     "sortKey": 20260117,
     "title": "「LUCKY STUN穿透」解决WebDAV重定向问题",
@@ -28,6 +40,12 @@
     "sortKey": 20251124,
     "title": "「LUCKY STUN穿透」使用Homer导航页指示stun穿透后的端口",
     "link": "/articles/lucky-STUN/stun-home-page"
+  },
+  {
+    "date": "2025.11.12",
+    "sortKey": 20251112,
+    "title": "「转」Cloudflare Workers & Pages 优选IP",
+    "link": "/articles/ipv6-transition/cf-workers-pages-optimized-ip"
   },
   {
     "date": "2025.11.05",
@@ -42,16 +60,34 @@
     "link": "/articles/bitcomet-FAQ/BC-anti-leech-2"
   },
   {
+    "date": "2025.10.01",
+    "sortKey": 20251001,
+    "title": "Docusaurus-解决showLastUpdateTime总是显示相同日期问题",
+    "link": "/articles/research-logs/Docusaurus-showLastUpdateTime"
+  },
+  {
     "date": "2025.09.04",
     "sortKey": 20250904,
     "title": "使用SVCB/HTTPS记录隐藏和固定Web服务端口",
     "link": "/articles/lucky-STUN/svcb-records-hidden-ports"
   },
   {
+    "date": "2025.08.31",
+    "sortKey": 20250831,
+    "title": "eMule设置IP绑定",
+    "link": "/articles/research-logs/emule-ip-binding"
+  },
+  {
     "date": "2025.08.25",
     "sortKey": 20250825,
     "title": "使用Gost替换Frp实现内网穿透为BT下载开放端口",
     "link": "/articles/virtual-private-network/gost-bt-NAT-Penetration"
+  },
+  {
+    "date": "2025.08.24",
+    "sortKey": 20250824,
+    "title": "「转」基于爱奇艺HCDN视频分发网络的开放缓存",
+    "link": "/articles/research-logs/爱奇艺HCDN"
   },
   {
     "date": "2025.07.19",
@@ -64,6 +100,12 @@
     "sortKey": 20250619,
     "title": "「EasyTier」使用SRV TXT HTTP重定向获取对端IP端口",
     "link": "/articles/virtual-private-network/easytier-get-port-form-dns-record"
+  },
+  {
+    "date": "2025.06.08",
+    "sortKey": 20250608,
+    "title": "Windows无法启用休眠问题",
+    "link": "/articles/research-logs/win-sleep-mode-issue"
   },
   {
     "date": "2025.06.05",
@@ -94,6 +136,12 @@
     "sortKey": 20250206,
     "title": "「反吸血」在Windows下使用Fort Firewall全自动批量屏蔽IP",
     "link": "/articles/bitcomet-FAQ/fort-firewall-anti-leech"
+  },
+  {
+    "date": "2025.01.09",
+    "sortKey": 20250109,
+    "title": "已知Bittorrent客户端生存调查",
+    "link": "/articles/research-logs/已知bittorrent客户端生存调查/已知客户端调查-说明"
   },
   {
     "date": "2024.12.08",
@@ -136,6 +184,18 @@
     "sortKey": 20240914,
     "title": "小米路由器固件支持更多IPv6获取方式",
     "link": "/articles/research-logs/小米路由更多IPv6获取方式"
+  },
+  {
+    "date": "2024.09.13",
+    "sortKey": 20240913,
+    "title": "废弃方案-使用lucky端口转发固定STUN穿透端口",
+    "link": "/articles/research-logs/废弃方案-使用lucky端口转发固定STUN穿透端口"
+  },
+  {
+    "date": "2024.09.08",
+    "sortKey": 20240908,
+    "title": "关于 qbittorrent 在匿名模式下能否以被比特彗星正确识别问题的研究",
+    "link": "/articles/research-logs/qb-anonymous-mode"
   },
   {
     "date": "2024.08.29",
@@ -436,5 +496,11 @@
     "sortKey": 20230405,
     "title": "解决Softether开源版本中“不支持此功能。它尚未在开源版本上实施”的问题",
     "link": "/articles/virtual-private-network/softether-enterprise-functions-unlock"
+  },
+  {
+    "date": "2023.02.15",
+    "sortKey": 20230215,
+    "title": "cURL SVCB/HTTPS 记录测试",
+    "link": "/articles/research-logs/curl-test"
   }
 ]
