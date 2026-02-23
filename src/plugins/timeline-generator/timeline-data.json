@@ -6,6 +6,12 @@
     "link": "/articles/research-logs/lucky-cmd-error"
   },
   {
+    "date": "2026.02.15",
+    "sortKey": 20260215,
+    "title": "cURL SVCB/HTTPS 记录测试",
+    "link": "/articles/research-logs/curl-test"
+  },
+  {
     "date": "2026.02.13",
     "sortKey": 20260213,
     "title": "SVCB/HTTPS记录与免费FRP穿透配合使用",
@@ -180,6 +186,12 @@
     "link": "/articles/virtual-private-network/setup-easytier-server-on-win"
   },
   {
+    "date": "2024.09.29",
+    "sortKey": 20240929,
+    "title": "B站专栏文本复制问题",
+    "link": "/articles/research-logs/B站专栏文本复制问题"
+  },
+  {
     "date": "2024.09.14",
     "sortKey": 20240914,
     "title": "小米路由器固件支持更多IPv6获取方式",
@@ -196,6 +208,12 @@
     "sortKey": 20240908,
     "title": "关于 qbittorrent 在匿名模式下能否以被比特彗星正确识别问题的研究",
     "link": "/articles/research-logs/qb-anonymous-mode"
+  },
+  {
+    "date": "2024.09.08",
+    "sortKey": 20240908,
+    "title": "L2TP 特性研究",
+    "link": "/articles/research-logs/L2TP特性研究"
   },
   {
     "date": "2024.08.29",
@@ -496,11 +514,5 @@
     "sortKey": 20230405,
     "title": "解决Softether开源版本中“不支持此功能。它尚未在开源版本上实施”的问题",
     "link": "/articles/virtual-private-network/softether-enterprise-functions-unlock"
-  },
-  {
-    "date": "2023.02.15",
-    "sortKey": 20230215,
-    "title": "cURL SVCB/HTTPS 记录测试",
-    "link": "/articles/research-logs/curl-test"
   }
 ]

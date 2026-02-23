@@ -30,16 +30,61 @@
 }
 
 
-/* 图片基础占位背景 */
+/* 只有在懒加载时应用占位背景，确保 onload 触发前有颜色 */
 .markdown img[loading="lazy"] {
-  /* 亮色模式：淡淡的灰色 */
   background-color: rgba(0, 0, 0, 0.05);
+  /*border-radius: 8px;
+  transition: background-color 0.3s ease; /* 可选：让背景消失得更平滑 */
 }
 
-/* 暗黑模式适配 */
 [data-theme='dark'] .markdown img[loading="lazy"] {
-  /* 暗色模式：微弱的白色半透明，看起来是深灰效果 */
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* 当图片加载完成（有像素内容）时，利用底层机制让背景不再显示 */
+.markdown img[loading="lazy"] {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+
+
+
+/* src/css/custom.css */
+
+.markdown img.ratio-img {
+  /* 1. 核心修复：强制让 img 表现为块级元素 */
+  /* 只有变成 block 或 inline-block，aspect-ratio 才能在内容缺失时依然撑开空间 */
+  display: inline-block; 
+  
+  /* 2. 确保宽度存在，配合 aspect-ratio 自动计算高度 */
+  /*width: 100%; 
+  /*max-width: 100%;
+  
+  /* 3. 这里的背景色是第一道防线 */
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+  
+  /* 4. 解决特定浏览器下 16x16 的偏移问题 */
+  vertical-align: middle;
+}
+
+/* 针对暗色模式 */
+[data-theme='dark'] .markdown img.ratio-img {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
