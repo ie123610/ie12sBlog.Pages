@@ -104,7 +104,7 @@ const config = {
                 开往
               </div>
             `,
-            href: 'https://travel.moe/go.html',
+            href: 'https://www.travellings.cn/go.html',
             position: 'right',
           },
         ],
@@ -134,6 +134,13 @@ const config = {
       items: [
         { label: '萌ICP备20253610号', href: 'https://icp.gov.moe/?keyword=20253610' },
         { label: '茶ICP备2026010294号', href: 'https://icp.redcha.cn/beian/ICP-2026010294.html' },
+      ],
+    },
+    {
+      title: '传送门',
+      items: [
+        {html: `<a class="footer__link-item" href="https://travel.moe/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/planet-icon.png" width="24" height="24"/>异次元之旅</a>`},
+        {html: `<a class="footer__link-item" href="https://www.travellings.cn/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/travelling-dark.png" width="36" height="36" "/>开往</a>`},
       ],
     },
   ],
