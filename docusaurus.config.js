@@ -116,7 +116,7 @@ const config = {
       title: '站点建设',
       items: [
         { label: 'GitHub后端', href: 'https://github.com/ie123610/ie12sBlog.Pages/' },
-        { label: '网站地图', to: '/sitemap.xml' },
+        { html: `<a class="footer__link-item" href="/sitemap.xml">网站地图</a>` },
         { label: 'umami', href: 'https://cloud.umami.is/share/3yaTIn7G7vwsW2vD' },
       ],
     },
@@ -140,7 +140,7 @@ const config = {
       title: '传送门',
       items: [
         {html: `<a class="footer__link-item" href="https://travel.moe/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/planet-icon.png" width="24" height="24"/>异次元之旅</a>`},
-        {html: `<a class="footer__link-item" href="https://www.travellings.cn/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/travelling-dark.png" width="36" height="36" "/>开往</a>`},
+        {html: `<a class="footer__link-item" href="https://www.travellings.cn/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/travelling-dark.png" width="36" height="36" />开往</a>`},
       ],
     },
   ],
