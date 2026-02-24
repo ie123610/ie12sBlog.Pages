@@ -75,6 +75,46 @@
 
 
 
+/* 1. 确保链接容器是 Flex 布局，且不强制换行 */
+.footer__links {
+  display: flex;
+  justify-content: center; /* 整体水平居中 */
+  flex-wrap: nowrap;      /* 强制不换行 */
+  gap: 6rem;               /* 列与列之间的间距，根据需要调整 */
+  margin-bottom: 2rem;
+}
+
+/* 2. 重置列的宽度逻辑 */
+.footer__col {
+  flex: 0 1 auto;         /* 不自动拉伸，但允许根据内容收缩 */
+  min-width: 150px;       /* 设置一个最小宽度，防止文字挤在一起 */
+  text-align: center;      /* 让每一列内部的标题和链接也居中 */
+  margin: 0 !important;    /* 清除默认可能的边距干扰 */
+}
+
+/* 3. 针对移动端的适配（可选） */
+/* 如果手机端屏幕太窄，强制一行会很难看，此时允许它换行 */
+@media (max-width: 768px) {
+  .footer__links {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+/* 默认隐藏深色模式图标 */
+.icon-dark-mode {
+  display: none !important;
+}
+
+/* 深色模式下：隐藏浅色图标，显示深色图标 */
+[data-theme='dark'] .icon-light-mode {
+  display: none !important;
+}
+[data-theme='dark'] .icon-dark-mode {
+  display: inline-block !important;
+}
+
+
 
 
 
