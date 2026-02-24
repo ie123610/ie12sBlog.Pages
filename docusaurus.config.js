@@ -112,8 +112,31 @@ const config = {
       footer: {
         style: 'dark',
         links: [
-        
-        ],
+        {
+      title: '站点建设',
+      items: [
+        { label: 'GitHub后端', href: 'https://github.com/ie123610/ie12sBlog.Pages/' },
+        { label: '网站地图', to: '/sitemap.xml' },
+        { label: 'umami', href: 'https://cloud.umami.is/share/3yaTIn7G7vwsW2vD' },
+      ],
+    },
+    {
+      title: '其他平台',
+      items: [
+        { label: 'B站专栏', href: 'https://space.bilibili.com/390936347/article' },
+        { label: 'GitHub版博客', href: 'https://github.com/ie123610/ie12sBlog' },
+        { label: '博客园', href: 'https://www.cnblogs.com/ie123610/' },
+        { label: '彗星论坛', href: 'https://www.cometbbs.com/' },
+      ],
+    },
+    {
+      title: '备案',
+      items: [
+        { label: '萌ICP备20253610号', href: 'https://icp.gov.moe/?keyword=20253610' },
+        { label: '茶ICP备2026010294号', href: 'https://icp.redcha.cn/beian/ICP-2026010294.html' },
+      ],
+    },
+  ],
         copyright: `文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>Powered by <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> & <a href="https://docusaurus.io/">Docusaurus</a>`,
       },
       prism: {
