@@ -75,6 +75,58 @@
 
 
 
+/* 1. 确保页脚列容器整体居中 */
+.footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+/* 2. 统一控制列内元素的对齐 */
+.footer__col {
+  flex: 0 1 auto;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 核心：让列内所有子元素（标题、label、html）水平居中 */
+}
+
+/* 3. 针对所有页脚项（不管是 label 还是 html） */
+.footer__item {
+  display: flex;
+  justify-content: center; /* 确保内容块水平居中 */
+  margin: 2px 0;          /* 统一行间距 */
+}
+
+/* 4. 针对链接内容的细节微调（包含图标对齐） */
+.footer__link-item {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px; /* 自动处理 html 模式下图片和文字的间距 */
+  text-align: center;
+}
+
+/* 5. 移动端适配保持不变 */
+@media (max-width: 768px) {
+  .footer__links { flex-wrap: wrap; gap: 2rem; }
+}
+
+/* 默认隐藏深色模式图标 */
+.icon-dark-mode {
+  display: none !important;
+}
+
+/* 深色模式下：隐藏浅色图标，显示深色图标 */
+[data-theme='dark'] .icon-light-mode {
+  display: none !important;
+}
+[data-theme='dark'] .icon-dark-mode {
+  display: inline-block !important;
+}
+
+
 
 
 
