@@ -40,6 +40,7 @@ const config = {
       },
     ],
     path.resolve(__dirname, 'src/plugins/timeline-generator'),
+    path.resolve(__dirname, 'src/plugins/rss-generator'),
   ],
 
   themes: [
@@ -89,6 +90,16 @@ const config = {
           {
             html: `
               <div style="display: flex; align-items: center;">
+                <img src="/img/feed-icon.svg" width="20" height="20" style="margin-right: 8px;"/>
+       RSS订阅
+              </div>
+            `,
+            href: 'pathname:///rss.xml',
+            position: 'right',
+          },
+          {
+            html: `
+              <div style="display: flex; align-items: center;">
                 <img src="/img/planet-icon.png" width="24" height="24" style="margin-right: 8px;"/>
                 异次元之旅
               </div>
@@ -117,6 +128,7 @@ const config = {
       items: [
         { label: 'GitHub后端', href: 'https://github.com/ie123610/ie12sBlog.Pages/' },
         { html: `<a class="footer__link-item" href="/sitemap.xml">网站地图</a>` },
+        { html: `<a class="footer__link-item" href="/rss.xml">RSS订阅</a>` },
         { label: 'umami', href: 'https://cloud.umami.is/share/3yaTIn7G7vwsW2vD' },
       ],
     },

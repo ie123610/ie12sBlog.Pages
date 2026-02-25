@@ -57,6 +57,10 @@ export default {
       label: '时间轴', // sidebar label
     },
     {
+      type: 'html',
+      value: `<a class="menu__link" href="/rss.xml">RSS订阅</a>`,
+    },
+    {
       type: 'link',
       label: '比特彗星资源导航', // 链接标签
       href: 'https://bc.36102025.xyz/', // 外部 URL
