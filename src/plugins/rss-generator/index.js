@@ -28,29 +28,35 @@ module.exports = function rssGeneratorPlugin(context) {
         language: "zh",
         copyright: `CC BY-SA 4.0`,
         generator: "Docusaurus Custom RSS Plugin",
+        // 解决 W3C "Missing atom:link with rel="self"" 警告
+        feedLinks: {
+          rss: `${siteUrl.replace(/\/+$/, '')}/rss.xml`,
+        },
       });
 
       // 3. 填充条目
       timelineData.forEach(item => {
         const [y, m, d] = item.date.split('.');
 
-        // --- 核心：链接末尾补斜杠处理 ---
         // 去掉 siteUrl 可能存在的末尾斜杠
         const cleanBaseUrl = siteUrl.replace(/\/+$/, '');
+        
         // 确保路径以 / 开头，且末尾有且只有一个 /
         let cleanItemPath = item.link.startsWith('/') ? item.link : `/${item.link}`;
         if (!cleanItemPath.endsWith('/')) {
           cleanItemPath += '/';
         }
-        
-        const fullUrl = `${cleanBaseUrl}${cleanItemPath}`;
+
+        // --- 核心修改：处理中文字符 (解决 IRI found where URL expected 错误) ---
+        // encodeURI 会对中文字符进行转义，但保留 / : 等 URL 结构符号
+        const encodedPath = encodeURI(cleanItemPath);
+        const fullUrl = `${cleanBaseUrl}${encodedPath}`;
 
         feed.addItem({
           title: item.title,
           id: fullUrl,
           link: fullUrl,
           date: new Date(parseInt(y), parseInt(m) - 1, parseInt(d)),
-          // 增加一个简短描述，有助于阅读器识别
           description: `发布于 ${item.date}`,
         });
       });
@@ -59,7 +65,7 @@ module.exports = function rssGeneratorPlugin(context) {
       const rssFilePath = path.join(outDir, 'rss.xml');
       fs.writeFileSync(rssFilePath, feed.rss2());
       
-      console.log(`\n[RSS Plugin] ✅ RSS Feed (带末尾斜杠) 已成功生成至: ${rssFilePath}`);
+      console.log(`\n[RSS Plugin] ✅ RSS Feed 已成功生成并完成 URL 编码: ${rssFilePath}`);
     },
   };
 };
