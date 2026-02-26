@@ -28,6 +28,9 @@ module.exports = function rssGeneratorPlugin(context) {
         language: "zh",
         copyright: `CC BY-SA 4.0`,
         generator: "Docusaurus Custom RSS Plugin",
+        feedLinks: {
+          rss: `${siteUrl.replace(/\/+$/, '')}/rss.xml`,
+          },
       });
 
       // 3. 填充条目
