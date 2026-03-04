@@ -43,3 +43,5 @@ lerna-debug.log*
 # 本地测试图片软链接
 static/articles/images
 
+# 自定义插件配置文件
+src/plugins/timeline-generator/timeline-data.json
