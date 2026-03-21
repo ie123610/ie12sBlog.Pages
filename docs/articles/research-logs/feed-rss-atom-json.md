@@ -61,7 +61,7 @@ RSS 2.X 规范 在全球大部分网站得到使用 但其并没有通过W3C、I
 
 ---
 
-### ATOM
+## ATOM
 
 ATOM（Atom Syndication Format）与RSS一样基于XML格式 其是IETF的建议标准（RFC 4287）  
 借鉴了各种版本RSS的使用经验 被设计作为RSS的替代品 发展Atom的动机在于解决 RSS 2.0 所存在的一些问题  
@@ -188,8 +188,8 @@ ATOM和RSS都基于XML 均可以添加命名空间（XML Namespaces 即 xmlns）
 不过这个 雅虎的media扩展 已经被RSS咨询委员会 收编 [链接](https://www.rssboard.org/media-rss)  
 原先的链接已经失效 当然通过 网页时光机 还是可以看到的  
 
-* `http://search.yahoo.com/mrss/` 网页时光机(https://web.archive.org/web/20260301000000*/http://search.yahoo.com/mrss/)
-* ` http://video.search.yahoo.com/mrss` 网页时光机(https://web.archive.org/web/20260000000000*/http://video.search.yahoo.com/mrss)
+* `http://search.yahoo.com/mrss/` [网页时光机](https://web.archive.org/web/20260301000000*/http://search.yahoo.com/mrss/)
+* ` http://video.search.yahoo.com/mrss` [网页时光机](https://web.archive.org/web/20260000000000*/http://video.search.yahoo.com/mrss)
 
 
 YouTube这个空间声明中的链接似乎没有真正的内容  
@@ -297,6 +297,7 @@ JSON Feed 与 RSS 和 ATOM 不同其使用 JSON格式书写而非XML
 RSS/ATOM: https://validator.w3.org/feed/  
 Feed JSON: https://validator.jsonfeed.org/  
 
+---
 
 ## 参考
 
