@@ -9,7 +9,7 @@ module.exports = function rssGeneratorPlugin(context) {
       // 1. 动态导入 feed (解决 ERR_PACKAGE_PATH_NOT_EXPORTED)
       const { Feed } = await import('feed');
 
-      const jsonPath = path.join(__dirname, '../timeline-generator/timeline-data.json');
+      const jsonPath = path.join(__dirname, '../../../cust-plugins/timeline-data.json');
 
       if (!fs.existsSync(jsonPath)) {
         console.warn('\n[RSS Plugin] ⚠️ 找不到 timeline-data.json，跳过生成。');
