@@ -1,6 +1,5 @@
 // @ts-check
 import {themes as prismThemes} from 'prism-react-renderer';
-import imgAspectRatioPlugin from './src/plugins/imageAspectRatio.js' 
 import path from 'path';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -39,7 +38,6 @@ const config = {
         dataDomains: "ie12blog.36102025.xyz", 
       },
     ],
-    path.resolve(__dirname, 'src/plugins/timeline-generator'),
     path.resolve(__dirname, 'src/plugins/rss-generator'),
   ],
 
@@ -65,7 +63,6 @@ const config = {
           sidebarPath: './sidebars.js',
           showLastUpdateTime: true,
           editUrl: 'https://github.com/ie123610/ie12sBlog.Pages/edit/main',
-          beforeDefaultRehypePlugins: [imgAspectRatioPlugin],
         },
         theme: {
           customCss: './src/css/custom.css',

@@ -44,4 +44,9 @@ lerna-debug.log*
 static/articles/images
 
 # 自定义插件配置文件
-src/plugins/timeline-generator/timeline-data.json
+*/timeline-data.json
+
+# doc 区域
+/docs
+
+
