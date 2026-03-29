@@ -47,7 +47,6 @@ static/articles/images
 */timeline-data.json
 
 # doc 区域
-
 /docs
-!/docs/占位符.txt
+
 
