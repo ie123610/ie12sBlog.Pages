@@ -1,11 +1,12 @@
 {
-  "name": "my-website",
+  "name": "ie12blog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "pre-process": "node cust-plugins/pre-process.js",
+    "start": "npm run pre-process && docusaurus start",
+    "build": "npm run pre-process && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

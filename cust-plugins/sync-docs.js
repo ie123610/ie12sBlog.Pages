@@ -32,7 +32,7 @@ async function syncDocs() {
       }
     });
 
-    console.log(`✅ 成功将 content/ 同步至 docs/`);
+    console.log(`✅ 成功将 docs-raw/ 同步至 docs/`);
     console.log('--- [Sync Task End] ---\n');
   } catch (err) {
     console.error('❌ 同步过程中发生错误:', err);

@@ -49,11 +49,14 @@ function generateTimeline() {
       const month = dateMatch[2].padStart(2, '0');
       const day = dateMatch[3].padStart(2, '0');
 
-      // 4. 路径处理逻辑 (完全对齐原脚本)
-      // a. 统一斜杠并移除后缀
+      // 4. 路径处理逻辑
+      // [新增] 保存真实相对路径，用于后续脚本定位文件
+      const sourcePath = fileName.replace(/\\/g, '/'); 
+
+      // a. 统一斜杠并移除后缀 (用于生成 webPath)
       let webPath = fileName.replace(/\\/g, '/').replace(/\.mdx?$/, '');
 
-      // b. 剔除每一级路径开头的序号前缀 (如 "01-", "1. ", "02_")
+      // b. 剔除序号前缀 (前端展示路径)
       webPath = webPath
         .split('/')
         .map(part => part.replace(/^(\d+[-_.\s]+)/, ''))
@@ -70,7 +73,8 @@ function generateTimeline() {
         date: `${year}.${month}.${day}`,
         sortKey: parseInt(`${year}${month}${day}`),
         title: title,
-        link: `/${webPath}`.replace(/\/$/, '') // 移除末尾斜杠
+        link: `/${webPath}`.replace(/\/$/, '') || '/',
+        sourcePath: sourcePath // <--- [关键] 存储真实磁盘路径，例如 "01-category/02-article.md"
       });
     } else {
       // 记录未匹配日期的文件名，用于日志输出
