@@ -4,7 +4,8 @@ const matter = require('gray-matter');
 
 const docsDir = path.resolve(__dirname, '../docs');
 const timelinePath = path.resolve(__dirname, '../cust-plugins/timeline-data.json');
-const dateReg = /^\d{4}[\.\-\/]\d{2}[\.\-\/]\d{2}$/;
+const dateReg = /^\d{4}[\.\-\/]\d{1,2}[\.\-\/]\d{1,2}/;
+
 
 function cleanText(text) {
   return text
