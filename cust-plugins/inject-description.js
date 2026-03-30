@@ -26,10 +26,16 @@ function injectDescription() {
     return;
   }
   
-  // 1. 加载白名单 (改用 sourcePath 作为 Key)
+  // 1. 加载数据并建立引用映射
   const timelineData = JSON.parse(fs.readFileSync(timelinePath, 'utf-8'));
-  const whiteListPaths = new Set(timelineData.map(item => item.sourcePath));
-  console.log(`(i) 已加载时间线记录: ${whiteListPaths.size} 条`);
+  const timelineMap = new Map();
+  timelineData.forEach(item => {
+    if (item.sourcePath) {
+      timelineMap.set(item.sourcePath, item);
+    }
+  });
+  
+  console.log(`(i) 已加载时间线记录: ${timelineMap.size} 条`);
 
   // 2. 递归扫描物理磁盘
   const getAllFiles = (dir) => {
@@ -55,12 +61,13 @@ function injectDescription() {
   const notInTimelineList = [];
   const contentTooShortList = [];
 
-  // 3. 遍历物理文件进行比对
+  // 3. 遍历物理文件
   allPhysicalFiles.forEach(filePath => {
     const relativePath = path.relative(docsDir, filePath).replace(/\\/g, '/');
+    const timelineItem = timelineMap.get(relativePath);
     
-    // --- 审计 A: 是否在时间线白名单中 ---
-    if (!whiteListPaths.has(relativePath)) {
+    // 情况 A: 该文件不在时间线内
+    if (!timelineItem) {
       notInTimelineList.push(relativePath);
       return; 
     }
@@ -68,39 +75,49 @@ function injectDescription() {
     const source = fs.readFileSync(filePath, 'utf-8');
     const { data, content } = matter(source);
 
-    // --- 审计 B: 是否已有描述 ---
-    if (data.description) {
-      existingDescList.push(relativePath);
-      return;
-    }
+    // 获取已有描述
+    let finalDescription = data.description || "";
 
-    // --- 注入逻辑 ---
-    const lines = content.split('\n');
-    let collectedText = "";
-    for (let line of lines) {
-      const trimmed = line.trim();
-      if (!trimmed || trimmed.startsWith('#') || trimmed.startsWith('!') || 
-          trimmed.startsWith('```') || dateReg.test(trimmed)) continue;
+    // 情况 B: 如果没有描述，则执行提取
+    if (!finalDescription) {
+      const lines = content.split('\n');
+      let collectedText = "";
+      for (let line of lines) {
+        const trimmed = line.trim();
+        if (!trimmed || trimmed.startsWith('#') || trimmed.startsWith('!') || 
+            trimmed.startsWith('```') || dateReg.test(trimmed)) continue;
 
-      const cleaned = cleanText(trimmed);
-      if (cleaned.length < 5) continue;
+        const cleaned = cleanText(trimmed);
+        if (cleaned.length < 5) continue;
 
-      collectedText += cleaned + " ";
-      if (collectedText.length > 160) break;
-    }
+        collectedText += cleaned + " ";
+        if (collectedText.length > 160) break;
+      }
 
-    if (collectedText.trim()) {
-      data.description = collectedText.trim().slice(0, 150) + "...";
-      const newContent = matter.stringify(content, data);
-      fs.writeFileSync(filePath, newContent, 'utf-8');
-      successList.push(relativePath);
+      if (collectedText.trim()) {
+        finalDescription = collectedText.trim().slice(0, 150) + "...";
+        // 物理同步到 Markdown 的 Front Matter
+        data.description = finalDescription;
+        const newContent = matter.stringify(content, data);
+        fs.writeFileSync(filePath, newContent, 'utf-8');
+        successList.push(relativePath);
+      } else {
+        contentTooShortList.push(relativePath);
+      }
     } else {
-      contentTooShortList.push(relativePath);
+      existingDescList.push(relativePath);
     }
+
+    // --- 核心逻辑：将 description 字段追加到 JSON 对象中 ---
+    // 无论从文件读取的还是新提取的，都确保写进 JSON
+    timelineItem.description = finalDescription || "";
   });
 
-  // --- 详细报告输出 ---
+  // 4. 直接写回原数组（保留所有原始字段：sourcePath, sortKey, link, title, date）
+  fs.writeFileSync(timelinePath, JSON.stringify(timelineData, null, 2), 'utf-8');
+  console.log(`✅ JSON 数据已增强: 为 ${timelineData.length} 条记录同步了 description 字段`);
 
+  // --- 详细日志报告 ---
   if (successList.length > 0) {
     console.log('\n✅ [已成功注入]');
     successList.forEach(name => console.log(`   + ${name}`));
@@ -121,9 +138,7 @@ function injectDescription() {
     contentTooShortList.forEach(name => console.log(`   ? ${name}`));
   }
 
-  //console.log('\n====================================');
   console.log(`--- [description 注入成功:${successList.length} | 已有: ${existingDescList.length} | 不在时间线内:${notInTimelineList.length}] ---\n`);
-  //console.log('====================================\n');
 }
 
 if (require.main === module) {
@@ -131,3 +146,4 @@ if (require.main === module) {
 } else {
   module.exports = injectDescription;
 }
+
