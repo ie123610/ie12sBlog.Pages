@@ -6,7 +6,7 @@ import path from 'path';
 const config = {
   title: 'ie12sBlog',
   tagline: 'ie12的博客',
-  favicon: 'img/Internet_Explorer_10.svg',
+  favicon: 'img/favicon.ico',
   url: 'https://ie12blog.36102025.xyz',
   baseUrl: '/',
   trailingSlash: true,
