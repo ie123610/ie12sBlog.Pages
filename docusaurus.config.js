@@ -38,7 +38,6 @@ const config = {
         dataDomains: "ie12blog.36102025.xyz", 
       },
     ],
-    path.resolve(__dirname, 'src/plugins/rss-generator'),
   ],
 
   themes: [

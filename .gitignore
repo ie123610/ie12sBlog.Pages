@@ -48,5 +48,12 @@ static/articles/images
 
 # doc 区域
 /docs
+docs/占位符.txt
+
+# rss
+*/rss.xml
+
+
+
 
 

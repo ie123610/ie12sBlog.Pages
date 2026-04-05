@@ -2,6 +2,7 @@ const syncDocs = require('./sync-docs');
 const injectImageSize = require('./inject-image-size');
 const generateTimeline = require('./timeline-generator.js');
 const injectDescription = require('./inject-description.js');
+const generateRSS = require('./generate-rss');
 
 async function runPipeline() {
   console.log('====================================');
@@ -20,9 +21,13 @@ async function runPipeline() {
     // 扫描内容生成 src/data/timeline-data.json
     await generateTimeline();
 
-    // 步骤 4: SEO 描述注入
+    // 步骤 4: 描述注入
     // 扫描隔离区，补齐没有 description 的 frontmatter
     await injectDescription();
+
+    // 生成 RSS 订阅源 (
+    // 注意：这一步会读取注入后的 description 字段
+    await generateRSS();
 
     console.log('✨ 预处理完成！');
     console.log('====================================');
