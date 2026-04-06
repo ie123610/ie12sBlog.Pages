@@ -54,7 +54,7 @@
 .markdown img.ratio-img {
   /* 1. 核心修复：强制让 img 表现为块级元素 */
   /* 只有变成 block 或 inline-block，aspect-ratio 才能在内容缺失时依然撑开空间 */
-  display: inline-block; 
+  display: block; 
   
   /* 2. 确保宽度存在，配合 aspect-ratio 自动计算高度 */
   /*width: 100%; 

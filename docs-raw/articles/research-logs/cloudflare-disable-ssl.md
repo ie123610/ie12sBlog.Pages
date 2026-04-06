@@ -1,4 +1,4 @@
-# Cloudflare 在指定域名下禁用SSL/TSL
+# Cloudflare 在指定域名下禁用SSL/TLS
 
 2026.4.4  
 
@@ -33,7 +33,7 @@ Cloudflare 提供网站加速服务和免费的SSL/TLS证书
 <img loading="lazy" src="../../images/cloudflare-disable-ssl/cf-rules-2.jpg" />
 
 
-* 规则名称可自定义
+* 规则名称可自定义  
 * 传入请求选择 **自定义筛选表达式**  
  如果需要设置多个子域名 可以通过联立多个条件
 * 匹配请求 字段选择 **主机名**
