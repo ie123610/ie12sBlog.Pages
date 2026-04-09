@@ -96,6 +96,16 @@ const config = {
           {
             html: `
               <div style="display: flex; align-items: center;">
+                <img src="/img/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 8px;"/>
+                星球穿梭
+              </div>
+            `,
+            href: 'https://www.boyouquan.com/planet-shuttle',
+            position: 'right',
+          },
+          {
+            html: `
+              <div style="display: flex; align-items: center;">
                 <img src="/img/planet-icon.png" width="24" height="24" style="margin-right: 8px;"/>
                 异次元之旅
               </div>
@@ -148,6 +158,7 @@ const config = {
       title: '传送门',
       items: [
         {html: `<a class="footer__link-item" href="https://travel.moe/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/planet-icon.png" width="24" height="24"/>异次元之旅</a>`},
+        {html: `<a class="footer__link-item" href="https://www.boyouquan.com/planet-shuttle" target="_blank" style="display: flex; align-items: center;"><img src="/img/planet-shuttle-logo.svg" width="24" height="24"/>星球穿梭</a>`},
         {html: `<a class="footer__link-item" href="https://www.travellings.cn/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/travelling-dark.png" width="36" height="36" />开往</a>`},
       ],
     },
