@@ -96,6 +96,26 @@ const config = {
           {
             html: `
               <div style="display: flex; align-items: center;">
+                <img src="/img/blogscn_icon.png" width="24" height="24" style="margin-right: 8px;"/>
+                Blogs CN
+              </div>
+            `,
+            href: 'https://blogscn.fun/random.html',
+            position: 'right',
+          },
+          {
+            html: `
+              <div style="display: flex; align-items: center;">
+                <img src="/img/blogsclub-shuttle.svg" width="32" height="32" style="margin-right: 8px;"/>
+                空间穿梭
+              </div>
+            `,
+            href: 'https://blogs.quest',
+            position: 'right',
+          },
+          {
+            html: `
+              <div style="display: flex; align-items: center;">
                 <img src="/img/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 8px;"/>
                 星球穿梭
               </div>
@@ -157,9 +177,12 @@ const config = {
     {
       title: '传送门',
       items: [
-        {html: `<a class="footer__link-item" href="https://travel.moe/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/planet-icon.png" width="24" height="24"/>异次元之旅</a>`},
-        {html: `<a class="footer__link-item" href="https://www.boyouquan.com/planet-shuttle" target="_blank" style="display: flex; align-items: center;"><img src="/img/planet-shuttle-logo.svg" width="24" height="24"/>星球穿梭</a>`},
-        {html: `<a class="footer__link-item" href="https://www.travellings.cn/go.html" target="_blank" style="display: flex; align-items: center;"><img src="/img/travelling-dark.png" width="36" height="36" />开往</a>`},
+        {html: `<a href="https://travel.moe/go.html"target="_blank"><img src="/img/travel-moe-default-white.png"style="width:auto;height:24px"title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！"></a>`},
+        {html: `<a href="https://blogscn.fun/" title="BLOGS·CN" target="_blank" > <img src="/img/blogs-cn-footer.png" alt="本站已加入BLOGS·CN" style="width:138px;height:24px;"> </a>`},
+        {html: `<a href="https://www.travellings.cn/go.html"target="_blank"rel="noopener"title="开往-友链接力"><img src="/img/travelling-footer.png"alt="开往-友链接力"width="120"></a>`},
+        {html: `<a href="https://blogs.quest" target="_blank" title="空间穿梭-随机访问BlogsClub成员博客"><img src="/img/shuttle_4.png "style="width:auto;height:30px "></a>`},
+        {html: `<a href="https://www.boyouquan.com/planet-shuttle" target="_blank" title=""><img src="/img/planet-shuttle-dark.svg"></a>`},
+        
       ],
     },
   ],
