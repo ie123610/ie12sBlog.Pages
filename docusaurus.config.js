@@ -78,7 +78,7 @@ const config = {
         {name: 'yandex-verification', content: 'a4de8a4e31fae19b'},
         {name: 'google-site-verification', content: 'TtT1Swq11wrVYAWojVGRYbjfGxFJP6uW0kTWnjiHse8'},
       ],
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/ie12-social-card.png',
       navbar: {
         title: 'ie12sBlog',
         logo: { src: 'img/logo.png' },
