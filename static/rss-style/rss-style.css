@@ -3,9 +3,16 @@ body {
   background: #3b70b3; margin: 0; padding: 0; 
   display: flex; justify-content: center; align-items: center;
   height: 100vh; overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px; /* 为页脚留出空间 */
 }
 
-.ie-window-frame { width: 1000px; height: 95vh; display: flex; flex-direction: column; }
+.ie-window-frame { width: 1000px; height: 95vh; display: flex; flex-direction: column; z-index: 2;}
 
 .ie-client-area { 
   flex: 1; min-height: 0; display: flex; flex-direction: column; 
@@ -18,15 +25,15 @@ body {
 .title-bar-text { display: flex; align-items: center; gap: 4px; line-height: 1; font-size: 12px; }
 .title-bar-icon { 
   width: 16px; height: 16px; 
-  background-image: url('./img/ie7Logo.png'); 
+  background-image: url('./img/ie8Logo.png'); 
   background-size: contain; background-repeat: no-repeat;
 }
 
-.ie7-nav-zone {
+.ie8-nav-zone {
   display: flex; align-items: center; padding: 6px 8px; background: #ece9d8; gap: 4px; border-bottom: 1px solid #d6d2c2; 
 }
 
-.ie7-nav-buttons {
+.ie8-nav-buttons {
   width: 63px; height: 26.1px;
   background-image: url('./img/travel.png'); 
   background-size: 100% 100%; background-repeat: no-repeat; flex-shrink: 0;
@@ -35,10 +42,10 @@ body {
 .address-bar-container { flex: 1; display: flex; align-items: center; position: relative; }
 .address-favicon {
   position: absolute; left: 5px; z-index: 10; width: 16px; height: 16px;
-  background-image: url('./img/ie7Pgae.png'); background-size: contain; pointer-events: none;
+  background-image: url('./img/ie8Pgae.png'); background-size: contain; pointer-events: none;
 }
 
-.ie7-address-select {
+.ie8-address-select {
   width: 100%; height: 24px; margin: 0 !important; padding-left: 25px !important;
   font-family: "Microsoft YaHei", sans-serif !important; font-size: 12px; pointer-events: none;
 }
@@ -57,7 +64,7 @@ body {
   background-image: url('./img/ADDRESS_PRESSED_XP.png');
 }
 
-.ie7-menu-bar { padding-top: 4px; margin-bottom: 4px; }
+.ie8-menu-bar { padding-top: 4px; margin-bottom: 4px; }
 
 /* --- 网页主内容区 (微软雅黑) --- */
 .web-page-content { 
@@ -107,3 +114,32 @@ body {
   font-family: "SimSun", "宋体", serif !important;
 }
 .field-zoom { text-align: right; flex: 0.5; }
+
+
+/* 整个网页底部的信息行样式 */
+.global-footer-info {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Tahoma", "SimSun", sans-serif;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  pointer-events: none; /* 防止遮挡交互 */
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+
+/*恢复链接的可点击性 */
+.global-footer-info a {
+  color: rgba(255, 255, 255, 0.8);
+  /*让链接重新响应鼠标事件 */
+  pointer-events: auto; 
+  cursor: pointer;
+}
+
+.global-footer-info a:hover {
+  color: #fff;
+}

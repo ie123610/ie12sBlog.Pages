@@ -7,10 +7,12 @@
       <head>
         <meta charset="utf-8" />
         <title>ie12sBlog - Windows Internet Explorer</title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="/rss-style/xp.css" />
         <link rel="stylesheet" href="/rss-style/rss-style.css" />
       </head>
       <body>
+        <!-- 模拟浏览器窗口 -->
         <div class="window ie-window-frame">
           <!-- 标题栏 -->
           <div class="title-bar">
@@ -27,11 +29,11 @@
 
           <div class="ie-client-area">
             <!-- 导航区 -->
-            <div class="ie7-nav-zone">
-              <div class="ie7-nav-buttons" title="后退/前进"></div>
+            <div class="ie8-nav-zone">
+              <div class="ie8-nav-buttons" title="后退/前进"></div>
               <div class="address-bar-container">
                 <div class="address-favicon"></div>
-                <select class="ie7-address-select">
+                <select class="ie8-address-select">
                   <option selected="selected">https://ie12blog.36102025.xyz/rss.xml</option>
                 </select>
               </div>
@@ -42,7 +44,7 @@
             </div>
 
             <!-- 菜单栏 -->
-            <div class="ie7-menu-bar">
+            <div class="ie8-menu-bar">
               <menu role="tablist" style="margin:0; padding: 2px 10px; display:flex; gap:15px; list-style:none;">
                 <li style="font-size:12px; cursor:default;">文件(F)</li>
                 <li style="font-size:12px; cursor:default;">编辑(E)</li>
@@ -55,7 +57,6 @@
 
             <!-- 网页主内容 (包含嵌入式提示) -->
             <div class="web-page-content">
-              <!-- 提示横幅现已放入模拟网页内容中，随页面滚动 -->
               <div class="rss-info-banner">
                 <div class="rss-icon-small">RSS</div>
                 <div>
@@ -86,6 +87,11 @@
               <p class="status-bar-field field-zoom">100%</p>
             </div>
           </div>
+        </div>
+
+        <!-- 窗口之外，网页最底部的信息行 -->
+        <div class="global-footer-info">
+          Powered by <a href="https://botoxparty.github.io/XP.css/" target="_blank">XP.css</a>
         </div>
       </body>
     </html>
