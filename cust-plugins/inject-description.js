@@ -9,7 +9,8 @@ const dateReg = /^\d{4}[\.\-\/]\d{1,2}[\.\-\/]\d{1,2}/;
 
 function cleanText(text) {
   return text
-    .replace(/<[^>]+>/g, '')             
+    .replace(/<[^>]+>/g, '')
+    .replace(/&/g, '&amp;')
     .replace(/\{.*?\}/g, '')             
     .replace(/!\[.*?\]\(.*?\)/g, '')     
     .replace(/\[(.*?)\]\(.*?\)/g, '$1')   
