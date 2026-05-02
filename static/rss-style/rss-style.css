@@ -1,0 +1,145 @@
+* { box-sizing: border-box; }
+body { 
+  background: #3b70b3; margin: 0; padding: 0; 
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh; overflow: hidden;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px; /* 为页脚留出空间 */
+}
+
+.ie-window-frame { width: 1000px; height: 95vh; display: flex; flex-direction: column; z-index: 2;}
+
+.ie-client-area { 
+  flex: 1; min-height: 0; display: flex; flex-direction: column; 
+  background: #ece9d8; margin: 2px;
+  font-family: "SimSun", "宋体", serif; 
+}
+
+/* --- 导航与地址栏 --- */
+.title-bar { height: 30px; min-height: 30px; display: flex; align-items: center; padding: 3px 3px 3px 6px !important; }
+.title-bar-text { display: flex; align-items: center; gap: 4px; line-height: 1; font-size: 12px; }
+.title-bar-icon { 
+  width: 16px; height: 16px; 
+  background-image: url('./img/ie8Logo.png'); 
+  background-size: contain; background-repeat: no-repeat;
+}
+
+.ie8-nav-zone {
+  display: flex; align-items: center; padding: 6px 8px; background: #ece9d8; gap: 4px; border-bottom: 1px solid #d6d2c2; 
+}
+
+.ie8-nav-buttons {
+  width: 63px; height: 26.1px;
+  background-image: url('./img/travel.png'); 
+  background-size: 100% 100%; background-repeat: no-repeat; flex-shrink: 0;
+}
+
+.address-bar-container { flex: 1; display: flex; align-items: center; position: relative; }
+.address-favicon {
+  position: absolute; left: 5px; z-index: 10; width: 16px; height: 16px;
+  background-image: url('./img/ie8Pgae.png'); background-size: contain; pointer-events: none;
+}
+
+.ie8-address-select {
+  width: 100%; height: 24px; margin: 0 !important; padding-left: 25px !important;
+  font-family: "Microsoft YaHei", sans-serif !important; font-size: 12px; pointer-events: none;
+}
+
+.action-button-group { display: flex; gap: 4px; margin-left: 2px; height: 24px; align-items: center; }
+.address-action-div { width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.action-icon { width: 100%; height: 100%; background-repeat: no-repeat; background-image: url('./img/ADDRESS_XP.png'); background-size: 60px 20px; }
+
+#ie-go-btn-icon { background-position: -40px 0; }
+#ie-stop-btn-icon { background-position: -20px 0; }
+
+.address-action-div:hover .action-icon {
+  background-image: url('./img/ADDRESS_HOT_XP.png');
+}
+.address-action-div:active .action-icon {
+  background-image: url('./img/ADDRESS_PRESSED_XP.png');
+}
+
+.ie8-menu-bar { padding-top: 4px; margin-bottom: 4px; }
+
+/* --- 网页主内容区 (微软雅黑) --- */
+.web-page-content { 
+  flex: 1; background: white; overflow-y: scroll; 
+  padding: 0; /* 移除外层内边距，让提示横幅可以贴边 */
+  margin: 0 4px;
+  border: 2px solid #716f64; border-right-color: #fff; border-bottom-color: #fff;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+/* --- 嵌入页面的 RSS 提示横幅 --- */
+.rss-info-banner {
+  background: #ffffcc; /* 截图中的浅黄色背景 */
+  border-bottom: 1px solid #e1d2b8;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  color: #000;
+  line-height: 1.5;
+}
+.rss-icon-small {
+  width: 26px; height: 18px;
+  background: #ff6600;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  flex-shrink: 0;
+  margin-top: 0.5px;
+}
+
+.feed-container { padding: 0 40px 25px 40px; }
+.feed-header { color: #2b579a; font-size: 24px; margin: 0 0 20px 0; border-bottom: 1px solid #2b579a; padding-bottom: 10px; font-weight: bold; }
+.entry-item { margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px dotted #ccc; }
+.entry-title { font-size: 18px; color: #2b579a; font-weight: bold; text-decoration: underline; display: block; margin-bottom: 8px; }
+
+/* --- 状态栏 --- */
+.status-bar { height: 23px; display: flex; }
+.status-bar-field {
+  padding: 0 6px !important; font-size: 12px; line-height: 21px; flex: 1;
+  font-family: "SimSun", "宋体", serif !important;
+}
+.field-zoom { text-align: right; flex: 0.5; }
+
+
+/* 整个网页底部的信息行样式 */
+.global-footer-info {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Tahoma", "SimSun", sans-serif;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  pointer-events: none; /* 防止遮挡交互 */
+  letter-spacing: 0.5px;
+  z-index: 10;
+}
+
+
+/*恢复链接的可点击性 */
+.global-footer-info a {
+  color: rgba(255, 255, 255, 0.8);
+  /*让链接重新响应鼠标事件 */
+  pointer-events: auto; 
+  cursor: pointer;
+}
+
+.global-footer-info a:hover {
+  color: #fff;
+}
