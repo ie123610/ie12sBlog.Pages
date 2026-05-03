@@ -68,7 +68,8 @@
                 <div class="feed-header">ie12sBlog</div>
                 <xsl:for-each select="/rss/channel/item">
                   <div class="entry-item">
-                    <a class="entry-title" href="{link}">
+                    <!-- 修改此处：添加 target="_blank" -->
+                    <a class="entry-title" href="{link}" target="_blank">
                       <xsl:value-of select="title" />
                     </a>
                     <div style="color:#666; font-size:12px; margin-bottom:12px;">发布日期: <xsl:value-of select="pubDate" /></div>

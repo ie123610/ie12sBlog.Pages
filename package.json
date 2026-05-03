@@ -29,7 +29,9 @@
     "probe-image-size": "^7.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "unist-util-visit": "^5.1.0"
+    "unist-util-visit": "^5.1.0",
+    "xmldom": "^0.6.0",
+    "xslt-processor": "^5.0.10"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.0",

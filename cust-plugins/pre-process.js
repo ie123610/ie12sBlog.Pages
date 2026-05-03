@@ -1,8 +1,9 @@
-const syncDocs = require('./sync-docs');
-const injectImageSize = require('./inject-image-size');
+const syncDocs = require('./sync-docs.js');
+const injectImageSize = require('./inject-image-size.js');
 const generateTimeline = require('./timeline-generator.js');
 const injectDescription = require('./inject-description.js');
-const generateRSS = require('./generate-rss');
+const generateRSS = require('./generate-rss.js');
+const generateRssFriendlyView = require('./rss2html.js');
 
 async function runPipeline() {
   console.log('====================================');
@@ -28,7 +29,10 @@ async function runPipeline() {
     // 生成 RSS 订阅源 (
     // 注意：这一步会读取注入后的 description 字段
     await generateRSS();
-
+    
+    //生成RSS友好视图
+    await generateRssFriendlyView();
+    
     console.log('✨ 预处理完成！');
     console.log('====================================');
   } catch (err) {
