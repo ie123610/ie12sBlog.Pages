@@ -6,7 +6,7 @@ const path = require('path');
 const paths = {
     xml: path.join(__dirname, '../static/rss.xml'),
     xsl: path.join(__dirname, '../static/rss-style/rss-style.xsl'),
-    output: path.join(__dirname, '../static/rss-friendly-view.html')
+    output: path.join(__dirname, '../static/rss-friendly-view.htm')
 };
 
 async function generateRssFriendlyView() {

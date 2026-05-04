@@ -26,7 +26,7 @@ window.onload = function() {
         `);
         
         // 3. 设置目标页面
-        ifrm.setAttribute('src', '/rss-friendly-view.html');
+        ifrm.setAttribute('src', '/rss-friendly-view.htm');
         
         // 4. 将 iframe 挂载到根节点
         document.documentElement.appendChild(ifrm);
