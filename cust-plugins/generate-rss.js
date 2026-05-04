@@ -86,6 +86,22 @@ async function generateRSS() {
     const scriptTag = `<script src="${CONFIG.jsPath}" xmlns="http://www.w3.org/1999/xhtml"></script>\n    `;
     rssContent = rssContent.replace('<channel>', scriptTag + '<channel>');
 
+    // --- 新增：插入用于同步拦截渲染的内联脚本 ---
+    const inlineBlockingScript = `
+<script xmlns="http://www.w3.org/1999/xhtml">
+//<![CDATA[
+    (function() {
+        var head = document.getElementsByTagName('head')[0] || document.documentElement;
+        var style = document.createElementNS('http://www.w3.org/1999/xhtml', 'style');
+        style.textContent = 'rss, channel, item { display: none !important; }';
+        head.insertBefore(style, head.firstChild);
+    })();
+//]]>
+</script>`;
+    
+    // 将内联脚本插入到 <rss ...> 标签之后
+    rssContent = rssContent.replace(/(<rss[^>]*>)/, `$1${inlineBlockingScript}`);
+
     // 3. 统一替换时区标识[cite: 1]
     rssContent = rssContent.replace(/GMT/g, '+0800');
 
@@ -93,6 +109,7 @@ async function generateRSS() {
     
     console.log(`✅ RSS Feed 生成成功: ${rssFilePath}`);
     console.log(`📊 共处理条目: ${timelineData.length} 个`);
+
   } catch (err) {
     console.error('❌ 写入 RSS 文件失败:', err);
   }

@@ -1,8 +1,13 @@
-// 1. 立即执行：完全隐藏原始 XML 渲染
-document.documentElement.setAttribute('style', 'display: none ;');
-
 window.onload = function() {
     try {
+        // 1. 使用你提供的精准选择器查找并移除临时样式
+        // "rss > style:nth-child(1)" 表示根元素 rss 下的第一个 style 子元素
+        const tempStyle = document.querySelector("rss > style:nth-child(1)");
+        if (tempStyle) {
+            tempStyle.remove();
+            console.log('✅ 已移除拦截样式表');
+        }
+
         // 2. 创建全屏 iframe (使用 XHTML 命名空间以确保在 XML 环境下的渲染兼容性)
         const ifrm = document.createElementNS('http://www.w3.org/1999/xhtml', 'iframe');
         
@@ -26,24 +31,19 @@ window.onload = function() {
         // 4. 将 iframe 挂载到根节点
         document.documentElement.appendChild(ifrm);
         
-        /**
-         * 5. 恢复根节点显示但禁用滚动条
-         * 关键点：
-         * - display: block !important 恢复容器显示。
-         * - overflow: hidden !important 彻底禁用原始 XML 内容产生的滚动条。
-         * - margin/padding: 0 消除 XP 风格 CSS 可能引入的外边距。
-         */
-        document.documentElement.setAttribute('style', 'display: block ; margin: 0; padding: 0; overflow: hidden; height: 100vh;');
-        
-         // 6. 隐藏 XML 渲染的残留内容
-         // 为了防止 CSS 渲染的 channel 等元素依然在后台占据空间，可以通过样式将其高度塌陷。
+        // 5. 隐藏 XML 渲染的残留内容
         const style = document.createElementNS('http://www.w3.org/1999/xhtml', 'style');
-        style.textContent = 'channel { display: none; }'; // 隐藏 CSS 渲染出的主界面容器[cite: 2]
+        style.textContent = 'channel { display: none; }'; 
         document.documentElement.appendChild(style);
+        
+        /**
+         * 6. 恢复根节点显示但禁用滚动条
+         * 关键点：使用 !important 确保完全覆盖之前脚本可能残留的任何 display: none 状态
+         */
+        document.documentElement.setAttribute('style', 'display: block !important; margin: 0; padding: 0; overflow: hidden; height: 100vh;');
         
         console.log('✅ 成功接管 RSS 视图并禁用滚动条');
     } catch (e) {
-        // 发生错误时恢复显示，防止页面永久空白[cite: 2]
         document.documentElement.setAttribute('style', 'display: block !important;');
         console.error('❌ 脚本执行失败:', e);
     }
