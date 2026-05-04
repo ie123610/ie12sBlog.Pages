@@ -16,8 +16,8 @@ window.onload = function() {
             border: none;
             margin: 0;
             padding: 0;
-            z-index: 999999;
-            background: white;
+            z-index: 999;
+            background: #3b70b3;
         `);
         
         // 3. 设置目标页面
