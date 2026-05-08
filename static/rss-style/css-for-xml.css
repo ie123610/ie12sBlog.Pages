@@ -1,0 +1,127 @@
+/* 针对 RSS 根节点及 channel 的基础布局 */
+rss, channel {
+    display: block;
+    background: #3b70b3; /* 还原经典 XP 蓝色背景 */
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 调整 rss 容器，通过 padding 让内容区与上下边缘产生间距 */
+rss {
+    padding: 30px 0; /* 上下预留 30px 的间距 */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* 模拟网页主内容区容器 */
+channel {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* 修改 min-height，确保高度自适应内容且不再强制撑满全屏 */
+    min-height: calc(100vh - 60px); 
+    border: 1px inset #716f64;
+    background: white;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2); 
+}
+
+/* --- 顶部黄色 RSS 提示横幅 --- */
+channel > description {
+    display: block;
+    background: #ffffcc; /* 浅黄色背景 */
+    border-bottom: 1px solid #e1d2b8;
+    padding: 15px 25px;
+    margin: 0 0 25px 0;
+    font-size: 0; 
+    line-height: 1.8; 
+}
+
+/* 插入指定的提示文字，并强制换行 */
+channel > description::after {
+    content: "这是一个RSS订阅源。 复制当前URL到RSS阅读器，即可订阅本博客的所有文章。\A 如果您看到此段内容说明 JavaScript 已经禁用，为获得更好的显示效果请启用 JavaScript 功能。";
+    color: #000;
+    font-size: 13px; 
+    display: inline-block;
+    /* 修改为 middle 以实现与图标的中线对齐 */
+    vertical-align: middle; 
+    white-space: pre; 
+    font-weight: bold;
+}
+
+channel > description::before {
+    content: "RSS";
+    background: #ff6600;
+    color: white;
+    font-weight: bold;
+    font-size: 10px; 
+    padding: 2px 6px;
+    margin-right: 12px;
+    border-radius: 2px;
+    display: inline-block;
+    /* 修改为 middle 实现垂直居中对齐 */
+    vertical-align: middle; 
+}
+
+/* --- 订阅源标题 (Feed Header) --- */
+channel > title {
+    display: block;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    color: #2b579a;
+    font-size: 24px;
+    height: 45px;
+    font-weight: bold;
+    border-bottom: 1px solid #2b579a;
+    background: #ebe9d7; 
+}
+
+/* --- 文章条目 (Entry Item) --- */
+item {
+    display: block;
+    padding: 0 40px 15px 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted #ccc;
+}
+
+item > title {
+    display: block;
+    font-size: 18px;
+    color: #2b579a;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* 发布日期容器 */
+item > pubDate {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+/* 使用伪元素添加“发布时间：”字样 */
+item > pubDate::before {
+    content: "发布时间：";
+}
+
+item > description {
+    display: block;
+    line-height: 1.6;
+    color: #333;
+    font-size: 13px;
+    white-space: normal;
+}
+
+/* --- 隐藏元素 --- */
+link,
+guid,
+docs,
+generator,
+copyright,
+lastBuildDate,
+language {
+    display: none;
+}

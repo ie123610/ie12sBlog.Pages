@@ -1,29 +1,30 @@
 const fs = require('fs-extra');
 const path = require('path');
 
-// 配置信息 (因为是独立运行，需要手动指定这些原本由 Docusaurus 提供的配置)
+// 配置信息
 const CONFIG = {
-  siteUrl: 'https://ie12blog.36102025.xyz', // 替换为你的真实域名
+  siteUrl: 'https://ie12blog.36102025.xyz',
   siteTitle: 'ie12sBlog',
   siteTagline: 'ie12的博客-网络教程与技术研究',
-  outDir: path.resolve(__dirname, '../static'), // RSS 输出目录 
-  jsonPath: path.resolve(__dirname, '../cust-plugins/timeline-data.json')
+  outDir: path.resolve(__dirname, '../static'), 
+  jsonPath: path.resolve(__dirname, '../cust-plugins/timeline-data.json'),
+  // 路径变量定义
+  jsPath: '/rss-style/rss-ifrm-loader.js', 
+  cssPath: '/rss-style/css-for-xml.css' // 请确保此路径指向你的 CSS 文件
 };
 
 async function generateRSS() {
   console.log('--- [RSS Generator Start] ---');
 
-  // 1. 动态导入 feed 库
   let Feed;
   try {
     const feedModule = await import('feed');
     Feed = feedModule.Feed;
   } catch (err) {
-    console.error('❌ 无法加载 feed 库，请确保已安装: npm install feed');
+    console.error('❌ 无法加载 feed library，请确保已安装: npm install feed');
     return;
   }
 
-  // 2. 检查数据源
   if (!fs.existsSync(CONFIG.jsonPath)) {
     console.warn('⚠️  找不到 timeline-data.json，跳过生成。');
     return;
@@ -32,7 +33,6 @@ async function generateRSS() {
   const timelineData = JSON.parse(fs.readFileSync(CONFIG.jsonPath, 'utf-8'));
   const cleanBaseUrl = CONFIG.siteUrl.replace(/\/+$/, '');
 
-  // 3. 初始化 Feed
   const feed = new Feed({
     title: CONFIG.siteTitle,
     description: CONFIG.siteTagline,
@@ -46,52 +46,70 @@ async function generateRSS() {
     },
   });
 
-// 4. 填充条目
   timelineData.forEach(item => {
-    // 假设 item.date 是 "2026.03.21"
-    const [y, m, d] = item.date.split('.');
-    
-    // 补齐两位数 (例如 3 -> 03)
-    const year = y;
-    const month = m.padStart(2, '0');
-    const day = d.padStart(2, '0');
+    const [y, m, d] = item.date.split('.').map(num => parseInt(num, 10));
+    const itemDate = new Date(Date.UTC(y, m - 1, d, 0, 0, 0));
 
-    // --- 核心修改：构造 ISO 8601 字符串 ---
-    // 强制指定 +08:00，这样无论环境时区是什么，Date 对象都会锁定在北京时间
-    // 设定在 00:00:00 
-    const isoDateString = `${year}-${month}-${day}T00:00:00+08:00`;
-    const itemDate = new Date(isoDateString);
-
-    // 路径处理 (与之前一致)
     let cleanItemPath = item.link.startsWith('/') ? item.link : `/${item.link}`;
     if (!cleanItemPath.endsWith('/')) {
       cleanItemPath += '/';
     }
 
     const encodedPath = encodeURI(cleanItemPath);
-    const fullUrl = `${CONFIG.siteUrl.replace(/\/+$/, '')}${encodedPath}`;
+    const fullUrl = `${cleanBaseUrl}${encodedPath}`;
 
     feed.addItem({
       title: item.title,
       id: fullUrl,
       link: fullUrl,
-      date: itemDate, // 传入带时区信息的 Date 对象
+      date: itemDate, 
       description: item.description || `发布于 ${item.date}`, 
     });
   });
 
-  // 5. 写入文件
   try {
-    // 确保输出目录存在
     if (!fs.existsSync(CONFIG.outDir)) {
       fs.ensureDirSync(CONFIG.outDir);
     }
 
     const rssFilePath = path.join(CONFIG.outDir, 'rss.xml');
-    fs.writeFileSync(rssFilePath, feed.rss2());
+    
+    let rssContent = feed.rss2();
+
+    // 1. 插入 CSS 引用并精确控制换行
+    // 这里匹配 '?>' 及其后的所有空白字符，替换为带单个换行的声明，确保下方 rss 节点紧跟其后
+    const cssTag = `<?xml-stylesheet type="text/css" href="${CONFIG.cssPath}"?>\n`;
+    rssContent = rssContent.replace(/\?>\s*/, `?>\n${cssTag}`);
+
+    // 2. 插入 XHTML 脚本标签 (使用变量 CONFIG.jsPath)
+    // 在 <channel> 标签之前插入，确保其位于 <rss> 内部
+    const scriptTag = `<script src="${CONFIG.jsPath}" xmlns="http://www.w3.org/1999/xhtml"></script>\n    `;
+    rssContent = rssContent.replace('<channel>', scriptTag + '<channel>');
+
+    // --- 新增：插入用于同步拦截渲染的内联脚本 ---
+    const inlineBlockingScript = `
+<script xmlns="http://www.w3.org/1999/xhtml">
+//<![CDATA[
+    (function() {
+        var head = document.getElementsByTagName('head')[0] || document.documentElement;
+        var style = document.createElementNS('http://www.w3.org/1999/xhtml', 'style');
+        style.textContent = 'rss, channel, item { display: none !important; }';
+        head.insertBefore(style, head.firstChild);
+    })();
+//]]>
+</script>`;
+    
+    // 将内联脚本插入到 <rss ...> 标签之后
+    rssContent = rssContent.replace(/(<rss[^>]*>)/, `$1${inlineBlockingScript}`);
+
+    // 3. 统一替换时区标识[cite: 1]
+    rssContent = rssContent.replace(/GMT/g, '+0800');
+
+    fs.writeFileSync(rssFilePath, rssContent);
     
     console.log(`✅ RSS Feed 生成成功: ${rssFilePath}`);
     console.log(`📊 共处理条目: ${timelineData.length} 个`);
+
   } catch (err) {
     console.error('❌ 写入 RSS 文件失败:', err);
   }
@@ -99,7 +117,6 @@ async function generateRSS() {
   console.log('--- [RSS Generator End] ---\n');
 }
 
-// 支持直接运行或被 require
 if (require.main === module) {
   generateRSS();
 } else {
