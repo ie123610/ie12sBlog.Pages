@@ -1,2 +1,5 @@
+# 图片路径
 /articles/images/* /images/:splat 200
 
+# 
+/assets/files/:name-:hash.txt/  /assets/files/:name-:hash.txt
