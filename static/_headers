@@ -9,3 +9,9 @@ https://:version.:project.pages.dev/*
   
 /search/
   X-Robots-Tag: noindex
+  
+/BC改进建议/
+  X-Robots-Tag: noindex
+  
+/cnblog-index/
+  X-Robots-Tag: noindex
