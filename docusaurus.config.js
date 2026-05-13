@@ -92,70 +92,77 @@ const config = {
       navbar: {
         title: 'ie12sBlog',
         logo: {
-        alt: 'ie12sBlog-logo',
-        src: 'img/logo.png',
-      },
+          alt: 'ie12sBlog-logo',
+          src: 'img/logo.png',
+        },
         items: [
           {
             html: `
               <div style="display: flex; align-items: center;">
                 <img alt="rss-log" src="/img/feed-icon.svg" width="20" height="20" style="margin-right: 8px;"/>
-       RSS订阅
+               RSS订阅
               </div>
             `,
             href: 'pathname:///rss.xml',
             position: 'right',
           },
           {
+            type: 'dropdown',
             html: `
-              <div style="display: flex; align-items: center;">
-                <img alt="Blogs CN-图标" src="/img/blogscn_icon.png" width="24" height="24" style="margin-right: 8px;"/>
-                Blogs CN
+              <div style="display: inline-flex; align-items: center; vertical-align: bottom;">
+                <img alt="portal-logo" src="/img/Aperture_Science.svg" width="24" height="24" style="margin-right: 6px;"/>
+                <span>传送门</span>
               </div>
-            `,
-            href: 'https://blogscn.fun/random.html',
+            `, 
             position: 'right',
-          },
-          {
-            html: `
-              <div style="display: flex; align-items: center;">
-                <img alt="空间穿梭-图标" src="/img/blogsclub-shuttle.svg" width="32" height="32" style="margin-right: 8px;"/>
-                空间穿梭
-              </div>
-            `,
-            href: 'https://blogs.quest',
-            position: 'right',
-          },
-          {
-            html: `
-              <div style="display: flex; align-items: center;">
-                <img alt="星球穿梭-图标" src="/img/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 8px;"/>
-                星球穿梭
-              </div>
-            `,
-            href: 'https://www.boyouquan.com/planet-shuttle',
-            position: 'right',
-          },
-          {
-            html: `
-              <div style="display: flex; align-items: center;">
-                <img alt="异次元之旅-图标" src="/img/planet-icon.png" width="24" height="24" style="margin-right: 8px;"/>
-                异次元之旅
-              </div>
-            `,
-            href: 'https://travel.moe/go.html',
-            position: 'right',
-          },
-          {
-            html: `
-              <div style="display: flex; align-items: center;">
-                <img alt="开往-图标" src="/img/travelling.png" class="icon-light-mode" width="32" height="32" style="margin-right: 8px;"/>
-                <img alt="开往-图标-暗" src="/img/travelling-dark.png" class="icon-dark-mode" width="32" height="32" style="margin-right: 8px;"/>
-                开往
-              </div>
-            `,
-            href: 'https://www.travellings.cn/go.html',
-            position: 'right',
+            items: [
+              {
+                html: `
+                  <div class="navbar-portal-items">
+                    <img alt="Blogs CN-图标" src="/img/blogscn_icon.png" width="24" height="24" style="margin-right: 12px;"/>
+                    Blogs CN
+                  </div>
+                `,
+                href: 'https://blogscn.fun/random.html',
+              },
+              {
+                html: `
+                  <div class="navbar-portal-items">
+                    <img alt="空间穿梭-图标" src="/img/blogsclub-shuttle.svg" width="28" height="28" style="margin-right: 8px;"/>
+                    空间穿梭
+                  </div>
+                `,
+                href: 'https://blogs.quest',
+              },
+              {
+                html: `
+                  <div class="navbar-portal-items">
+                    <img alt="星球穿梭-图标" src="/img/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 12px;"/>
+                    星球穿梭
+                  </div>
+                `,
+                href: 'https://www.boyouquan.com/planet-shuttle',
+              },
+              {
+                html: `
+                  <div class="navbar-portal-items">
+                    <img alt="异次元之旅-图标" src="/img/planet-icon.png" width="24" height="24" style="margin-right: 12px;"/>
+                    异次元之旅
+                  </div>
+                `,
+                href: 'https://travel.moe/go.html',
+              },
+              {
+                html: `
+                  <div class="navbar-portal-items">
+                    <img alt="开往-图标" src="/img/travelling.png" class="icon-light-mode" width="32" height="32" style="margin-right: 4px;"/>
+                    <img alt="开往-图标-暗" src="/img/travelling-dark.png" class="icon-dark-mode" width="32" height="32" style="margin-right: 4px;"/>
+                    开往
+                  </div>
+                `,
+                href: 'https://www.travellings.cn/go.html',
+              },
+            ],
           },
         ],
       },
