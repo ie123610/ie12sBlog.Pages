@@ -108,13 +108,12 @@ const config = {
           },
           {
             type: 'dropdown',
-            // 🌟 核心修改：移除死板的 label，改为注入支持图片和文字水平居中对齐的 html 结构
             html: `
               <div style="display: inline-flex; align-items: center; vertical-align: middle;">
                 <img alt="portal-logo" src="/img/Aperture_Science.svg" width="24" height="24" style="margin-right: 6px;"/>
-                <span>传送门</span>
+                <span style="padding-top: 1px;">传送门</span>
               </div>
-            `,
+            `, 
             position: 'right',
             items: [
               {
