@@ -86,6 +86,7 @@ const config = {
       metadata: [
         {name: 'yandex-verification', content: 'a4de8a4e31fae19b'},
         {name: 'google-site-verification', content: 'TtT1Swq11wrVYAWojVGRYbjfGxFJP6uW0kTWnjiHse8'},
+        {property: 'og:type', content: 'website'},
       ],
       image: 'img/ie12-social-card.png',
       navbar: {
