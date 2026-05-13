@@ -109,9 +109,9 @@ const config = {
           {
             type: 'dropdown',
             html: `
-              <div style="display: inline-flex; align-items: center; vertical-align: middle;">
+              <div style="display: inline-flex; align-items: center; vertical-align: bottom;">
                 <img alt="portal-logo" src="/img/Aperture_Science.svg" width="24" height="24" style="margin-right: 6px;"/>
-                <span style="padding-top: 1px;">传送门</span>
+                <span>传送门</span>
               </div>
             `, 
             position: 'right',
