@@ -38,6 +38,8 @@ const config = {
         dataDomains: "ie12blog.36102025.xyz", 
       },
     ],
+    // 🌟 核心修改 1：插入图片缩放插件
+    'docusaurus-plugin-zooming',
   ],
 
   themes: [
@@ -211,6 +213,19 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      // 🌟 核心修改 2：插入精准匹配 .ratio-img 的图片缩放定制配置
+      zooming: {
+        selector: '.ratio-img',
+        delay: 500,
+        background: {
+          light: 'rgba(101,108,133,0.8)',
+          dark: 'rgba(9,10,17,0.8)'
+        },
+        options: {
+          enableGrab: false,
+          scaleBase: 0.8,
+        }
       },
     }),
 };
