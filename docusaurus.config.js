@@ -38,7 +38,7 @@ const config = {
         dataDomains: "ie12blog.36102025.xyz", 
       },
     ],
-    // 🌟 核心修改 1：插入图片缩放插件
+    // 图片缩放插件
     'docusaurus-plugin-zooming',
   ],
 
@@ -214,7 +214,7 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      // 🌟 核心修改 2：插入精准匹配 .ratio-img 的图片缩放定制配置
+      // 图片缩放定制配置
       zooming: {
         selector: '.ratio-img',
         delay: 500,
@@ -224,7 +224,7 @@ const config = {
         },
         options: {
           enableGrab: false,
-          scaleBase: 0.8,
+          scaleBase: 0.7,
         }
       },
     }),
