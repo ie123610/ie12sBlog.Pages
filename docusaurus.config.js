@@ -216,7 +216,7 @@ const config = {
       },
       // 图片缩放定制配置
       zooming: {
-        selector: '.ratio-img',
+        selector: '.ratio-img[width="60%"]',
         delay: 500,
         background: {
           light: 'rgba(101,108,133,0.8)',
@@ -224,7 +224,7 @@ const config = {
         },
         options: {
           enableGrab: false,
-          scaleBase: 0.7,
+          scaleBase: 0.8,
         }
       },
     }),
