@@ -135,6 +135,17 @@
   padding: 4px 8px;
 }
 
+/* 底部链接文字颜色 */
+.footer-copyright-link {
+  color: #1ebbee; 
+  text-decoration: none;
+}
+
+/* 鼠标悬停时的颜色 */
+.footer-copyright-link:hover {
+  color: #1ebbee;
+  text-decoration: underline;
+}
 
 
 

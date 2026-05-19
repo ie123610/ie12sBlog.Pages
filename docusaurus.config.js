@@ -208,7 +208,7 @@ const config = {
       ],
     },
   ],
-        copyright: `文章若无特殊说明则均使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>Powered by <a href="https://pages.cloudflare.com/">Cloudflare Pages</a> & <a href="https://docusaurus.io/">Docusaurus</a>`,
+        copyright: `文章若无特殊说明则均使用 <a class="footer-copyright-link" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>Powered by <a class="footer-copyright-link" href="https://pages.cloudflare.com/">Cloudflare Pages</a> & <a class="footer-copyright-link" href="https://docusaurus.io/">Docusaurus</a>`,
       },
       prism: {
         theme: prismThemes.github,
