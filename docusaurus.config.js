@@ -90,12 +90,12 @@ const config = {
         {name: 'google-site-verification', content: 'TtT1Swq11wrVYAWojVGRYbjfGxFJP6uW0kTWnjiHse8'},
         {property: 'og:type', content: 'website'},
       ],
-      image: 'img/ie12-social-card.png',
+      image: 'img/ie12-social-card.webp',
       navbar: {
         title: 'ie12sBlog',
         logo: {
           alt: 'ie12sBlog-logo',
-          src: 'img/logo.png',
+          src: 'img/logo.webp',
         },
         items: [
           {
@@ -199,7 +199,7 @@ const config = {
     {
       title: '传送门',
       items: [
-        {html: `<a href="https://travel.moe/go.html"target="_blank"><img alt="异次元之旅-图标" src="/img/travel-moe-default-white.png"style="width:146px;height:24px"title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！"></a>`},
+        {html: `<a href="https://travel.moe/go.html"target="_blank"><img alt="异次元之旅-图标" src="/img/travel-moe-default-white.webp"style="width:146px;height:24px"title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！"></a>`},
         {html: `<a href="https://blogscn.fun/" title="BLOGS·CN" target="_blank" > <img src="/img/blogs-cn-footer.png" alt="本站已加入BLOGS·CN" style="width:138px;height:24px;"> </a>`},
         {html: `<a href="https://www.travellings.cn/go.html"target="_blank"rel="noopener"title="开往-友链接力"><img src="/img/travelling-footer.png" alt="开往-友链接力"width="120;height:30px"></a>`},
         {html: `<a href="https://blogs.quest" target="_blank" title="空间穿梭-随机访问BlogsClub成员博客"><img alt="BlogsClub-图标" src="/img/shuttle_4.png"style="width:106px;height:30px"></a>`},
