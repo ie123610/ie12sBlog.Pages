@@ -4,7 +4,7 @@
 
 ## 关于Fort Firewall
 
-在之前的教程中我们已经用Windows防火墙实现了类似的效果 教程：[链接](https://www.bilibili.com/read/cv34787408/)  
+在之前的教程中我们已经用Windows防火墙实现了类似的效果 教程：[链接](./win-firewall-anti-leech.md)  
 其使用到了高版本Windows才具有的动态关键字来容纳IP地址 此外更新动态关键字需要手写脚本  
 **使用难度较高易用性较差**  
 
@@ -41,19 +41,19 @@
 
 安装位置可自定义 之后可以选择安装为便携版  
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-1.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-1.jpg" />
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-2.jpg" width="60%" />
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-3.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-2.jpg" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-3.jpg" />
 
 可以选择安装为便携版 这样配置文件就存储在程序目录下  
 而不是AppDat中 这里勾选便携版  
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-4.jpg" width="60%" />
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-5.jpg" width="60%" />
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-6.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-4.jpg" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-5.jpg" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/installation-6.jpg" />
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/portable-edition-description.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/portable-edition-description.jpg" />
 
 **便携版说明**  
 
@@ -83,7 +83,7 @@ Fort Firewall 需要管理员权限才能安装驱动程序。
 如果在修改期间已经拦截了程序则应进行放行  
 
 **修改拦截模式：**  
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/modify-blocking-mode.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/modify-blocking-mode.jpg" />
 
 **放行程序：**  
 右键托盘图标》应用程序  
@@ -93,7 +93,7 @@ Fort Firewall 需要管理员权限才能安装驱动程序。
 ### 订阅IP列表
 
 右键托盘图标》选项》区域  
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/open-area.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/open-area.jpg" />
 
 编辑》添加  
 这里使用PBH的IP列表：[链接](https://github.com/PBH-BTN/BTN-Collected-Rules)  
@@ -108,7 +108,7 @@ https://bcr.pbh-btn.ghorg.ghostchu-services.top/combine/all.txt
 
 <img loading="lazy" src="../../images/fort-firewall-anti-leech/subscribe-to-rules.jpg" width="60%" />
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/update-rules-prompt.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/update-rules-prompt.jpg" />
 
 <img loading="lazy" src="../../images/fort-firewall-anti-leech/update-rules-complete.jpg" width="60%" />
 
@@ -137,7 +137,7 @@ https://bcr.pbh-btn.ghorg.ghostchu-services.top/combine/all.txt
 
 对于迅雷这样使用特定端口的客户端 我们可以通过端口号进行过滤  
 
-有关不同版本迅雷吸血情况的总结请看之前的教程：[链接](https://www.bilibili.com/read/cv26104181)  
+有关不同版本迅雷吸血情况的总结请看之前的教程：[链接](./BC-anti-leech.md)  
 此处过滤的是`15000`和`15001`这个两个端口  
 
 再新建一个规则 类型为 **预设规则**  
@@ -149,13 +149,13 @@ https://bcr.pbh-btn.ghorg.ghostchu-services.top/combine/all.txt
 [::]/0:(15000,15001)
 ```
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/port-filtering-rules.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/port-filtering-rules.jpg" />
 
 其表示过滤所有IPv4和IPv6地址中有15000和15001端口的流量  
 堡垒默认不处理内网流量 不用担心其会影响其他程序  
 编辑之前设置好的程序规则 将此预设规则叠加上去  
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/additional-preset-rules.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/additional-preset-rules.jpg" />
 
 
 现在可以**分配规则**了 右键托盘图标》应用程序  
@@ -167,7 +167,7 @@ https://bcr.pbh-btn.ghorg.ghostchu-services.top/combine/all.txt
 可以手写规则 但是更简单的方法是使用右键菜单进行快捷添加  
 找到要添加的程序 右键选择 “Fort Firewall...”  
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/add-program-to-right-click-menu.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/add-program-to-right-click-menu.jpg" />
 
 点击后会弹出编辑窗口 这里为了方便演示依然使用比特彗星  
 点击右侧的 纸卷图标 即可分配规则 每个程序应只能分配一条规则  
@@ -195,7 +195,7 @@ https://bcr.pbh-btn.ghorg.ghostchu-services.top/combine/all.txt
 收集已经阻止的连接 选项可以关闭  
 需要进行诊断和故障排除时再打开 以节约磁盘空间  
 
-<img loading="lazy" src="../../images/fort-firewall-anti-leech/log-settings.jpg" width="60%" />
+<img loading="lazy" src="../../images/fort-firewall-anti-leech/log-settings.jpg" />
 
 
 ---

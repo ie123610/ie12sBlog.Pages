@@ -38,6 +38,8 @@ const config = {
         dataDomains: "ie12blog.36102025.xyz", 
       },
     ],
+    // 图片缩放插件
+    'docusaurus-plugin-zooming',
   ],
 
   themes: [
@@ -60,7 +62,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -211,6 +213,19 @@ const config = {
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+      },
+      // 图片缩放定制配置
+      zooming: {
+        selector: '.ratio-img[width="60%"]',
+        delay: 500,
+        background: {
+          light: 'rgba(101,108,133,0.8)',
+          dark: 'rgba(9,10,17,0.8)'
+        },
+        options: {
+          enableGrab: false,
+          scaleBase: 0.8,
+        }
       },
     }),
 };

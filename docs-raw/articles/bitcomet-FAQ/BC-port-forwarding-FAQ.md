@@ -52,7 +52,7 @@ sidebar_label: 有关绿灯的常见误区
 认为其表示左下角有两个绿色的点  
 
 **示例**  
-<img loading="lazy" src="../../images/BC-port-forwarding-FAQ/listening-port-and-dht.jpg" width="60%" />
+<img loading="lazy" src="../../images/BC-port-forwarding-FAQ/listening-port-and-dht.jpg" />
 
 
 然而这是不正确的 其正确的含义应该是  
@@ -102,7 +102,7 @@ sidebar_label: 有关绿灯的常见误区
 也不告诉你为什么要这样做 但由于其操作简单 被大量的复制和传播  
 
 要想解决端口阻塞问题还是要从实际情况出发  
-根据网络情况进行分析和排查 **端口阻塞解决方案：**[链接](https://www.bilibili.com/read/cv32811550/)  
+根据网络情况进行分析和排查 **端口阻塞解决方案：**[链接](../bitcomet-port-forwarding/)  
 
 ---
 
