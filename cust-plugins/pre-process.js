@@ -5,6 +5,7 @@ const injectDescription = require('./inject-description.js');
 const generateRSS = require('./generate-rss.js');
 const generateRssFriendlyView = require('./rss2html.js');
 const injectMetaHeader = require('./injectMetaHeader.js');
+const processWebpImages = require('./convert-images.js');
 
 async function runPipeline() {
   console.log('====================================');
@@ -36,6 +37,9 @@ async function runPipeline() {
     
     //生成RSS友好视图
     await generateRssFriendlyView();
+    
+    //webp图片转换
+    await processWebpImages();
     
     console.log('\n ✨ 预处理完成！');
     console.log('====================================');
