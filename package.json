@@ -24,7 +24,6 @@
     "clsx": "^2.0.0",
     "docusaurus-plugin-zooming": "^1.0.0",
     "feed": "^5.2.0",
-    "glob": "^13.0.6",
     "image-size": "^2.0.2",
     "prism-react-renderer": "^2.3.0",
     "probe-image-size": "^7.2.3",
@@ -36,7 +35,9 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.0",
     "@docusaurus/types": "^3.10.0",
-    "fs-extra": "^11.3.4"
+    "fs-extra": "^11.3.4",
+    "glob": "^13.0.6",
+    "sharp": "^0.34.5"
   },
   "browserslist": {
     "production": [
