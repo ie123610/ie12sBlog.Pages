@@ -135,6 +135,19 @@
   padding: 4px 8px;
 }
 
+/* 底部链接文字颜色 */
+.footer-copyright-link {
+  color: #1ebbee; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 鼠标悬停 */
+.footer-copyright-link:hover {
+  color: #1ebbee;
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 
 
