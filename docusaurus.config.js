@@ -101,7 +101,7 @@ const config = {
           {
             html: `
               <div style="display: flex; align-items: center;">
-                <img alt="rss-log" src="/img/feed-icon.svg" width="20" height="20" style="margin-right: 8px;"/>
+                <img alt="rss-log" src="/img/header/feed-icon.svg" width="20" height="20" style="margin-right: 8px;"/>
                RSS订阅
               </div>
             `,
@@ -112,7 +112,7 @@ const config = {
             type: 'dropdown',
             html: `
               <div style="display: inline-flex; align-items: center; vertical-align: bottom;">
-                <img alt="portal-logo" src="/img/Aperture_Science.svg" width="24" height="24" style="margin-right: 6px;"/>
+                <img alt="portal-logo" src="/img/header/Aperture_Science.svg" width="24" height="24" style="margin-right: 6px;"/>
                 <span>传送门</span>
               </div>
             `, 
@@ -121,7 +121,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="Blogs CN-图标" src="/img/blogscn_icon.png" width="24" height="24" style="margin-right: 12px;"/>
+                    <img alt="Blogs CN-图标" src="/img/header/blogscn_icon.png" width="24" height="24" style="margin-right: 12px;"/>
                     Blogs CN
                   </div>
                 `,
@@ -130,7 +130,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="空间穿梭-图标" src="/img/blogsclub-shuttle.svg" width="28" height="28" style="margin-right: 8px;"/>
+                    <img alt="空间穿梭-图标" src="/img/header/blogsclub-shuttle.svg" width="28" height="28" style="margin-right: 8px;"/>
                     空间穿梭
                   </div>
                 `,
@@ -139,7 +139,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="星球穿梭-图标" src="/img/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 12px;"/>
+                    <img alt="星球穿梭-图标" src="/img/header/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 12px;"/>
                     星球穿梭
                   </div>
                 `,
@@ -148,7 +148,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="异次元之旅-图标" src="/img/planet-icon.png" width="24" height="24" style="margin-right: 12px;"/>
+                    <img alt="异次元之旅-图标" src="/img/header/planet-icon.png" width="24" height="24" style="margin-right: 12px;"/>
                     异次元之旅
                   </div>
                 `,
@@ -157,8 +157,8 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="开往-图标" src="/img/travelling.png" class="icon-light-mode" width="32" height="32" style="margin-right: 4px;"/>
-                    <img alt="开往-图标-暗" src="/img/travelling-dark.png" class="icon-dark-mode" width="32" height="32" style="margin-right: 4px;"/>
+                    <img alt="开往-图标" src="/img/header/travelling.png" class="icon-light-mode" width="32" height="32" style="margin-right: 4px;"/>
+                    <img alt="开往-图标-暗" src="/img/header/travelling-dark.png" class="icon-dark-mode" width="32" height="32" style="margin-right: 4px;"/>
                     开往
                   </div>
                 `,
@@ -199,11 +199,11 @@ const config = {
     {
       title: '传送门',
       items: [
-        {html: `<a href="https://travel.moe/go.html"target="_blank"><img alt="异次元之旅-图标" src="/img/travel-moe-default-white.webp"style="width:146px;height:24px"title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！"></a>`},
-        {html: `<a href="https://blogscn.fun/" title="BLOGS·CN" target="_blank" > <img src="/img/blogs-cn-footer.png" alt="本站已加入BLOGS·CN" style="width:107px;height:30px;"> </a>`},
-        {html: `<a href="https://www.travellings.cn/go.html"target="_blank"rel="noopener"title="开往-友链接力"><img src="/img/travelling-footer.png" alt="开往-友链接力" style="width:120px;height:30px"></a>`},
-        {html: `<a href="https://blogs.quest" target="_blank" title="空间穿梭-随机访问BlogsClub成员博客"><img alt="BlogsClub-图标" src="/img/shuttle_4.png"style="width:106px;height:30px"></a>`},
-        {html: `<a href="https://www.boyouquan.com/planet-shuttle" target="_blank" title="博友圈"><img alt="博友圈-图标" src="/img/planet-shuttle-dark.svg" style="width:100px;height:30px"></a>`},
+        {html: `<a href="https://travel.moe/go.html"target="_blank"><img alt="异次元之旅-图标" src="/img/footer/travel-moe-default-white.webp"style="width:146px;height:24px"title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！"></a>`},
+        {html: `<a href="https://blogscn.fun/" title="BLOGS·CN" target="_blank" > <img src="/img/footer/blogs-cn-footer.png" alt="本站已加入BLOGS·CN" style="width:107px;height:30px;"> </a>`},
+        {html: `<a href="https://www.travellings.cn/go.html"target="_blank"rel="noopener"title="开往-友链接力"><img src="/img/footer/travelling-footer.png" alt="开往-友链接力" style="width:120px;height:30px"></a>`},
+        {html: `<a href="https://blogs.quest" target="_blank" title="空间穿梭-随机访问BlogsClub成员博客"><img alt="BlogsClub-图标" src="/img/footer/shuttle_4.png"style="width:106px;height:30px"></a>`},
+        {html: `<a href="https://www.boyouquan.com/planet-shuttle" target="_blank" title="博友圈"><img alt="博友圈-图标" src="/img/footer/planet-shuttle-dark.svg" style="width:100px;height:30px"></a>`},
         
       ],
     },
