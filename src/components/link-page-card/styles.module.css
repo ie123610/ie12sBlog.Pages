@@ -23,7 +23,7 @@
    根据屏幕宽度自动排列卡片，不需要任何 JS 监听 */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 1.25rem;
 }
 
@@ -104,8 +104,8 @@
 
 /* 核心：纯图片图标的样式 */
 .imgIcon {
-  width: 32px;  /* 图片的实际大小 */
-  height: 32px;
+  width: 48px;  /* 图片的实际大小 */
+  height: 48px;
   object-fit: contain; /* 确保图片完整显示不拉伸 */
   /* SVG 图标可加 filter 适配黑夜模式，如果是 PNG 则无需此项 */
 }
