@@ -149,7 +149,24 @@
   font-weight: bold;
 }
 
+/* github图标 */
+.header-github-link:hover {
+  opacity: 0.6;
+}
 
+.header-github-link:before {
+  background: url("/img/header/github-light.svg")
+    no-repeat;
+  content: "";
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+[data-theme="dark"] .header-github-link:before {
+  background: url("/img/header/github-dark.svg")
+    no-repeat;
+}
 
 
 

@@ -166,6 +166,13 @@ const config = {
               },
             ],
           },
+          {
+            href: "https://github.com/ie123610",
+            className: "header-github-link",
+            position: "right",
+            "aria-label": "GitHub repository",
+            title: "GitHub",
+          },
         ],
       },
       footer: {
