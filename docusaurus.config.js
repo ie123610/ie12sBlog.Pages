@@ -181,7 +181,7 @@ const config = {
         copyright: `
 		<div class="footer-img">
 		
-		<a href="#" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://www.travellings.cn/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/train.svg" alt="travelling-icon" class="badge-pixel-img" />
 		</div>
@@ -190,16 +190,16 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="#" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://www.blogsclub.org" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
 		<div class="badge-icon-zone">
-		<img src="/img/link-exchange/blogclub-logo.png" alt="boyouquan-icon" class="badge-pixel-img" />
+		<img src="/img/link-exchange/blogsclub-logo.png" alt="BlogsClub-icon" class="badge-pixel-img" />
 		</div>
 		<div class="badge-text-zone">
-		<span style="font-size: 10px;" class="badge-multiline-text">BlogClub</span>
+		<span class="badge-multiline-text">Blogs<br>Club</span>
 		</div>
 		</a>
 		
-		<a href="#" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://www.boyouquan.com/home" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/boyouquan-logo.svg" alt="boyouquan-icon" class="badge-pixel-img" />
 		</div>
@@ -208,12 +208,12 @@ const config = {
 		</div>
 		</a>
 
-		<a href="#" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://blogscn.fun/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img style="background: black;" src="/img/link-exchange/blogscn_icon.png" alt="boyouquan-icon" class="badge-pixel-img" />
 		</div>
 		<div class="badge-text-zone">
-		<span class="badge-multiline-text">Blog CN</span>
+		<span class="badge-multiline-text">BlogCN</span>
 		</div>
 		</a>
 
@@ -229,8 +229,8 @@ const config = {
 		</div>
         
         <div class="footer-img">
-        <a href="" target="_blank" title=""><img alt="" style="display: block;"  src="/img/footer/ice-moe-20253610.svg" ></a>
-        <a href="" target="_blank" title=""><img alt="" style="display: block;"  src="/img/footer/icp-tea-202601029.svg" ></a>
+        <a href="https://icp.gov.moe/?keyword=20253610" target="_blank" ><img alt="ice-moe-20253610" style="display: block;"  src="/img/footer/ice-moe-20253610.svg" ></a>
+        <a href="https://icp.redcha.cn/beian/ICP-2026010294.html" target="_blank" ><img alt="icp-tea-202601029" style="display: block;"  src="/img/footer/icp-tea-202601029.svg" ></a>
         </div>
         
         <div class="footer-img">
