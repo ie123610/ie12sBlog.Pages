@@ -5,7 +5,7 @@
       <stop offset="100%" style="stop-color:#af15b2;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <rect width="60" height="60" rx="8" fill="url(#linearGradientBg)" />
+  <rect width="60" height="60" rx="0" fill="url(#linearGradientBg)" />
   <g transform="translate(5, -3)">
          <g data-gra="path-name" class="tp-name iconsvg-namesvg" fill="white">
             <g transform="scale(1)">
