@@ -181,7 +181,7 @@ const config = {
         copyright: `
 		<div class="footer-img">
 		
-		<a href="https://www.travellings.cn/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://www.travellings.cn/" target="_blank"  class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/train.svg" alt="travelling-icon" class="badge-pixel-img" />
 		</div>
@@ -190,7 +190,7 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.blogsclub.org" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://www.blogsclub.org" target="_blank"  class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/blogsclub-logo.png" alt="BlogsClub-icon" class="badge-pixel-img" />
 		</div>
@@ -199,7 +199,7 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.boyouquan.com/home" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://www.boyouquan.com/home" target="_blank"  class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/boyouquan-logo.svg" alt="boyouquan-icon" class="badge-pixel-img" />
 		</div>
@@ -208,7 +208,7 @@ const config = {
 		</div>
 		</a>
 
-		<a href="https://blogscn.fun/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://blogscn.fun/" target="_blank"  class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img style="background: black;" src="/img/link-exchange/blogscn_icon.png" alt="boyouquan-icon" class="badge-pixel-img" />
 		</div>
@@ -217,7 +217,7 @@ const config = {
 		</div>
 		</a>
 
-		<a href="https://bf.zzxworld.com/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<a href="https://bf.zzxworld.com/" target="_blank"  class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/blogfinder.png" alt="blog-finder-icon" class="badge-pixel-img" />
 		</div>
@@ -226,21 +226,43 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.zhblogs.net/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
-		<div class="badge-icon-zone">
-		<img src="/img/link-exchange/zhblogs.svg" alt="zhblogs-icon" class="badge-pixel-img" />
 		</div>
-		<div class="badge-text-zone">
-		<span class="badge-multiline-text">集博栈</span>
-		</div>
-		</a>
 		
-		<a href="https://bloginc.cn/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
+		<div class="footer-img">
+		
+		<a href="https://bloginc.cn/" target="_blank"  class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/bloginc.svg" alt="bloginc-icon" class="badge-pixel-img" />
 		</div>
 		<div class="badge-text-zone">
 		<span class="badge-multiline-text">博客集</span>
+		</div>
+		</a>
+		
+		<a href="https://www.blogplanet.cn/" target="_blank"  class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/bkxq.png" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span style="font-size: 11px" class="badge-multiline-text">博客星球</span>
+		</div>
+		</a>
+		
+		<a href="https://www.rmbk.cc/" target="_blank"  class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/rmbk.ico" style="background-color: transparent;" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span style="font-size: 11px" class="badge-multiline-text">若梦博客</span>
+		</div>
+		</a>
+		
+		<a href="https://haozhan.wang/index.php" target="_blank"  class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/haozhan.ico" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">好网站</span>
 		</div>
 		</a>
 		
