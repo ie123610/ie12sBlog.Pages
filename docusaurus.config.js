@@ -226,15 +226,6 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.zhblogs.net/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
-		<div class="badge-icon-zone">
-		<img src="/img/link-exchange/zhblogs.svg" alt="zhblogs-icon" class="badge-pixel-img" />
-		</div>
-		<div class="badge-text-zone">
-		<span class="badge-multiline-text">集博栈</span>
-		</div>
-		</a>
-		
 		<a href="https://bloginc.cn/" target="_blank" rel="noopener noreferrer" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/bloginc.svg" alt="bloginc-icon" class="badge-pixel-img" />
