@@ -244,7 +244,7 @@ const config = {
 		<img src="/img/link-exchange/bkxq.png" alt="bloginc-icon" class="badge-pixel-img" />
 		</div>
 		<div class="badge-text-zone">
-		<span class="badge-multiline-text">博客星球</span>
+		<span style="font-size: 11px" class="badge-multiline-text">博客星球</span>
 		</div>
 		</a>
 		
@@ -253,7 +253,7 @@ const config = {
 		<img src="/img/link-exchange/rmbk.ico" style="background-color: transparent;" alt="bloginc-icon" class="badge-pixel-img" />
 		</div>
 		<div class="badge-text-zone">
-		<span class="badge-multiline-text">若梦博客</span>
+		<span style="font-size: 11px" class="badge-multiline-text">若梦博客</span>
 		</div>
 		</a>
 		

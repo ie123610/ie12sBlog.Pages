@@ -241,7 +241,7 @@
   white-space: normal ;   /* 文字自动换行 */
   line-height: 14px ;     /* 压缩多行字间距，防止文字被挤出 31px 框外 */
   word-break: break-all ; /* 防止超长连续英文字母不换行 */
-  padding: 0 1px ;        /* 两侧微小的安全边距，防止贴着边框 */
+  padding: 0 2px ;        /* 两侧微小的安全边距，防止贴着边框 */
 }
 
 
