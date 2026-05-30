@@ -269,13 +269,13 @@ const config = {
 		</div>
         
         <div class="footer-img">
-        <a href="https://icp.gov.moe/?keyword=20253610" target="_blank" rel="noopener nofollow"><img alt="ice-moe-20253610" style="display: block;"  src="/img/footer/ice-moe-20253610.svg" ></a>
-        <a href="https://icp.redcha.cn/beian/ICP-2026010294.html" target="_blank" rel="noopener nofollow"><img alt="icp-tea-202601029" style="display: block;"  src="/img/footer/icp-tea-202601029.svg" ></a>
+        <a href="https://icp.gov.moe/?keyword=20253610" target="_blank" rel="noopener nofollow"><img alt="ice-moe-20253610" class="shields-img"" src="/img/footer/ice-moe-20253610.svg" ></a>
+        <a href="https://icp.redcha.cn/beian/ICP-2026010294.html" target="_blank" rel="noopener nofollow"><img alt="icp-tea-202601029" class="shields-img""  src="/img/footer/icp-tea-202601029.svg" ></a>
         </div>
         
         <div class="footer-img">
-        <a href="/sitemap.xml" target="_blank" title="Sitemap"><img alt="Sitemap-icon" src="/img/footer/sitemap.svg" ></a>
-        <a href="https://cloud.umami.is/share/3yaTIn7G7vwsW2vD" target="_blank" title="Umami" rel="noopener nofollow"><img alt="Umami-icon" src="/img/footer/Umami.svg" ></a>
+        <a href="/sitemap.xml" target="_blank" title="Sitemap"><img alt="Sitemap-icon" class="shields-img"" src="/img/footer/sitemap.svg" ></a>
+        <a href="https://cloud.umami.is/share/3yaTIn7G7vwsW2vD" target="_blank" title="Umami" rel="noopener nofollow"><img alt="Umami-icon" class="shields-img"" src="/img/footer/Umami.svg" ></a>
         </div>
         
         <span>文章若无特殊说明则均使用 </span><a class="footer-copyright-link" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noopener nofollow" >CC BY-SA 4.0</a><span> 共享协议</span>
