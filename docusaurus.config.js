@@ -181,7 +181,7 @@ const config = {
         copyright: `
 		<div class="footer-img">
 		
-		<a href="https://www.travellings.cn/" target="_blank"  class="micro-badge-card">
+		<a href="https://www.travellings.cn/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/train.svg" alt="travelling-icon" class="badge-pixel-img" />
 		</div>
@@ -190,7 +190,7 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.blogsclub.org" target="_blank"  class="micro-badge-card">
+		<a href="https://www.blogsclub.org" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/blogsclub-logo.png" alt="BlogsClub-icon" class="badge-pixel-img" />
 		</div>
@@ -199,7 +199,7 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.boyouquan.com/home" target="_blank"  class="micro-badge-card">
+		<a href="https://www.boyouquan.com/home" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/boyouquan-logo.svg" alt="boyouquan-icon" class="badge-pixel-img" />
 		</div>
@@ -208,7 +208,7 @@ const config = {
 		</div>
 		</a>
 
-		<a href="https://blogscn.fun/" target="_blank"  class="micro-badge-card">
+		<a href="https://blogscn.fun/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img style="background: black;" src="/img/link-exchange/blogscn_icon.png" alt="boyouquan-icon" class="badge-pixel-img" />
 		</div>
@@ -217,7 +217,7 @@ const config = {
 		</div>
 		</a>
 
-		<a href="https://bf.zzxworld.com/" target="_blank"  class="micro-badge-card">
+		<a href="https://bf.zzxworld.com/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/blogfinder.png" alt="blog-finder-icon" class="badge-pixel-img" />
 		</div>
@@ -230,7 +230,7 @@ const config = {
 		
 		<div class="footer-img">
 		
-		<a href="https://bloginc.cn/" target="_blank"  class="micro-badge-card">
+		<a href="https://bloginc.cn/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/bloginc.svg" alt="bloginc-icon" class="badge-pixel-img" />
 		</div>
@@ -239,7 +239,7 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.blogplanet.cn/" target="_blank"  class="micro-badge-card">
+		<a href="https://www.blogplanet.cn/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/bkxq.png" alt="bloginc-icon" class="badge-pixel-img" />
 		</div>
@@ -248,7 +248,7 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://www.rmbk.cc/" target="_blank"  class="micro-badge-card">
+		<a href="https://www.rmbk.cc/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/rmbk.ico" style="background-color: transparent;" alt="bloginc-icon" class="badge-pixel-img" />
 		</div>
@@ -257,7 +257,7 @@ const config = {
 		</div>
 		</a>
 		
-		<a href="https://haozhan.wang/index.php" target="_blank"  class="micro-badge-card">
+		<a href="https://haozhan.wang/index.php" target="_blank" rel="noopener nofollow" class="micro-badge-card">
 		<div class="badge-icon-zone">
 		<img src="/img/link-exchange/haozhan.ico" alt="bloginc-icon" class="badge-pixel-img" />
 		</div>
@@ -269,18 +269,18 @@ const config = {
 		</div>
         
         <div class="footer-img">
-        <a href="https://icp.gov.moe/?keyword=20253610" target="_blank" ><img alt="ice-moe-20253610" style="display: block;"  src="/img/footer/ice-moe-20253610.svg" ></a>
-        <a href="https://icp.redcha.cn/beian/ICP-2026010294.html" target="_blank" ><img alt="icp-tea-202601029" style="display: block;"  src="/img/footer/icp-tea-202601029.svg" ></a>
+        <a href="https://icp.gov.moe/?keyword=20253610" target="_blank" rel="noopener nofollow"><img alt="ice-moe-20253610" style="display: block;"  src="/img/footer/ice-moe-20253610.svg" ></a>
+        <a href="https://icp.redcha.cn/beian/ICP-2026010294.html" target="_blank" rel="noopener nofollow"><img alt="icp-tea-202601029" style="display: block;"  src="/img/footer/icp-tea-202601029.svg" ></a>
         </div>
         
         <div class="footer-img">
         <a href="/sitemap.xml" target="_blank" title="Sitemap"><img alt="Sitemap-icon" src="/img/footer/sitemap.svg" ></a>
-        <a href="https://cloud.umami.is/share/3yaTIn7G7vwsW2vD" target="_blank" title="Umami"><img alt="Umami-icon" src="/img/footer/Umami.svg" ></a>
+        <a href="https://cloud.umami.is/share/3yaTIn7G7vwsW2vD" target="_blank" title="Umami" rel="noopener nofollow"><img alt="Umami-icon" src="/img/footer/Umami.svg" ></a>
         </div>
         
-        <span>文章若无特殊说明则均使用 </span><a class="footer-copyright-link" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a><span> 共享协议</span>
+        <span>文章若无特殊说明则均使用 </span><a class="footer-copyright-link" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noopener nofollow" >CC BY-SA 4.0</a><span> 共享协议</span>
         <br>
-        <span>Powered by </span><a class="footer-copyright-link" href="https://pages.cloudflare.com/">Cloudflare Pages</a> & <a class="footer-copyright-link" href="https://docusaurus.io/">Docusaurus</a>
+        <span>Powered by </span><a class="footer-copyright-link" href="https://pages.cloudflare.com/" target="_blank" rel="noopener nofollow">Cloudflare Pages</a> & <a class="footer-copyright-link" href="https://docusaurus.io/" target="_blank" rel="noopener nofollow">Docusaurus</a>
         
         `,
       },
