@@ -1,0 +1,138 @@
+/* 导航大容器 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* 分类区块 */
+.section {
+  margin-bottom: 2.5rem;
+}
+
+/* 分类标题 */
+.categoryTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 0.3rem;
+}
+
+/* 网格布局：自适应的核心！
+   根据屏幕宽度自动排列卡片，不需要任何 JS 监听 */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.25rem;
+}
+
+/* 导航卡片基础样式 (原生的 <a> 标签) */
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background-color: var(--ifm-card-background-color, var(--ifm-background-surface-color));
+  text-decoration: none !important; /* 移除 Docusaurus 默认的下划线 */
+  color: var(--ifm-font-color-base) !important; /* 保持文字颜色，不变成链接蓝 */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* 鼠标悬停及聚焦效果 (纯 CSS 驱动，无需 JS) */
+.card:hover, .card:focus {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 卡片头部（图标 + 标题） */
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 图标样式 */
+.icon {
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+/* 网站名称 */
+.name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* 网站描述文本 */
+.desc {
+  font-size: 0.875rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0;
+  /* 限制描述最多显示 2 行，超出显示省略号，对长文本更友好 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* 稍微拉开点距离，给图片点空间 */
+  margin-bottom: 0.5rem;
+}
+
+/* 整个图标容器，确保内容完美对齐 */
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;  /* 固定图标区宽度 */
+  height: 48px; /* 固定图标区高度 */
+  border-radius: 8px; /* 可选：给图标区加个圆角底 */
+  background-color: var(--ifm-color-emphasis-100); /* 可选：给图片加个淡底色 */
+  overflow: hidden; /* 超出则隐藏 */
+}
+
+/* 核心：纯图片图标的样式 */
+.imgIcon {
+  width: 48px;  /* 图片的实际大小 */
+  height: 48px;
+  object-fit: contain; /* 确保图片完整显示不拉伸 */
+  /* SVG 图标可加 filter 适配黑夜模式，如果是 PNG 则无需此项 */
+}
+
+/* 如果数据源是 Emoji 或者是加载失败，可以给它加一个特定样式 */
+.emojiIcon {
+  font-size: 2rem;
+}
+
+
+/* 默认情况下，先隐藏深色模式图标 */
+.showInDark {
+  display: none !important;
+}
+
+/* 当全局 html 标签带有 data-theme='dark' 时：隐藏浅色，显示深色 */
+:global(html[data-theme='dark']) .showInLight {
+  display: none !important;
+}
+:global(html[data-theme='dark']) .showInDark {
+  display: block !important;
+}
+
+/* 当全局 html 标签带有 data-theme='light' 时：确保显示浅色，隐藏深色 */
+:global(html[data-theme='light']) .showInLight {
+  display: block !important;
+}
+:global(html[data-theme='light']) .showInDark {
+  display: none !important;
+}

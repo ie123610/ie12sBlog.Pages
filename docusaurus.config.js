@@ -101,7 +101,7 @@ const config = {
           {
             html: `
               <div style="display: flex; align-items: center;">
-                <img alt="rss-log" src="/img/feed-icon.svg" width="20" height="20" style="margin-right: 8px;"/>
+                <img alt="rss-log" src="/img/header/feed-icon.svg" width="20" height="20" style="margin-right: 8px;"/>
                RSS订阅
               </div>
             `,
@@ -112,7 +112,7 @@ const config = {
             type: 'dropdown',
             html: `
               <div style="display: inline-flex; align-items: center; vertical-align: bottom;">
-                <img alt="portal-logo" src="/img/Aperture_Science.svg" width="24" height="24" style="margin-right: 6px;"/>
+                <img alt="portal-logo" src="/img/header/Aperture_Science.svg" width="24" height="24" style="margin-right: 6px;"/>
                 <span>传送门</span>
               </div>
             `, 
@@ -121,7 +121,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="Blogs CN-图标" src="/img/blogscn_icon.png" width="24" height="24" style="margin-right: 12px;"/>
+                    <img alt="Blogs CN-图标" src="/img/header/blogscn_icon.png" width="24" height="24" style="margin-right: 12px;"/>
                     Blogs CN
                   </div>
                 `,
@@ -130,7 +130,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="空间穿梭-图标" src="/img/blogsclub-shuttle.svg" width="28" height="28" style="margin-right: 8px;"/>
+                    <img alt="空间穿梭-图标" src="/img/header/blogsclub-shuttle.svg" width="28" height="28" style="margin-right: 8px;"/>
                     空间穿梭
                   </div>
                 `,
@@ -139,7 +139,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="星球穿梭-图标" src="/img/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 12px;"/>
+                    <img alt="星球穿梭-图标" src="/img/header/planet-shuttle-logo.svg" width="24" height="24" style="margin-right: 12px;"/>
                     星球穿梭
                   </div>
                 `,
@@ -148,7 +148,7 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="异次元之旅-图标" src="/img/planet-icon.png" width="24" height="24" style="margin-right: 12px;"/>
+                    <img alt="异次元之旅-图标" src="/img/header/planet-icon.png" width="24" height="24" style="margin-right: 12px;"/>
                     异次元之旅
                   </div>
                 `,
@@ -157,8 +157,8 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="开往-图标" src="/img/travelling.png" class="icon-light-mode" width="32" height="32" style="margin-right: 4px;"/>
-                    <img alt="开往-图标-暗" src="/img/travelling-dark.png" class="icon-dark-mode" width="32" height="32" style="margin-right: 4px;"/>
+                    <img alt="开往-图标" src="/img/header/travelling.png" class="icon-light-mode" width="32" height="32" style="margin-right: 4px;"/>
+                    <img alt="开往-图标-暗" src="/img/header/travelling-dark.png" class="icon-dark-mode" width="32" height="32" style="margin-right: 4px;"/>
                     开往
                   </div>
                 `,
@@ -166,49 +166,123 @@ const config = {
               },
             ],
           },
+          {
+            href: "https://github.com/ie123610",
+            className: "header-github-link",
+            position: "right",
+            "aria-label": "GitHub repository",
+            title: "GitHub",
+          },
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-        {
-      title: '站点建设',
-      items: [
-        { label: 'GitHub后端', href: 'https://github.com/ie123610/ie12sBlog.Pages/' },
-        { html: `<a class="footer__link-item" href="/sitemap.xml">网站地图</a>` },
-        { html: `<a class="footer__link-item" href="/rss.xml">RSS订阅</a>` },
-        { label: 'umami', href: 'https://cloud.umami.is/share/3yaTIn7G7vwsW2vD' },
-      ],
-    },
-    {
-      title: '其他平台',
-      items: [
-        { label: 'B站专栏', href: 'https://space.bilibili.com/390936347/article' },
-        { label: 'GitHub版博客', href: 'https://github.com/ie123610/ie12sBlog' },
-        { label: '博客园', href: 'https://www.cnblogs.com/ie123610/' },
-        { label: '彗星论坛', href: 'https://www.cometbbs.com/' },
-      ],
-    },
-    {
-      title: '备案',
-      items: [
-        { label: '萌ICP备20253610号', href: 'https://icp.gov.moe/?keyword=20253610' },
-        { label: '茶ICP备2026010294号', href: 'https://icp.redcha.cn/beian/ICP-2026010294.html' },
-      ],
-    },
-    {
-      title: '传送门',
-      items: [
-        {html: `<a href="https://travel.moe/go.html"target="_blank"><img alt="异次元之旅-图标" src="/img/travel-moe-default-white.webp"style="width:146px;height:24px"title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！"></a>`},
-        {html: `<a href="https://blogscn.fun/" title="BLOGS·CN" target="_blank" > <img src="/img/blogs-cn-footer.png" alt="本站已加入BLOGS·CN" style="width:107px;height:30px;"> </a>`},
-        {html: `<a href="https://www.travellings.cn/go.html"target="_blank"rel="noopener"title="开往-友链接力"><img src="/img/travelling-footer.png" alt="开往-友链接力" style="width:120px;height:30px"></a>`},
-        {html: `<a href="https://blogs.quest" target="_blank" title="空间穿梭-随机访问BlogsClub成员博客"><img alt="BlogsClub-图标" src="/img/shuttle_4.png"style="width:106px;height:30px"></a>`},
-        {html: `<a href="https://www.boyouquan.com/planet-shuttle" target="_blank" title="博友圈"><img alt="博友圈-图标" src="/img/planet-shuttle-dark.svg" style="width:100px;height:30px"></a>`},
+        //links: [],
+        copyright: `
+		<div class="footer-img">
+		
+		<a href="https://www.travellings.cn/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/train.svg" alt="travelling-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">开 往</span>
+		</div>
+		</a>
+		
+		<a href="https://www.blogsclub.org" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/blogsclub-logo.png" alt="BlogsClub-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">Blogs<br>Club</span>
+		</div>
+		</a>
+		
+		<a href="https://www.boyouquan.com/home" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/boyouquan-logo.svg" alt="boyouquan-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">博友圈</span>
+		</div>
+		</a>
+
+		<a href="https://blogscn.fun/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img style="background: black;" src="/img/link-exchange/blogscn_icon.png" alt="boyouquan-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">BlogCN</span>
+		</div>
+		</a>
+
+		<a href="https://bf.zzxworld.com/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/blogfinder.png" alt="blog-finder-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">Blog <br> Finder</span>
+		</div>
+		</a>
+		
+		</div>
+		
+		<div class="footer-img">
+		
+		<a href="https://bloginc.cn/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/bloginc.svg" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">博客集</span>
+		</div>
+		</a>
+		
+		<a href="https://www.blogplanet.cn/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/bkxq.png" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span style="font-size: 11px" class="badge-multiline-text">博客星球</span>
+		</div>
+		</a>
+		
+		<a href="https://www.rmbk.cc/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/rmbk.ico" style="background-color: transparent;" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span style="font-size: 11px" class="badge-multiline-text">若梦博客</span>
+		</div>
+		</a>
+		
+		<a href="https://haozhan.wang/index.php" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/haozhan.ico" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">好网站</span>
+		</div>
+		</a>
+		
+		</div>
         
-      ],
-    },
-  ],
-        copyright: `文章若无特殊说明则均使用 <a class="footer-copyright-link" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank">CC BY-SA 4.0</a> 共享协议<br>Powered by <a class="footer-copyright-link" href="https://pages.cloudflare.com/">Cloudflare Pages</a> & <a class="footer-copyright-link" href="https://docusaurus.io/">Docusaurus</a>`,
+        <div class="footer-img">
+        <a href="https://icp.gov.moe/?keyword=20253610" target="_blank" rel="noopener nofollow"><img alt="ice-moe-20253610" class="shields-img"" src="/img/footer/ice-moe-20253610.svg" ></a>
+        <a href="https://icp.redcha.cn/beian/ICP-2026010294.html" target="_blank" rel="noopener nofollow"><img alt="icp-tea-202601029" class="shields-img""  src="/img/footer/icp-tea-202601029.svg" ></a>
+        </div>
+        
+        <div class="footer-img">
+        <a href="/sitemap.xml" target="_blank" title="Sitemap"><img alt="Sitemap-icon" class="shields-img"" src="/img/footer/sitemap.svg" ></a>
+        <a href="https://cloud.umami.is/share/3yaTIn7G7vwsW2vD" target="_blank" title="Umami" rel="noopener nofollow"><img alt="Umami-icon" class="shields-img"" src="/img/footer/Umami.svg" ></a>
+        </div>
+        
+        <span>文章若无特殊说明则均使用 </span><a class="footer-copyright-link" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="noopener nofollow" >CC BY-SA 4.0</a><span> 共享协议</span>
+        <br>
+        <span>Powered by </span><a class="footer-copyright-link" href="https://pages.cloudflare.com/" target="_blank" rel="noopener nofollow">Cloudflare Pages</a> & <a class="footer-copyright-link" href="https://docusaurus.io/" target="_blank" rel="noopener nofollow">Docusaurus</a>
+        
+        `,
       },
       prism: {
         theme: prismThemes.github,
