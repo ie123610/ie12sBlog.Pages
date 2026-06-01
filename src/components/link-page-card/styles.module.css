@@ -114,3 +114,25 @@
 .emojiIcon {
   font-size: 2rem;
 }
+
+
+/* 默认情况下，先隐藏深色模式图标 */
+.showInDark {
+  display: none !important;
+}
+
+/* 当全局 html 标签带有 data-theme='dark' 时：隐藏浅色，显示深色 */
+:global(html[data-theme='dark']) .showInLight {
+  display: none !important;
+}
+:global(html[data-theme='dark']) .showInDark {
+  display: block !important;
+}
+
+/* 当全局 html 标签带有 data-theme='light' 时：确保显示浅色，隐藏深色 */
+:global(html[data-theme='light']) .showInLight {
+  display: block !important;
+}
+:global(html[data-theme='light']) .showInDark {
+  display: none !important;
+}
