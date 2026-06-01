@@ -1,0 +1,9 @@
+{
+  "label": "笔记",
+  "position": 70,
+      link: {
+      type: 'generated-index',
+      slug: '/notes',
+      "description": "记录非教程性质的内容",
+    }, 
+}

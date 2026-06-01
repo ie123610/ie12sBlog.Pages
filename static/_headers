@@ -3,15 +3,6 @@ https://:project.pages.dev/*
 
 https://:version.:project.pages.dev/*
   X-Robots-Tag: noindex
-  
-/markdown-page/
-  X-Robots-Tag: noindex
-  
+
 /search/
-  X-Robots-Tag: noindex
-  
-/BC改进建议/
-  X-Robots-Tag: noindex
-  
-/cnblog-index/
   X-Robots-Tag: noindex
