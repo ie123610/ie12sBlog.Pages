@@ -14,13 +14,14 @@ export const navCategories = [
         name: "开往-友链接力", 
         url: "https://www.travellings.cn/", 
         desc: "让传统友链“活跃”，让网页相互接力。", 
-        iconPath: "/img/link-exchange/travelling.png"
+        iconPath: "/img/link-exchange/travelling.png",
+        iconPathDark: "/img/link-exchange/travelling-dark.png" 
       },
       {
         name: "BlogsClub", 
         url: "https://www.blogsclub.org/", 
         desc: "一个独立且相互包容的个人博客俱乐部", 
-        iconPath: "/img/link-exchange/blogclub-logo.png"
+        iconPath: "/img/link-exchange/blogsclub-logo.png"
       },
       { 
         name: "博友圈", 

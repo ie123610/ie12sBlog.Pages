@@ -11,6 +11,8 @@ import Navigation from '@site/src/components/link-page-card';
 
 <Navigation categoryName="博客发现" />
 
+---
+
 ## 趣味备案
 
 <Navigation categoryName="趣味备案" />

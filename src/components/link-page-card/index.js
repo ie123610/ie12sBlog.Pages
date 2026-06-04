@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import { navCategories } from '@site/cust-plugins/link-page-data.js';
 import styles from './styles.module.css'; // 使用上次写的 CSS
@@ -21,18 +19,30 @@ export default function Navigation({ categoryName }) {
             key={lIdx} 
             href={link.url} 
             target="_blank" 
-            rel="noopener noreferrer" 
+            rel="noopener nofollow" 
             className={styles.card}
           >
             <div className={styles.cardHeader}>
               <div className={styles.iconContainer}>
                 {link.iconPath && link.iconPath.startsWith('/') ? (
-                  <img 
-                    src={link.iconPath} 
-                    alt={`${link.name} 图标`} 
-                    className={styles.imgIcon}
-                    loading="lazy" 
-                  />
+                  <>
+                    {/* 🌟 浅色模式图标：如果配置了暗色图标，则加 showInLight 类名控制隐藏，否则正常显示 */}
+                    <img 
+                      src={link.iconPath} 
+                      alt={`${link.name} 图标`} 
+                      className={`${styles.imgIcon} ${link.iconPathDark ? styles.showInLight : ''}`}
+                      loading="lazy" 
+                    />
+                    {/* 🌟 深色模式图标：只有在数据源配置了 iconPathDark 时才渲染 */}
+                    {link.iconPathDark && (
+                      <img 
+                        src={link.iconPathDark} 
+                        alt={`${link.name} 暗色图标`} 
+                        className={`${styles.imgIcon} ${styles.showInDark}`}
+                        loading="lazy" 
+                      />
+                    )}
+                  </>
                 ) : (
                   <span className={styles.emojiIcon}>{link.iconPath || '🔗'}</span>
                 )}
