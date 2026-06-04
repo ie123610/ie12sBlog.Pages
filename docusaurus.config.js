@@ -70,10 +70,7 @@ const config = {
         blog: false,
         sitemap: {
           ignorePatterns: [
-            '/markdown-page/', 
             '/search/',
-            '/BC改进建议/',
-            '/cnblog-index/',
           ],
           changefreq: 'weekly',
           priority: 0.5,
