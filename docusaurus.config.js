@@ -164,7 +164,7 @@ const config = {
             ],
           },
           {
-            href: "https://github.com/ie123610",
+            href: "https://github.com/ie123610/ie12sBlog.Pages",
             className: "header-github-link",
             position: "right",
             "aria-label": "GitHub repository",
