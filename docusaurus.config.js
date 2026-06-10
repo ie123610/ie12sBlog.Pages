@@ -164,7 +164,7 @@ const config = {
             ],
           },
           {
-            href: "https://github.com/ie123610",
+            href: "https://github.com/ie123610/ie12sBlog.Pages",
             className: "header-github-link",
             position: "right",
             "aria-label": "GitHub repository",
@@ -260,6 +260,15 @@ const config = {
 		</div>
 		<div class="badge-text-zone">
 		<span class="badge-multiline-text">好网站</span>
+		</div>
+		</a>
+		
+		<a href="https://www.zhblogs.net/" target="_blank" rel="noopener nofollow" class="micro-badge-card">
+		<div class="badge-icon-zone">
+		<img src="/img/link-exchange/zhblogs.svg" alt="bloginc-icon" class="badge-pixel-img" />
+		</div>
+		<div class="badge-text-zone">
+		<span class="badge-multiline-text">集博栈</span>
 		</div>
 		</a>
 		
