@@ -55,4 +55,5 @@ docs/占位符.txt
 */rss-friendly-view.*
 
 # 不再手动添加webp图片
-/static/images/*.webp
+/static/images/**/*.webp
+
