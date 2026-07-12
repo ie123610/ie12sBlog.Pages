@@ -6,3 +6,7 @@ https://:version.:project.pages.dev/*
 
 /search/
   X-Robots-Tag: noindex
+
+/script/pdfjs-legacy/web/viewer
+  X-Robots-Tag: noindex
+  

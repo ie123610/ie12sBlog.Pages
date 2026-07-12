@@ -37,7 +37,7 @@
 //export default sidebars;
 
 
-
+/*
 export default {
   mySidebar: [
   
@@ -66,6 +66,6 @@ export default {
     },
   ],
 };
-
+*/
 
 
