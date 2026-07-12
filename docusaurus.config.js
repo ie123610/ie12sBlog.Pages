@@ -10,8 +10,8 @@ const config = {
   url: 'https://ie12blog.36102025.xyz',
   baseUrl: '/',
   trailingSlash: true,
-  organizationName: 'ie123610', // 建议改为你的用户名
-  projectName: 'ie12sBlog',    // 建议改为你的项目名
+  organizationName: 'ie123610', // 用户名
+  projectName: 'ie12sBlog',    // 项目名
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
@@ -95,6 +95,21 @@ const config = {
           src: 'img/logo.webp',
         },
         items: [
+          {
+            href: "/",
+            label: "关于",
+            position: "left",
+          },
+          {
+            href: "/the-index/",
+            label: "索引",
+            position: "left",
+          },
+          {
+            href: "/timeline/",
+            label: "时间轴",
+            position: "left",
+          },
           {
             html: `
               <div style="display: flex; align-items: center;">
