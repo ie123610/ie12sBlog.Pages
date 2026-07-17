@@ -133,15 +133,6 @@ const config = {
               {
                 html: `
                   <div class="navbar-portal-items">
-                    <img alt="Blogs CN-图标" src="/img/header/blogscn_icon.png" width="24" height="24" style="margin-right: 12px;"/>
-                    Blogs CN
-                  </div>
-                `,
-                href: 'https://blogscn.fun/random.html',
-              },
-              {
-                html: `
-                  <div class="navbar-portal-items">
                     <img alt="空间穿梭-图标" src="/img/header/blogsclub-shuttle.svg" width="28" height="28" style="margin-right: 8px;"/>
                     空间穿梭
                   </div>
