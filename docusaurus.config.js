@@ -62,7 +62,7 @@ const config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          showLastUpdateTime: false,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -71,6 +71,7 @@ const config = {
         sitemap: {
           ignorePatterns: [
             '/search/',
+            '/html/smhy/*',
           ],
           changefreq: 'weekly',
           priority: 0.5,
