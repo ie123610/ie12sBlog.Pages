@@ -1,3 +1,6 @@
+# Doc
+# https://developers.cloudflare.com/pages/configuration/headers/
+
 https://:project.pages.dev/*
   X-Robots-Tag: noindex
 
@@ -10,3 +13,6 @@ https://:version.:project.pages.dev/*
 /script/pdfjs-legacy/web/viewer
   X-Robots-Tag: noindex
   
+
+/html/smhy/*
+  X-Robots-Tag: noindex
