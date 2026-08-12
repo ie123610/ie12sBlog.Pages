@@ -16,3 +16,6 @@ https://:version.:project.pages.dev/*
 
 /html/smhy/*
   X-Robots-Tag: noindex
+
+/articles/research-logs/research-index/
+  X-Robots-Tag: noindex
