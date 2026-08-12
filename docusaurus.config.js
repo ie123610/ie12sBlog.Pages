@@ -72,6 +72,7 @@ const config = {
           ignorePatterns: [
             '/search/',
             '/html/smhy/*',
+            '/articles/research-logs/research-index/',
           ],
           changefreq: 'weekly',
           priority: 0.5,
